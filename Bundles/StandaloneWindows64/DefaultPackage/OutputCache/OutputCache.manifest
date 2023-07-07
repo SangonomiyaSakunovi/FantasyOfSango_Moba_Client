@@ -1,0 +1,42 @@
+ManifestFileVersion: 0
+CRC: 1189883850
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: assets_assetbundles_abprefabs_rootprefabs.bundle
+      Dependencies:
+        Dependency_0: assets_assetbundles_abuis_sprites_backgrounds_books.bundle
+        Dependency_1: assets_assetbundles_abuis_sprites_backgrounds.bundle
+        Dependency_2: assets_assetbundles_abuis_sprites_bars.bundle
+        Dependency_3: assets_assetbundles_abuis_sprites_buttons.bundle
+        Dependency_4: assets_assetbundles_abuis_sprites_frame.bundle
+        Dependency_5: assets_assetbundles_abuis_sprites_logo.bundle
+        Dependency_6: assets_assetbundles_abuis_sprites_talk.bundle
+        Dependency_7: unityshaders.bundle
+    Info_1:
+      Name: assets_assetbundles_abuis_avaters_show.bundle
+      Dependencies: {}
+    Info_2:
+      Name: assets_assetbundles_abuis_sprites_backgrounds_books.bundle
+      Dependencies: {}
+    Info_3:
+      Name: assets_assetbundles_abuis_sprites_backgrounds.bundle
+      Dependencies: {}
+    Info_4:
+      Name: assets_assetbundles_abuis_sprites_bars.bundle
+      Dependencies: {}
+    Info_5:
+      Name: assets_assetbundles_abuis_sprites_buttons.bundle
+      Dependencies: {}
+    Info_6:
+      Name: assets_assetbundles_abuis_sprites_frame.bundle
+      Dependencies: {}
+    Info_7:
+      Name: assets_assetbundles_abuis_sprites_logo.bundle
+      Dependencies: {}
+    Info_8:
+      Name: assets_assetbundles_abuis_sprites_talk.bundle
+      Dependencies: {}
+    Info_9:
+      Name: unityshaders.bundle
+      Dependencies: {}

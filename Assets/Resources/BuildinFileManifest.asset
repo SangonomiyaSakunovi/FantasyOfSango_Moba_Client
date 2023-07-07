@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71b02dfa7aa9d4545b3417a18477fbee, type: 3}
+  m_Name: BuildinFileManifest
+  m_EditorClassIdentifier: 
+  BuildinFiles:
+  - 32342dba02d9242a8703bb38f514e89b.bundle
+  - 57634e3fbd48637ea4e7f738c4b0a964.bundle
+  - 9c2a66dbfb36f2f74118e65c40e1b60b.bundle
+  - 9e1da33f488cb890f60e2b6aafb4689d.bundle
+  - a27b48b97dd482faefb5ab6afce8e6d6.bundle
+  - b1acbacbb7796d11c770b47b02044ff5.bundle
+  - b63daf3693c40a94078da6c74a676500.bundle
+  - d869aee04424c37b1dade3f88659c562.bundle
+  - ed841dc40ca8191a9ac5f8ee5fb4a319.bundle
+  - ff834a41a5fb8c9a4a41f303c7f40a78.bundle
+  - ffe2053c9da70bae35c92bf730a64f18.rawfile

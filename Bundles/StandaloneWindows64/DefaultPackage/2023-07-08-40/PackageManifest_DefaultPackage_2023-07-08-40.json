@@ -1,0 +1,420 @@
+{
+    "FileVersion": "1.4.17",
+    "EnableAddressable": false,
+    "LocationToLower": false,
+    "IncludeAssetGUID": false,
+    "OutputNameStyle": 1,
+    "PackageName": "DefaultPackage",
+    "PackageVersion": "2023-07-08-40",
+    "AssetList": [
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABPrefabs/RootPrefabs/HotFixRoot.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": [
+                3,
+                4,
+                10,
+                5,
+                2,
+                8,
+                6,
+                7
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Avaters/Show/UI_CoopImg_Kokomi.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg1.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg2.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg3.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg4.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg5.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg6.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg7.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg8.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg9.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg10.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/UI_Bg_AkaFes.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 3,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/UI_Hachi_Frame.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 3,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/UI_Img_Activity_HideandSeekPaper.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 3,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/UI_Img_PopupItemBG.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 3,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Bars/UI_Img_CoopBar.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Bars/UI_Img_PhotoGraphOutline.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Bars/UI_RogueDiary_BG_Img_Light.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Buttons/UI_Button_Gacha.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Buttons/UI_GravenInnocence_AD_Btn_03_1.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Buttons/UI_Img_AkaFesAkaFesBtn_Bg.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Buttons/UI_Img_EffigyChallengeV3_Shop_TextBg.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Buttons/UI_MusicV3SelectPage_Img_Watcher_Bg.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Frame/UI_FrameA.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Logo/FOSLogo-removebg-preview.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 7,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_Icon_Sub_BackplaneFill.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 8,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkClickA.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 8,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkClickB.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 8,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkLine.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 8,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkLine_Left.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 8,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkLine_Right.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 8,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkShadowV1.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 8,
+            "DependIDs": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABScripts/FOSMobaHotFix.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 9,
+            "DependIDs": []
+        }
+    ],
+    "BundleList": [
+        {
+            "BundleName": "assets_assetbundles_abprefabs_rootprefabs.bundle",
+            "FileHash": "d869aee04424c37b1dade3f88659c562",
+            "FileCRC": "bf8c91ce",
+            "FileSize": 9700830,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": []
+        },
+        {
+            "BundleName": "assets_assetbundles_abuis_avaters_show.bundle",
+            "FileHash": "9e1da33f488cb890f60e2b6aafb4689d",
+            "FileCRC": "d0bcb679",
+            "FileSize": 1746397,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": []
+        },
+        {
+            "BundleName": "assets_assetbundles_abuis_sprites_backgrounds_books.bundle",
+            "FileHash": "a27b48b97dd482faefb5ab6afce8e6d6",
+            "FileCRC": "e272498e",
+            "FileSize": 597882,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [
+                0
+            ]
+        },
+        {
+            "BundleName": "assets_assetbundles_abuis_sprites_backgrounds.bundle",
+            "FileHash": "b63daf3693c40a94078da6c74a676500",
+            "FileCRC": "2cf600cb",
+            "FileSize": 373287,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [
+                0
+            ]
+        },
+        {
+            "BundleName": "assets_assetbundles_abuis_sprites_bars.bundle",
+            "FileHash": "57634e3fbd48637ea4e7f738c4b0a964",
+            "FileCRC": "0cd9d8b9",
+            "FileSize": 7656,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [
+                0
+            ]
+        },
+        {
+            "BundleName": "assets_assetbundles_abuis_sprites_buttons.bundle",
+            "FileHash": "9c2a66dbfb36f2f74118e65c40e1b60b",
+            "FileCRC": "e60e8216",
+            "FileSize": 35765,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [
+                0
+            ]
+        },
+        {
+            "BundleName": "assets_assetbundles_abuis_sprites_frame.bundle",
+            "FileHash": "32342dba02d9242a8703bb38f514e89b",
+            "FileCRC": "43c820e2",
+            "FileSize": 8523,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [
+                0
+            ]
+        },
+        {
+            "BundleName": "assets_assetbundles_abuis_sprites_logo.bundle",
+            "FileHash": "ff834a41a5fb8c9a4a41f303c7f40a78",
+            "FileCRC": "d28657d2",
+            "FileSize": 41217,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [
+                0
+            ]
+        },
+        {
+            "BundleName": "assets_assetbundles_abuis_sprites_talk.bundle",
+            "FileHash": "b1acbacbb7796d11c770b47b02044ff5",
+            "FileCRC": "9cb84d6b",
+            "FileSize": 12521,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [
+                0
+            ]
+        },
+        {
+            "BundleName": "assets_assetbundles_abscripts_fosmobahotfix_dll_bytes.rawfile",
+            "FileHash": "ffe2053c9da70bae35c92bf730a64f18",
+            "FileCRC": "3e5ccd8a",
+            "FileSize": 4608,
+            "IsRawFile": true,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": []
+        },
+        {
+            "BundleName": "unityshaders.bundle",
+            "FileHash": "ed841dc40ca8191a9ac5f8ee5fb4a319",
+            "FileCRC": "d14da370",
+            "FileSize": 23549,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [
+                0
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 1953783566
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c4747192c002c5bf2c467041b6b53bec
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkShadowV1.png
+- Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkLine_Left.png
+- Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkClickA.png
+- Assets/AssetBundles/ABUIs/Sprites/Talk/UI_Icon_Sub_BackplaneFill.png
+- Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkClickB.png
+- Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkLine.png
+- Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkLine_Right.png
+Dependencies: []

@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 480290861
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fcc699a574f9e659311c8a0d96db150c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg3.png
+- Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg10.png
+- Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg1.png
+- Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg5.png
+- Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg6.png
+- Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg8.png
+- Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg2.png
+- Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg9.png
+- Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg4.png
+- Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg7.png
+Dependencies: []

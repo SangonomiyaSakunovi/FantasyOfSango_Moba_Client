@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 4074457861
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 031cd9d33c61a1582826b200a4cac889
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/ABUIs/Sprites/Bars/UI_Img_CoopBar.png
+- Assets/AssetBundles/ABUIs/Sprites/Bars/UI_Img_PhotoGraphOutline.png
+- Assets/AssetBundles/ABUIs/Sprites/Bars/UI_RogueDiary_BG_Img_Light.png
+Dependencies: []

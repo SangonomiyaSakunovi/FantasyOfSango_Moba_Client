@@ -1,0 +1,608 @@
+{
+    "Summary": {
+        "YooVersion": "1.5.0",
+        "UnityVersion": "2022.3.2f1c1",
+        "BuildDate": "2023/7/8 0:40:34",
+        "BuildSeconds": 8,
+        "BuildTarget": 19,
+        "BuildPipeline": 0,
+        "BuildMode": 0,
+        "BuildPackageName": "DefaultPackage",
+        "BuildPackageVersion": "2023-07-08-40",
+        "EnableAddressable": false,
+        "LocationToLower": false,
+        "IncludeAssetGUID": false,
+        "UniqueBundleName": false,
+        "SharedPackRuleClassName": "YooAsset.Editor.ZeroRedundancySharedPackRule",
+        "EncryptionServicesClassName": "YooAsset.Editor.EncryptionNone",
+        "OutputNameStyle": 1,
+        "CompressOption": 2,
+        "DisableWriteTypeTree": false,
+        "IgnoreTypeTreeChanges": true,
+        "AssetFileTotalCount": 43,
+        "MainAssetTotalCount": 34,
+        "AllBundleTotalCount": 11,
+        "AllBundleTotalSize": 12552235,
+        "EncryptedBundleTotalCount": 0,
+        "EncryptedBundleTotalSize": 0,
+        "RawBundleTotalCount": 1,
+        "RawBundleTotalSize": 4608
+    },
+    "AssetInfos": [
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABPrefabs/RootPrefabs/HotFixRoot.prefab",
+            "AssetGUID": "eae6eb79710a9224491b488ea72a1699",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abprefabs_rootprefabs.bundle",
+            "MainBundleSize": 9700830,
+            "DependBundles": [
+                "assets_assetbundles_abuis_sprites_backgrounds.bundle",
+                "assets_assetbundles_abuis_sprites_bars.bundle",
+                "unityshaders.bundle",
+                "assets_assetbundles_abuis_sprites_buttons.bundle",
+                "assets_assetbundles_abuis_sprites_backgrounds_books.bundle",
+                "assets_assetbundles_abuis_sprites_talk.bundle",
+                "assets_assetbundles_abuis_sprites_frame.bundle",
+                "assets_assetbundles_abuis_sprites_logo.bundle"
+            ],
+            "DependAssets": [
+                "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/UI_Bg_AkaFes.png",
+                "Assets/AssetBundles/ABUIs/Sprites/Bars/UI_Img_CoopBar.png",
+                "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+                "Assets/AssetBundles/ABUIs/Sprites/Buttons/UI_Img_AkaFesAkaFesBtn_Bg.png",
+                "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg1.png",
+                "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_Icon_Sub_BackplaneFill.png",
+                "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkClickB.png",
+                "Assets/Resources/ResFonts/SourceHanSans-Light-Lite SDF.asset",
+                "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg10.png",
+                "Assets/AssetBundles/ABUIs/Sprites/Frame/UI_FrameA.png",
+                "Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Input Field Icon.psd",
+                "Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Text Component Icon.psd",
+                "Assets/AssetBundles/ABUIs/Sprites/Logo/FOSLogo-removebg-preview.png",
+                "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader",
+                "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset",
+                "Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Font Asset Icon.psd",
+                "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg2.png",
+                "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+                "Assets/AssetBundles/ABUIs/Sprites/Bars/UI_RogueDiary_BG_Img_Light.png",
+                "Assets/TextMesh Pro/Fonts/LiberationSans.ttf"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Avaters/Show/UI_CoopImg_Kokomi.png",
+            "AssetGUID": "29b30e921b728654086671bcf3f36f87",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_avaters_show.bundle",
+            "MainBundleSize": 1746397,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg1.png",
+            "AssetGUID": "7f0478085672b23419dde92407013f6d",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_backgrounds_books.bundle",
+            "MainBundleSize": 597882,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg2.png",
+            "AssetGUID": "b99dd63eaf9111a41915df56bef74838",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_backgrounds_books.bundle",
+            "MainBundleSize": 597882,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg3.png",
+            "AssetGUID": "436f4c990f12776419618d5d016df93d",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_backgrounds_books.bundle",
+            "MainBundleSize": 597882,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg4.png",
+            "AssetGUID": "51fbcba115ff21b4eb096e731c424fe8",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_backgrounds_books.bundle",
+            "MainBundleSize": 597882,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg5.png",
+            "AssetGUID": "39b4a94a13d592c4d81bcf273b786af0",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_backgrounds_books.bundle",
+            "MainBundleSize": 597882,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg6.png",
+            "AssetGUID": "b92f16dfdba28b949bc6b66cdcac2819",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_backgrounds_books.bundle",
+            "MainBundleSize": 597882,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg7.png",
+            "AssetGUID": "5b45cf1f2dce5f544971901dbd3993ef",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_backgrounds_books.bundle",
+            "MainBundleSize": 597882,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg8.png",
+            "AssetGUID": "a5f33124e33f1c34fab5700943dd5c02",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_backgrounds_books.bundle",
+            "MainBundleSize": 597882,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg9.png",
+            "AssetGUID": "9d1bf9e2f42853445b30ac4fe17741e5",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_backgrounds_books.bundle",
+            "MainBundleSize": 597882,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg10.png",
+            "AssetGUID": "a374ba1af9ee3a54997ed90f28de77e0",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_backgrounds_books.bundle",
+            "MainBundleSize": 597882,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/UI_Bg_AkaFes.png",
+            "AssetGUID": "e0266557de0dada48accfcb0ffdcbc92",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_backgrounds.bundle",
+            "MainBundleSize": 373287,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/UI_Hachi_Frame.png",
+            "AssetGUID": "423a6a4562948164d832bebf92bc285c",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_backgrounds.bundle",
+            "MainBundleSize": 373287,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/UI_Img_Activity_HideandSeekPaper.png",
+            "AssetGUID": "d08f654ab7228d849bab25673961c4be",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_backgrounds.bundle",
+            "MainBundleSize": 373287,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/UI_Img_PopupItemBG.png",
+            "AssetGUID": "e67b5b1ef6a1ee145bd093ef229f76f6",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_backgrounds.bundle",
+            "MainBundleSize": 373287,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Bars/UI_Img_CoopBar.png",
+            "AssetGUID": "4da7e35c37556984eb49ba23a327b4ae",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_bars.bundle",
+            "MainBundleSize": 7656,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Bars/UI_Img_PhotoGraphOutline.png",
+            "AssetGUID": "f09a2ad58d15e4546ae622f2e1d433f2",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_bars.bundle",
+            "MainBundleSize": 7656,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Bars/UI_RogueDiary_BG_Img_Light.png",
+            "AssetGUID": "2cda54d63498262489f78be5360c18e1",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_bars.bundle",
+            "MainBundleSize": 7656,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Buttons/UI_Button_Gacha.png",
+            "AssetGUID": "6471db62a6b48734ebc3d0cc217f7373",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_buttons.bundle",
+            "MainBundleSize": 35765,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Buttons/UI_GravenInnocence_AD_Btn_03_1.png",
+            "AssetGUID": "611e235095884794b82f5ba10fc2447d",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_buttons.bundle",
+            "MainBundleSize": 35765,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Buttons/UI_Img_AkaFesAkaFesBtn_Bg.png",
+            "AssetGUID": "1aa7b9204d2d224448ad072dcf632143",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_buttons.bundle",
+            "MainBundleSize": 35765,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Buttons/UI_Img_EffigyChallengeV3_Shop_TextBg.png",
+            "AssetGUID": "1cfbd8e3e6150c241bf49832724f2a71",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_buttons.bundle",
+            "MainBundleSize": 35765,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Buttons/UI_MusicV3SelectPage_Img_Watcher_Bg.png",
+            "AssetGUID": "a1388b077e3fc1b4fa6011e3578f66c9",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_buttons.bundle",
+            "MainBundleSize": 35765,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Frame/UI_FrameA.png",
+            "AssetGUID": "06cb941e9c9219845bb5408002461678",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_frame.bundle",
+            "MainBundleSize": 8523,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Logo/FOSLogo-removebg-preview.png",
+            "AssetGUID": "4db7c4f89439f2849a97fb30c45ead25",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_logo.bundle",
+            "MainBundleSize": 41217,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_Icon_Sub_BackplaneFill.png",
+            "AssetGUID": "e80b2e4dfbeb789419d5919b015906c1",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_talk.bundle",
+            "MainBundleSize": 12521,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkClickA.png",
+            "AssetGUID": "7d4c22d8aab3e064383bff82827ddae2",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_talk.bundle",
+            "MainBundleSize": 12521,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkClickB.png",
+            "AssetGUID": "ca64a72820a6b134e8b3519a645a635a",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_talk.bundle",
+            "MainBundleSize": 12521,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkLine.png",
+            "AssetGUID": "dbae4c573d5835d46ab388450d96907e",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_talk.bundle",
+            "MainBundleSize": 12521,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkLine_Left.png",
+            "AssetGUID": "6cb41c3b6c87bf442b5b52b6d5918d95",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_talk.bundle",
+            "MainBundleSize": 12521,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkLine_Right.png",
+            "AssetGUID": "213c6b22aefcc6a41a605fadf58e42a0",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_talk.bundle",
+            "MainBundleSize": 12521,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkShadowV1.png",
+            "AssetGUID": "bff1c33e1e5a37146a5f459eb29c1403",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abuis_sprites_talk.bundle",
+            "MainBundleSize": 12521,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetBundles/ABScripts/FOSMobaHotFix.dll.bytes",
+            "AssetGUID": "6b6bcf1ea81bd6d4cabcdc30b27c66d1",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetbundles_abscripts_fosmobahotfix_dll_bytes.rawfile",
+            "MainBundleSize": 4608,
+            "DependBundles": [],
+            "DependAssets": []
+        }
+    ],
+    "BundleInfos": [
+        {
+            "BundleName": "assets_assetbundles_abprefabs_rootprefabs.bundle",
+            "FileName": "d869aee04424c37b1dade3f88659c562.bundle",
+            "FileHash": "d869aee04424c37b1dade3f88659c562",
+            "FileCRC": "bf8c91ce",
+            "FileSize": 9700830,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [],
+            "AllBuiltinAssets": [
+                "Assets/AssetBundles/ABPrefabs/RootPrefabs/HotFixRoot.prefab",
+                "Assets/Resources/ResFonts/SourceHanSans-Light-Lite SDF.asset",
+                "Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Input Field Icon.psd",
+                "Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Text Component Icon.psd",
+                "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset",
+                "Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Font Asset Icon.psd",
+                "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+                "Assets/TextMesh Pro/Fonts/LiberationSans.ttf"
+            ]
+        },
+        {
+            "BundleName": "assets_assetbundles_abuis_avaters_show.bundle",
+            "FileName": "9e1da33f488cb890f60e2b6aafb4689d.bundle",
+            "FileHash": "9e1da33f488cb890f60e2b6aafb4689d",
+            "FileCRC": "d0bcb679",
+            "FileSize": 1746397,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [],
+            "AllBuiltinAssets": [
+                "Assets/AssetBundles/ABUIs/Avaters/Show/UI_CoopImg_Kokomi.png"
+            ]
+        },
+        {
+            "BundleName": "assets_assetbundles_abuis_sprites_backgrounds_books.bundle",
+            "FileName": "a27b48b97dd482faefb5ab6afce8e6d6.bundle",
+            "FileHash": "a27b48b97dd482faefb5ab6afce8e6d6",
+            "FileCRC": "e272498e",
+            "FileSize": 597882,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [
+                0
+            ],
+            "AllBuiltinAssets": [
+                "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg1.png",
+                "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg2.png",
+                "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg3.png",
+                "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg4.png",
+                "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg5.png",
+                "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg6.png",
+                "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg7.png",
+                "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg8.png",
+                "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg9.png",
+                "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Books/Img_BG_Book_Bg10.png"
+            ]
+        },
+        {
+            "BundleName": "assets_assetbundles_abuis_sprites_backgrounds.bundle",
+            "FileName": "b63daf3693c40a94078da6c74a676500.bundle",
+            "FileHash": "b63daf3693c40a94078da6c74a676500",
+            "FileCRC": "2cf600cb",
+            "FileSize": 373287,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [
+                0
+            ],
+            "AllBuiltinAssets": [
+                "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/UI_Bg_AkaFes.png",
+                "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/UI_Hachi_Frame.png",
+                "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/UI_Img_Activity_HideandSeekPaper.png",
+                "Assets/AssetBundles/ABUIs/Sprites/BackGrounds/UI_Img_PopupItemBG.png"
+            ]
+        },
+        {
+            "BundleName": "assets_assetbundles_abuis_sprites_bars.bundle",
+            "FileName": "57634e3fbd48637ea4e7f738c4b0a964.bundle",
+            "FileHash": "57634e3fbd48637ea4e7f738c4b0a964",
+            "FileCRC": "0cd9d8b9",
+            "FileSize": 7656,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [
+                0
+            ],
+            "AllBuiltinAssets": [
+                "Assets/AssetBundles/ABUIs/Sprites/Bars/UI_Img_CoopBar.png",
+                "Assets/AssetBundles/ABUIs/Sprites/Bars/UI_Img_PhotoGraphOutline.png",
+                "Assets/AssetBundles/ABUIs/Sprites/Bars/UI_RogueDiary_BG_Img_Light.png"
+            ]
+        },
+        {
+            "BundleName": "assets_assetbundles_abuis_sprites_buttons.bundle",
+            "FileName": "9c2a66dbfb36f2f74118e65c40e1b60b.bundle",
+            "FileHash": "9c2a66dbfb36f2f74118e65c40e1b60b",
+            "FileCRC": "e60e8216",
+            "FileSize": 35765,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [
+                0
+            ],
+            "AllBuiltinAssets": [
+                "Assets/AssetBundles/ABUIs/Sprites/Buttons/UI_Button_Gacha.png",
+                "Assets/AssetBundles/ABUIs/Sprites/Buttons/UI_GravenInnocence_AD_Btn_03_1.png",
+                "Assets/AssetBundles/ABUIs/Sprites/Buttons/UI_Img_AkaFesAkaFesBtn_Bg.png",
+                "Assets/AssetBundles/ABUIs/Sprites/Buttons/UI_Img_EffigyChallengeV3_Shop_TextBg.png",
+                "Assets/AssetBundles/ABUIs/Sprites/Buttons/UI_MusicV3SelectPage_Img_Watcher_Bg.png"
+            ]
+        },
+        {
+            "BundleName": "assets_assetbundles_abuis_sprites_frame.bundle",
+            "FileName": "32342dba02d9242a8703bb38f514e89b.bundle",
+            "FileHash": "32342dba02d9242a8703bb38f514e89b",
+            "FileCRC": "43c820e2",
+            "FileSize": 8523,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [
+                0
+            ],
+            "AllBuiltinAssets": [
+                "Assets/AssetBundles/ABUIs/Sprites/Frame/UI_FrameA.png"
+            ]
+        },
+        {
+            "BundleName": "assets_assetbundles_abuis_sprites_logo.bundle",
+            "FileName": "ff834a41a5fb8c9a4a41f303c7f40a78.bundle",
+            "FileHash": "ff834a41a5fb8c9a4a41f303c7f40a78",
+            "FileCRC": "d28657d2",
+            "FileSize": 41217,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [
+                0
+            ],
+            "AllBuiltinAssets": [
+                "Assets/AssetBundles/ABUIs/Sprites/Logo/FOSLogo-removebg-preview.png"
+            ]
+        },
+        {
+            "BundleName": "assets_assetbundles_abuis_sprites_talk.bundle",
+            "FileName": "b1acbacbb7796d11c770b47b02044ff5.bundle",
+            "FileHash": "b1acbacbb7796d11c770b47b02044ff5",
+            "FileCRC": "9cb84d6b",
+            "FileSize": 12521,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [
+                0
+            ],
+            "AllBuiltinAssets": [
+                "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_Icon_Sub_BackplaneFill.png",
+                "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkClickA.png",
+                "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkClickB.png",
+                "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkLine.png",
+                "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkLine_Left.png",
+                "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkLine_Right.png",
+                "Assets/AssetBundles/ABUIs/Sprites/Talk/UI_TalkShadowV1.png"
+            ]
+        },
+        {
+            "BundleName": "assets_assetbundles_abscripts_fosmobahotfix_dll_bytes.rawfile",
+            "FileName": "ffe2053c9da70bae35c92bf730a64f18.rawfile",
+            "FileHash": "ffe2053c9da70bae35c92bf730a64f18",
+            "FileCRC": "3e5ccd8a",
+            "FileSize": 4608,
+            "IsRawFile": true,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [],
+            "AllBuiltinAssets": [
+                "Assets/AssetBundles/ABScripts/FOSMobaHotFix.dll.bytes"
+            ]
+        },
+        {
+            "BundleName": "unityshaders.bundle",
+            "FileName": "ed841dc40ca8191a9ac5f8ee5fb4a319.bundle",
+            "FileHash": "ed841dc40ca8191a9ac5f8ee5fb4a319",
+            "FileCRC": "d14da370",
+            "FileSize": 23549,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [
+                0
+            ],
+            "AllBuiltinAssets": [
+                "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+                "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader"
+            ]
+        }
+    ],
+    "RedundancyInfos": []
+}
