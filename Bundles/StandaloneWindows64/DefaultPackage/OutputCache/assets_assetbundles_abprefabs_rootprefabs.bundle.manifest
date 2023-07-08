@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3853025251
+CRC: 1087497905
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: a37134ed6f4a4c92bb0324f97f5441ef
+    Hash: 6e429566ca1781de41e806fe7e483232
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 1433120e4c4921aa07eabb0ebebd568a
+    Hash: ab28789ad39fdfd5def0598dc76d90b1
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -19,7 +19,9 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 82
   Script: {instanceID: 0}
-- Class: 111
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
   Script: {instanceID: 0}
 - Class: 114
   Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -59,6 +61,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 4b748e73f49e983459a7c2713004d9d2, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: fec1660166dfd204bafae82a9c5456d8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 47b332878d5155b4c8def2dbc2886f8e, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 128
@@ -135,11 +139,11 @@ SerializeReferenceClassIdentifiers:
 Assets:
 - Assets/AssetBundles/ABPrefabs/RootPrefabs/HotFixRoot.prefab
 Dependencies:
+- E:/FantasyOfSango/FantasyOfSango_Moba_Client/Bundles/StandaloneWindows64/DefaultPackage/OutputCache/assets_assetbundles_abuis_animations.bundle
 - E:/FantasyOfSango/FantasyOfSango_Moba_Client/Bundles/StandaloneWindows64/DefaultPackage/OutputCache/assets_assetbundles_abuis_sprites_backgrounds.bundle
 - E:/FantasyOfSango/FantasyOfSango_Moba_Client/Bundles/StandaloneWindows64/DefaultPackage/OutputCache/assets_assetbundles_abuis_sprites_backgrounds_books.bundle
 - E:/FantasyOfSango/FantasyOfSango_Moba_Client/Bundles/StandaloneWindows64/DefaultPackage/OutputCache/assets_assetbundles_abuis_sprites_bars.bundle
 - E:/FantasyOfSango/FantasyOfSango_Moba_Client/Bundles/StandaloneWindows64/DefaultPackage/OutputCache/assets_assetbundles_abuis_sprites_buttons.bundle
 - E:/FantasyOfSango/FantasyOfSango_Moba_Client/Bundles/StandaloneWindows64/DefaultPackage/OutputCache/assets_assetbundles_abuis_sprites_frame.bundle
 - E:/FantasyOfSango/FantasyOfSango_Moba_Client/Bundles/StandaloneWindows64/DefaultPackage/OutputCache/assets_assetbundles_abuis_sprites_logo.bundle
-- E:/FantasyOfSango/FantasyOfSango_Moba_Client/Bundles/StandaloneWindows64/DefaultPackage/OutputCache/assets_assetbundles_abuis_sprites_talk.bundle
 - E:/FantasyOfSango/FantasyOfSango_Moba_Client/Bundles/StandaloneWindows64/DefaultPackage/OutputCache/unityshaders.bundle

@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class HotFixWindow : MonoBehaviour
 {
-    public Button confirmButton;
-    public Button cancelButton;
     public GameObject hotfixPanel;
     public TMP_Text Tips;
     public TMP_Text HotfixInfo;
@@ -20,13 +18,12 @@ public class HotFixWindow : MonoBehaviour
 
     public void OpenHotFixPanel()
     {
-        hotfixPanel.SetActive(true);
         InitWindow();
+        hotfixPanel.SetActive(true);
     }
 
     private void InitWindow()
     {
-        hotfixPanel.SetActive(false);
         loadingProgressFGWidth = loadingProgressFG.GetComponent<RectTransform>().sizeDelta.x;
         loadingProgressPointYPos = loadingProgressPoint.GetComponent<RectTransform>().sizeDelta.y;
         loadingProgressText.text = "0%";
@@ -48,7 +45,7 @@ public class HotFixWindow : MonoBehaviour
     public void SetHotFixInfoText(long totalDownloadBytes)
     {
         long totalUploadMB = totalDownloadBytes / 1048576;
-        string text = "当前需要下载更新" + totalDownloadBytes + "MB左右，\n是否继续？\n（建议在Wifi环境下进行）";
+        string text = "当前需要下载更新" + totalUploadMB + "MB左右，\n是否继续？\n（建议在Wifi环境下进行）";
         HotfixInfo.text = text;
     }
 

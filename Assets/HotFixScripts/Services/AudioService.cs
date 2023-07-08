@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 //Developer: SangonomiyaSakunovi
@@ -27,5 +28,14 @@ public class AudioService : BaseService
             bgAudioSource.loop = isLoop;
             bgAudioSource.Play();
         }
+    }
+
+    public void PlayUIAudio(string name, bool isCache = true)
+    {
+        if (!isTurnOnAudio) { return; }
+        string path = ResourcePath.UIAudioPath + name;
+        AudioClip audioClip = ResourceService.Instance.LoadAudioClip(path, isCache);
+        uiAudioSource.clip = audioClip;
+        uiAudioSource.Play();
     }
 }

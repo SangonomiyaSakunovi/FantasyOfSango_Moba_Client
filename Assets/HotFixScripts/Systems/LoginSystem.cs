@@ -15,6 +15,6 @@ public class LoginSystem : BaseSystem
     public void OpenLoginWindow()
     {
         loginWindow.SetWindowState();
-        audioService.PlayBGAudio(AudioConstant.MainCityBGMusic);
+        audioService.PlayBGAudio(AudioBGConstant.MainCityBGMusic);
     }
 }

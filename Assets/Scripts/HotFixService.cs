@@ -11,7 +11,9 @@ public class HotFixService : MonoBehaviour
 {
     public static List<string> AOTMetaAssemblyNames { get; } = new List<string>()
     {
-        
+        "Assets/AssetBundles/ABScripts/UnityEngine.CoreModule.dll.bytes",
+        "Assets/AssetBundles/ABScripts/YooAsset.dll.bytes",
+        "Assets/AssetBundles/ABScripts/mscorlib.dll.bytes"       
     };
 
     private static Dictionary<string, byte[]> dllAssetDataDict = new Dictionary<string, byte[]>();

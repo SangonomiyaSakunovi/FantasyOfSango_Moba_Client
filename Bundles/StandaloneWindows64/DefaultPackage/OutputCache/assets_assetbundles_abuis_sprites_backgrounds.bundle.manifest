@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1167344334
+CRC: 2345290606
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: eedbbb3705288504f7e151620f350132
+    Hash: af26b1066bc60ec2203adb813237f24f
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2d8df09e698f722ada1caa03d3413830
@@ -18,5 +18,7 @@ Assets:
 - Assets/AssetBundles/ABUIs/Sprites/BackGrounds/UI_Bg_AkaFes.png
 - Assets/AssetBundles/ABUIs/Sprites/BackGrounds/UI_Img_Activity_HideandSeekPaper.png
 - Assets/AssetBundles/ABUIs/Sprites/BackGrounds/UI_Hachi_Frame.png
+- Assets/AssetBundles/ABUIs/Sprites/BackGrounds/UIMask.png
 - Assets/AssetBundles/ABUIs/Sprites/BackGrounds/UI_Img_PopupItemBG.png
+- Assets/AssetBundles/ABUIs/Sprites/BackGrounds/Background.png
 Dependencies: []

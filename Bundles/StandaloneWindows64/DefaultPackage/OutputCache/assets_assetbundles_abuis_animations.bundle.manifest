@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2546808514
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9d7e12de05fb596b2f7adeb0d9139155
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5d8cf9d168a23b38c9007ec49c138a92
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/ABUIs/Animations/TipsWindowAnimation.anim
+- Assets/AssetBundles/ABUIs/Animations/TipsWindowAnimator.controller
+Dependencies: []

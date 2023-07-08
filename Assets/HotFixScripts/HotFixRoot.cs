@@ -10,6 +10,7 @@ public class HotFixRoot : MonoBehaviour
     public GameObject servicesRoot;
     public GameObject systemsRoot;
 
+    public TipsWindow tipsWindow;
 
     private void Start()
     {
@@ -28,6 +29,7 @@ public class HotFixRoot : MonoBehaviour
             Transform transform = windowRoot.transform.GetChild(index);
             transform.gameObject.SetActive(false); 
         }
+        tipsWindow.SetWindowState();
     }
 
     private void InitServices()
@@ -48,5 +50,10 @@ public class HotFixRoot : MonoBehaviour
         registSystem.InitSystem();
         LobbySystem lobbySystem = systemsRoot.GetComponent<LobbySystem>();
         lobbySystem.InitSystem();
+    }
+
+    public void AddTips(string tips)
+    {
+        tipsWindow.AddTips(tips);
     }
 }
