@@ -10,6 +10,7 @@ public class AOTRoot : MonoBehaviour
     {
         Debug.Log("Æô¶¯³É¹¦");
         Instance = this;
+        DontDestroyOnLoad(this);
         InitRoot();
     }
 

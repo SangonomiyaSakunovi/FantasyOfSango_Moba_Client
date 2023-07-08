@@ -21,16 +21,16 @@ public class HotFixService : MonoBehaviour
     public Transform hotFixRootParent;
 
     private ResourceDownloaderOperation downloaderOperation;
-    private ResourcePackage package;
+    private ResourcePackage yooAssetResourcePackage;
 
-    private HotFixWindow hotFixWindow;
+    public HotFixWindow hotFixWindow;
     private HotFixConfig hotFixConfig;
 
     public void InitService()
     {
         Instance = this;
-        hotFixWindow = GetComponentInChildren<HotFixWindow>();
         hotFixConfig = GetComponent<HotFixConfig>();
+        hotFixWindow.SetTips("正在检查更新");
         StartCoroutine(PrepareAssets());
     }
 
@@ -60,7 +60,7 @@ public class HotFixService : MonoBehaviour
         }.Concat(AOTMetaAssemblyNames);
         foreach (var dllName in dllNameList)
         {
-            var obj = package.LoadRawFileSync(dllName);
+            var obj = yooAssetResourcePackage.LoadRawFileSync(dllName);
             byte[] fileData = obj.GetRawFileData();
             dllAssetDataDict.Add(dllName, fileData);
         }
@@ -68,7 +68,7 @@ public class HotFixService : MonoBehaviour
 
     private void LoadGameRootObject()
     {
-        var asset1 = package.LoadAssetSync<GameObject>("Assets/AssetBundles/ABPrefabs/RootPrefabs/HotFixRoot.prefab");
+        var asset1 = yooAssetResourcePackage.LoadAssetSync<GameObject>("Assets/AssetBundles/ABPrefabs/RootPrefabs/HotFixRoot.prefab");
         GameObject hotFixRoot = asset1.InstantiateSync();
         hotFixRoot.transform.SetParent(hotFixRootParent);
         RectTransform rect = hotFixRoot.GetComponent<RectTransform>();
@@ -80,8 +80,8 @@ public class HotFixService : MonoBehaviour
     {
         //1. InitYooAsset
         YooAssets.Initialize();
-        package = YooAssets.CreatePackage("DefaultPackage");
-        YooAssets.SetDefaultPackage(package);
+        yooAssetResourcePackage = YooAssets.CreatePackage("DefaultPackage");
+        YooAssets.SetDefaultPackage(yooAssetResourcePackage);
         EPlayMode PlayMode = hotFixConfig.GetEPlayMode();
         switch (PlayMode)
         {
@@ -89,7 +89,7 @@ public class HotFixService : MonoBehaviour
                 {
                     var initParameters = new EditorSimulateModeParameters();
                     initParameters.SimulateManifestFilePath = EditorSimulateModeHelper.SimulateBuild("DefaultPackage");
-                    var initOperation = package.InitializeAsync(initParameters);
+                    var initOperation = yooAssetResourcePackage.InitializeAsync(initParameters);
                     yield return initOperation;
 
                     if (initOperation.Status == EOperationStatus.Succeed)
@@ -110,7 +110,7 @@ public class HotFixService : MonoBehaviour
                     initParameters.QueryServices = new GameQueryServices();
                     initParameters.DefaultHostServer = hotFixConfig.GetCNDServerAddress();
                     initParameters.FallbackHostServer = hotFixConfig.GetCNDServerAddress();
-                    var initOperation = package.InitializeAsync(initParameters);
+                    var initOperation = yooAssetResourcePackage.InitializeAsync(initParameters);
                     yield return initOperation;
 
                     if (initOperation.Status == EOperationStatus.Succeed)
@@ -127,7 +127,7 @@ public class HotFixService : MonoBehaviour
             case EPlayMode.OfflinePlayMode:
                 {
                     var initParameters = new OfflinePlayModeParameters();
-                    var initOperation = package.InitializeAsync(initParameters);
+                    var initOperation = yooAssetResourcePackage.InitializeAsync(initParameters);
                     yield return initOperation;
 
                     if (initOperation.Status == EOperationStatus.Succeed)
@@ -145,7 +145,7 @@ public class HotFixService : MonoBehaviour
         }
 
         //2. UpdatePackageVersion
-        var updatePackageVersionOperation = package.UpdatePackageVersionAsync();
+        var updatePackageVersionOperation = yooAssetResourcePackage.UpdatePackageVersionAsync();
         yield return updatePackageVersionOperation;
 
         if (updatePackageVersionOperation.Status != EOperationStatus.Succeed)
@@ -157,7 +157,7 @@ public class HotFixService : MonoBehaviour
 
         //3. UpdatePackageManifest
         bool savePackageVersion = true;
-        var updatePackageManifestOperation = package.UpdatePackageManifestAsync(packageVersion, savePackageVersion);
+        var updatePackageManifestOperation = yooAssetResourcePackage.UpdatePackageManifestAsync(packageVersion, savePackageVersion);
         yield return updatePackageManifestOperation;
 
         if (updatePackageManifestOperation.Status != EOperationStatus.Succeed)
@@ -175,7 +175,7 @@ public class HotFixService : MonoBehaviour
     {
         int downloadingMaxNum = 10;
         int failedTryAgain = 3;
-        var downloader = package.CreateResourceDownloader(downloadingMaxNum, failedTryAgain);
+        var downloader = yooAssetResourcePackage.CreateResourceDownloader(downloadingMaxNum, failedTryAgain);
 
         if (downloader.TotalDownloadCount == 0)
         {
@@ -194,6 +194,7 @@ public class HotFixService : MonoBehaviour
 
         downloaderOperation = downloader;
 
+        hotFixWindow.OpenHotFixPanel();
         hotFixWindow.SetHotFixInfoText(totalDownloadBytes);
 
         Debug.Log("现在已经准备好下载器了哦~");

@@ -18,8 +18,15 @@ public class HotFixWindow : MonoBehaviour
     private float loadingProgressFGWidth;
     private float loadingProgressPointYPos;
 
-    public void InitWindow()
+    public void OpenHotFixPanel()
     {
+        hotfixPanel.SetActive(true);
+        InitWindow();
+    }
+
+    private void InitWindow()
+    {
+        hotfixPanel.SetActive(false);
         loadingProgressFGWidth = loadingProgressFG.GetComponent<RectTransform>().sizeDelta.x;
         loadingProgressPointYPos = loadingProgressPoint.GetComponent<RectTransform>().sizeDelta.y;
         loadingProgressText.text = "0%";
@@ -29,12 +36,13 @@ public class HotFixWindow : MonoBehaviour
 
     public void OnConfirmButtonClick()
     {
+        SetTips("正在下载更新");
         HotFixService.Instance.RunHotFix();
     }
 
     public void OnCancelButtonClick()
     {
-        //TODO
+        SetTips("在测试服中，取消会无法进入游戏的哦");
     }
 
     public void SetHotFixInfoText(long totalDownloadBytes)

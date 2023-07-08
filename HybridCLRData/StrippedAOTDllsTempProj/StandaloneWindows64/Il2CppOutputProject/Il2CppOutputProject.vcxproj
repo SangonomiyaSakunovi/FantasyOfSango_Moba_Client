@@ -62,6 +62,8 @@
     </ClCompile>
     <ClCompile Include="Source\GenericMethods__16.cpp">
     </ClCompile>
+    <ClCompile Include="Source\GenericMethods__17.cpp">
+    </ClCompile>
     <ClCompile Include="Source\GenericMethods__2.cpp">
     </ClCompile>
     <ClCompile Include="Source\GenericMethods__3.cpp">
@@ -215,6 +217,12 @@
     <ClCompile Include="Source\Generics__7.cpp">
     </ClCompile>
     <ClCompile Include="Source\Generics__70.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\Generics__71.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\Generics__72.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\Generics__73.cpp">
     </ClCompile>
     <ClCompile Include="Source\Generics__8.cpp">
     </ClCompile>
