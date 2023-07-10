@@ -7,34 +7,34 @@ using UnityEngine.UI;
 
 public class TipsWindow : BaseWindow
 {
-    public Image tipsBG;
-    public TMP_Text tipsText;
-    public Animator tipsAnimator;
+    public Image _tipsBG;
+    public TMP_Text _tipsText;
+    public Animator _tipsAnimator;
 
-    private float tipsTime = 1.5f;
-    private int fontSize = 40;
-    private int tipsBGHeight = 80;
-    private bool isTipsShow = false;
-    private float tipsShowEndTime;
-    private Queue<string> tipsQueue = new Queue<string>();
+    private float _tipsTime = 1.5f;
+    private int _fontSize = 40;
+    private int _tipsBGHeight = 80;
+    private bool _isTipsShow = false;
+    private float _tipsShowEndTime;
+    private Queue<string> _tipsQueue = new Queue<string>();
 
     public override void InitWindow()
     {
         base.InitWindow();
-        SetActive(tipsBG, false);
-        tipsQueue.Clear();
+        SetActive(_tipsBG, false);
+        _tipsQueue.Clear();
     }
 
     private void Update()
     {
-        if (Time.time - tipsShowEndTime > 0)
+        if (_isTipsShow && Time.time > _tipsShowEndTime)
         {
             OnTipsShowDone();
         }
-        if (tipsQueue.Count > 0 && !isTipsShow)
+        if (_tipsQueue.Count > 0 && !_isTipsShow)
         {
-            string tips = tipsQueue.Dequeue();
-            isTipsShow = true;
+            string tips = _tipsQueue.Dequeue();
+            _isTipsShow = true;
             SetTips(tips);
         }
     }
@@ -42,21 +42,21 @@ public class TipsWindow : BaseWindow
     private void SetTips(string tips)
     {
         int length = tips.Length;
-        SetActive(tipsBG);
-        SetText(tipsText, tips);
-        tipsBG.GetComponent<RectTransform>().sizeDelta = new Vector2(fontSize * (length + 2), tipsBGHeight);
-        tipsAnimator.Play("TipsWindowAnimation", 0, 0);
-        tipsShowEndTime = Time.time + tipsTime;
+        SetActive(_tipsBG);
+        SetText(_tipsText, tips);
+        _tipsBG.GetComponent<RectTransform>().sizeDelta = new Vector2(_fontSize * (length + 2), _tipsBGHeight);
+        _tipsAnimator.Play("TipsWindowAnimation", 0, 0);
+        _tipsShowEndTime = Time.time + _tipsTime;
     }
 
     public void AddTips(string tips)
     {
-        tipsQueue.Enqueue(tips);
+        _tipsQueue.Enqueue(tips);
     }
 
     public void OnTipsShowDone()
     {
-        SetActive(tipsBG, false);
-        isTipsShow = false;
+        SetActive(_tipsBG, false);
+        _isTipsShow = false;
     }
 }

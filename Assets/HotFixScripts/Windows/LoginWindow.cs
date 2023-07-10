@@ -4,8 +4,8 @@ using TMPro;
 
 public class LoginWindow : BaseWindow
 {
-    public TMP_InputField accountInput;
-    public TMP_InputField passwordInput;
+    public TMP_InputField _accountInput;
+    public TMP_InputField _passwordInput;
 
     public override void InitWindow()
     {
@@ -14,14 +14,14 @@ public class LoginWindow : BaseWindow
 
     public void OnLoginButtonClick()
     {
-        audioService.PlayUIAudio(AudioUIConstant.LoginButtonClick);
-        if (accountInput.text.Length > 0 && passwordInput.text.Length > 0)
+        _audioService.PlayUIAudio(AudioUIConstant.LoginButtonClick);
+        if (_accountInput.text.Length > 0 && _passwordInput.text.Length > 0)
         {
 
         }
         else
         {
-            hotFixRoot.AddTips("账号或密码为空，请重新输入");
+            _hotFixRoot.AddTips("账号或密码为空，请重新输入");
         }
     }
 

@@ -4,7 +4,7 @@ public class LoginSystem : BaseSystem
 {
     public static LoginSystem Instance;
 
-    public LoginWindow loginWindow;
+    public LoginWindow _loginWindow;
 
     public override void InitSystem()
     {
@@ -14,7 +14,7 @@ public class LoginSystem : BaseSystem
 
     public void OpenLoginWindow()
     {
-        loginWindow.SetWindowState();
-        audioService.PlayBGAudio(AudioBGConstant.MainCityBGMusic);
+        _loginWindow.SetWindowState();
+        _audioService.PlayBGAudio(AudioBGConstant.MainCityBGMusic);
     }
 }

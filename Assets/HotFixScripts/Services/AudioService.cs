@@ -3,39 +3,38 @@ using UnityEngine;
 
 //Developer: SangonomiyaSakunovi
 
-public class AudioService : BaseService
+public class AudioService : MonoBehaviour
 {
     public static AudioService Instance;
 
-    public bool isTurnOnAudio;
-    public AudioSource bgAudioSource;
-    public AudioSource uiAudioSource;
+    public bool _isTurnOnAudio;
+    public AudioSource _bgAudioSource;
+    public AudioSource _uiAudioSource;
 
-    public override void InitService()
+    public void InitService()
     {
         Instance = this;
-        base.InitService();
     }
 
     public void PlayBGAudio(string name, bool isLoop = true, bool isCache = true)
     {
-        if (!isTurnOnAudio) { return; }
+        if (!_isTurnOnAudio) { return; }
         string path = ResourcePath.BGAudioPath + name;
         AudioClip audioClip = ResourceService.Instance.LoadAudioClip(path, isCache);
-        if (bgAudioSource.clip == null || bgAudioSource.clip.name != audioClip.name)
+        if (_bgAudioSource.clip == null || _bgAudioSource.clip.name != audioClip.name)
         {
-            bgAudioSource.clip = audioClip;
-            bgAudioSource.loop = isLoop;
-            bgAudioSource.Play();
+            _bgAudioSource.clip = audioClip;
+            _bgAudioSource.loop = isLoop;
+            _bgAudioSource.Play();
         }
     }
 
     public void PlayUIAudio(string name, bool isCache = true)
     {
-        if (!isTurnOnAudio) { return; }
+        if (!_isTurnOnAudio) { return; }
         string path = ResourcePath.UIAudioPath + name;
         AudioClip audioClip = ResourceService.Instance.LoadAudioClip(path, isCache);
-        uiAudioSource.clip = audioClip;
-        uiAudioSource.Play();
+        _uiAudioSource.clip = audioClip;
+        _uiAudioSource.Play();
     }
 }

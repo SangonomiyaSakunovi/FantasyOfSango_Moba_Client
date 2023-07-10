@@ -8,10 +8,10 @@ using UnityEngine.UI;
 
 public class BaseWindow : MonoBehaviour
 {
-    protected HotFixRoot hotFixRoot;
-    protected AudioService audioService;
-    protected ResourceService resourceService;
-    protected NetService netService;
+    protected HotFixRoot _hotFixRoot;
+    protected AudioService _audioService;
+    protected ResourceService _resourceService;
+    protected NetService _netService;
 
     public virtual void SetWindowState(bool isActive = true)
     {
@@ -31,18 +31,20 @@ public class BaseWindow : MonoBehaviour
 
     public virtual void InitWindow()
     {
-        hotFixRoot = HotFixRoot.Instance;
-        audioService = AudioService.Instance;
-        resourceService = ResourceService.Instance;
-        netService = NetService.Instance;
+        _hotFixRoot = HotFixRoot.Instance;
+        _audioService = AudioService.Instance;
+        _resourceService = ResourceService.Instance;
+        _netService = NetService.Instance;
     }
+
+    public virtual void UpdateWindow() { }
 
     public virtual void UnInitWindow()
     {
-        hotFixRoot = null;
-        audioService = null;
-        resourceService = null;
-        netService = null;
+        _hotFixRoot = null;
+        _audioService = null;
+        _resourceService = null;
+        _netService = null;
     }
 
     protected void SetActive(GameObject gameObject, bool isActive = true)

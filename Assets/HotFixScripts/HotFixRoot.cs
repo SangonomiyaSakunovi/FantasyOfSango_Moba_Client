@@ -6,11 +6,12 @@ public class HotFixRoot : MonoBehaviour
 {
     public static HotFixRoot Instance;
 
-    public GameObject windowRoot;
-    public GameObject servicesRoot;
-    public GameObject systemsRoot;
+    public GameObject _windowRoot;
+    public GameObject _servicesRoot;
+    public GameObject _systemsRoot;
 
-    public TipsWindow tipsWindow;
+    public TipsWindow _tipsWindow;
+
 
     private void Start()
     {
@@ -22,38 +23,45 @@ public class HotFixRoot : MonoBehaviour
         LoginSystem.Instance.OpenLoginWindow();
     }
 
+    private void Update()
+    {
+        NetService.Instance.IsGetReceivedMessage();
+    }
+
     private void InitHotFixRoot()
     {
-        for (int index = 0; index < windowRoot.transform.childCount; index++)
+        for (int index = 0; index < _windowRoot.transform.childCount; index++)
         {
-            Transform transform = windowRoot.transform.GetChild(index);
-            transform.gameObject.SetActive(false); 
+            Transform transform = _windowRoot.transform.GetChild(index);
+            transform.gameObject.SetActive(false);
         }
-        tipsWindow.SetWindowState();
+        _tipsWindow.SetWindowState();
     }
+
+
 
     private void InitServices()
     {
-        ResourceService resourceService = servicesRoot.GetComponent<ResourceService>();
+        ResourceService resourceService = _servicesRoot.GetComponent<ResourceService>();
         resourceService.InitService();
-        NetService netService = servicesRoot.GetComponent<NetService>();
+        NetService netService = _servicesRoot.GetComponent<NetService>();
         netService.InitService();
-        AudioService audioService = servicesRoot.GetComponent<AudioService>();
+        AudioService audioService = _servicesRoot.GetComponent<AudioService>();
         audioService.InitService();
     }
 
     private void InitSystems()
     {
-        LoginSystem loginSystem = systemsRoot.GetComponent<LoginSystem>();
+        LoginSystem loginSystem = _systemsRoot.GetComponent<LoginSystem>();
         loginSystem.InitSystem();
-        RegistSystem registSystem = systemsRoot.GetComponent<RegistSystem>();
+        RegistSystem registSystem = _systemsRoot.GetComponent<RegistSystem>();
         registSystem.InitSystem();
-        LobbySystem lobbySystem = systemsRoot.GetComponent<LobbySystem>();
+        LobbySystem lobbySystem = _systemsRoot.GetComponent<LobbySystem>();
         lobbySystem.InitSystem();
     }
 
     public void AddTips(string tips)
     {
-        tipsWindow.AddTips(tips);
+        _tipsWindow.AddTips(tips);
     }
 }

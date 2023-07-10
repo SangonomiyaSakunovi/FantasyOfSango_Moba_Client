@@ -6,16 +6,16 @@ using UnityEngine;
 
 public class BaseSystem : MonoBehaviour
 {
-    protected HotFixRoot hotFixRoot;
-    protected AudioService audioService;
-    protected ResourceService resourceService;
-    protected NetService netService;
+    protected HotFixRoot _hotFixRoot;
+    protected AudioService _audioService;
+    protected ResourceService _resourceService;
+    protected NetService _netService;
 
     public virtual void InitSystem() 
     {
-        hotFixRoot = HotFixRoot.Instance;
-        audioService = AudioService.Instance;
-        resourceService = ResourceService.Instance;
-        netService = NetService.Instance;
+        _hotFixRoot = HotFixRoot.Instance;
+        _audioService = AudioService.Instance;
+        _resourceService = ResourceService.Instance;
+        _netService = NetService.Instance;
     }
 }

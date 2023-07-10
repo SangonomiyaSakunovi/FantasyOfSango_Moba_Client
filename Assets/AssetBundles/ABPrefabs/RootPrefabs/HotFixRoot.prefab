@@ -3828,8 +3828,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fec1660166dfd204bafae82a9c5456d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accountInput: {fileID: 6883398742002329626}
-  passwordInput: {fileID: 5881121204460047799}
+  _accountInput: {fileID: 6883398742002329626}
+  _passwordInput: {fileID: 5881121204460047799}
 --- !u!1 &4130543126840661923
 GameObject:
   m_ObjectHideFlags: 0
@@ -5415,10 +5415,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e26b1777304abdc4a94aa4c41c0bc67a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windowRoot: {fileID: 2463503842644258878}
-  servicesRoot: {fileID: 7638226671050735953}
-  systemsRoot: {fileID: 7647527699902866847}
-  tipsWindow: {fileID: 5402025233000702323}
+  _windowRoot: {fileID: 2463503842644258878}
+  _servicesRoot: {fileID: 7638226671050735953}
+  _systemsRoot: {fileID: 7647527699902866847}
+  _tipsWindow: {fileID: 5402025233000702323}
 --- !u!1 &6308341923060925329
 GameObject:
   m_ObjectHideFlags: 0
@@ -7027,9 +7027,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb33335007cbdf14d8a095ebf02ee4d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isTurnOnAudio: 1
-  bgAudioSource: {fileID: 2118550242533033510}
-  uiAudioSource: {fileID: 4514762502009031494}
+  _isTurnOnAudio: 1
+  _bgAudioSource: {fileID: 2118550242533033510}
+  _uiAudioSource: {fileID: 4514762502009031494}
 --- !u!114 &3870274079620151048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7117,7 +7117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ff1c3b84bc052c458a0314f4f1f7c21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loginWindow: {fileID: 7018185776744928135}
+  _loginWindow: {fileID: 7018185776744928135}
 --- !u!114 &3498662892762134069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7180,9 +7180,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b332878d5155b4c8def2dbc2886f8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipsBG: {fileID: 6568532057337549146}
-  tipsText: {fileID: 7468552714476143699}
-  tipsAnimator: {fileID: 6349570816914360838}
+  _tipsBG: {fileID: 6568532057337549146}
+  _tipsText: {fileID: 7468552714476143699}
+  _tipsAnimator: {fileID: 6349570816914360838}
 --- !u!1 &7731777381364818532
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,18 +5,18 @@ using YooAsset;
 
 public class HotFixConfig : MonoBehaviour
 {
-    private EPlayMode ePlayMode = EPlayMode.HostPlayMode;
-    private CDNServerModeCode cndServerMode = CDNServerModeCode.Local;
-    private SangoApplicationCode sangoApplication = SangoApplicationCode.FOS_Moba;
+    private EPlayMode _ePlayMode = EPlayMode.HostPlayMode;
+    private CDNServerModeCode _cndServerMode = CDNServerModeCode.Local;
+    private SangoApplicationCode _sangoApplication = SangoApplicationCode.FOS_Moba;
 
     #region CDNServerConfig
     public string GetCNDServerAddress()
     {
         string cndAddress = "";
-        switch (cndServerMode)
+        switch (_cndServerMode)
         {
             case CDNServerModeCode.Local:
-                switch (sangoApplication)
+                switch (_sangoApplication)
                 {
                     case SangoApplicationCode.FOS_MMO:
                         cndAddress = "http://127.0.0.1/CNDServer_MMO";
@@ -38,7 +38,7 @@ public class HotFixConfig : MonoBehaviour
 
     public EPlayMode GetEPlayMode()
     {
-        return ePlayMode;
+        return _ePlayMode;
     }
 
     public enum CDNServerModeCode

@@ -16,29 +16,29 @@ public class HotFixService : MonoBehaviour
         "Assets/AssetBundles/ABScripts/mscorlib.dll.bytes"       
     };
 
-    private static Dictionary<string, byte[]> dllAssetDataDict = new Dictionary<string, byte[]>();
+    private static Dictionary<string, byte[]> _dllAssetDataDict = new Dictionary<string, byte[]>();
 
     public static HotFixService Instance;
 
-    public Transform hotFixRootParent;
+    public Transform _hotFixRootParent;
 
-    private ResourceDownloaderOperation downloaderOperation;
-    private ResourcePackage yooAssetResourcePackage;
+    private ResourceDownloaderOperation _downloaderOperation;
+    private ResourcePackage _yooAssetResourcePackage;
 
-    public HotFixWindow hotFixWindow;
-    private HotFixConfig hotFixConfig;
+    public HotFixWindow _hotFixWindow;
+    private HotFixConfig _hotFixConfig;
 
     public void InitService()
     {
         Instance = this;
-        hotFixConfig = GetComponent<HotFixConfig>();
-        hotFixWindow.SetTips("正在检查更新");
+        _hotFixConfig = GetComponent<HotFixConfig>();
+        _hotFixWindow.SetTips("正在检查更新");
         StartCoroutine(PrepareAssets());
     }
 
     public void RunHotFix()
     {
-        StartCoroutine(RunDownloader(downloaderOperation));
+        StartCoroutine(RunDownloader(_downloaderOperation));
     }
 
     public void EnterSangoGameRoot()
@@ -62,36 +62,36 @@ public class HotFixService : MonoBehaviour
         }.Concat(AOTMetaAssemblyNames);
         foreach (var dllName in dllNameList)
         {
-            var obj = yooAssetResourcePackage.LoadRawFileSync(dllName);
+            var obj = _yooAssetResourcePackage.LoadRawFileSync(dllName);
             byte[] fileData = obj.GetRawFileData();
-            dllAssetDataDict.Add(dllName, fileData);
+            _dllAssetDataDict.Add(dllName, fileData);
         }
     }
 
     private void LoadGameRootObject()
     {
-        var asset1 = yooAssetResourcePackage.LoadAssetSync<GameObject>("Assets/AssetBundles/ABPrefabs/RootPrefabs/HotFixRoot.prefab");
+        var asset1 = _yooAssetResourcePackage.LoadAssetSync<GameObject>("Assets/AssetBundles/ABPrefabs/RootPrefabs/HotFixRoot.prefab");
         GameObject hotFixRoot = asset1.InstantiateSync();
-        hotFixRoot.transform.SetParent(hotFixRootParent);
+        hotFixRoot.transform.SetParent(_hotFixRootParent);
         RectTransform rect = hotFixRoot.GetComponent<RectTransform>();
         rect.offsetMax = new Vector2(0, 0);
-        hotFixWindow.gameObject.SetActive(false);
+        _hotFixWindow.gameObject.SetActive(false);
     }
 
     private IEnumerator PrepareAssets()
     {
         //1. InitYooAsset
         YooAssets.Initialize();
-        yooAssetResourcePackage = YooAssets.CreatePackage("DefaultPackage");
-        YooAssets.SetDefaultPackage(yooAssetResourcePackage);
-        EPlayMode PlayMode = hotFixConfig.GetEPlayMode();
+        _yooAssetResourcePackage = YooAssets.CreatePackage("DefaultPackage");
+        YooAssets.SetDefaultPackage(_yooAssetResourcePackage);
+        EPlayMode PlayMode = _hotFixConfig.GetEPlayMode();
         switch (PlayMode)
         {
             case EPlayMode.EditorSimulateMode:
                 {
                     var initParameters = new EditorSimulateModeParameters();
                     initParameters.SimulateManifestFilePath = EditorSimulateModeHelper.SimulateBuild("DefaultPackage");
-                    var initOperation = yooAssetResourcePackage.InitializeAsync(initParameters);
+                    var initOperation = _yooAssetResourcePackage.InitializeAsync(initParameters);
                     yield return initOperation;
 
                     if (initOperation.Status == EOperationStatus.Succeed)
@@ -110,9 +110,9 @@ public class HotFixService : MonoBehaviour
                 {
                     var initParameters = new HostPlayModeParameters();
                     initParameters.QueryServices = new GameQueryServices();
-                    initParameters.DefaultHostServer = hotFixConfig.GetCNDServerAddress();
-                    initParameters.FallbackHostServer = hotFixConfig.GetCNDServerAddress();
-                    var initOperation = yooAssetResourcePackage.InitializeAsync(initParameters);
+                    initParameters.DefaultHostServer = _hotFixConfig.GetCNDServerAddress();
+                    initParameters.FallbackHostServer = _hotFixConfig.GetCNDServerAddress();
+                    var initOperation = _yooAssetResourcePackage.InitializeAsync(initParameters);
                     yield return initOperation;
 
                     if (initOperation.Status == EOperationStatus.Succeed)
@@ -129,7 +129,7 @@ public class HotFixService : MonoBehaviour
             case EPlayMode.OfflinePlayMode:
                 {
                     var initParameters = new OfflinePlayModeParameters();
-                    var initOperation = yooAssetResourcePackage.InitializeAsync(initParameters);
+                    var initOperation = _yooAssetResourcePackage.InitializeAsync(initParameters);
                     yield return initOperation;
 
                     if (initOperation.Status == EOperationStatus.Succeed)
@@ -147,7 +147,7 @@ public class HotFixService : MonoBehaviour
         }
 
         //2. UpdatePackageVersion
-        var updatePackageVersionOperation = yooAssetResourcePackage.UpdatePackageVersionAsync();
+        var updatePackageVersionOperation = _yooAssetResourcePackage.UpdatePackageVersionAsync();
         yield return updatePackageVersionOperation;
 
         if (updatePackageVersionOperation.Status != EOperationStatus.Succeed)
@@ -159,7 +159,7 @@ public class HotFixService : MonoBehaviour
 
         //3. UpdatePackageManifest
         bool savePackageVersion = true;
-        var updatePackageManifestOperation = yooAssetResourcePackage.UpdatePackageManifestAsync(packageVersion, savePackageVersion);
+        var updatePackageManifestOperation = _yooAssetResourcePackage.UpdatePackageManifestAsync(packageVersion, savePackageVersion);
         yield return updatePackageManifestOperation;
 
         if (updatePackageManifestOperation.Status != EOperationStatus.Succeed)
@@ -177,7 +177,7 @@ public class HotFixService : MonoBehaviour
     {
         int downloadingMaxNum = 10;
         int failedTryAgain = 3;
-        var downloader = yooAssetResourcePackage.CreateResourceDownloader(downloadingMaxNum, failedTryAgain);
+        var downloader = _yooAssetResourcePackage.CreateResourceDownloader(downloadingMaxNum, failedTryAgain);
 
         if (downloader.TotalDownloadCount == 0)
         {
@@ -194,10 +194,10 @@ public class HotFixService : MonoBehaviour
         downloader.OnDownloadOverCallback = OnDownloadOverFunction;
         downloader.OnStartDownloadFileCallback = OnStartDownloadFileFunction;
 
-        downloaderOperation = downloader;
+        _downloaderOperation = downloader;
 
-        hotFixWindow.OpenHotFixPanel();
-        hotFixWindow.SetHotFixInfoText(totalDownloadBytes);
+        _hotFixWindow.OpenHotFixPanel();
+        _hotFixWindow.SetHotFixInfoText(totalDownloadBytes);
 
         Debug.Log("现在已经准备好下载器了哦~");
     }
@@ -205,7 +205,7 @@ public class HotFixService : MonoBehaviour
     private IEnumerator RunDownloader(ResourceDownloaderOperation downloader)
     {
         downloader.BeginDownload();
-        hotFixWindow.SetTips("正在下载更新中");
+        _hotFixWindow.SetTips("正在下载更新中");
         yield return downloader;
         if (downloader.Status == EOperationStatus.Succeed)
         {
@@ -222,7 +222,7 @@ public class HotFixService : MonoBehaviour
     {
         Debug.Log($"文件总数: {totalDownloadCount}, 已下载文件数： {currentDownloadCount}, 总大小: {totalDownloadBytes}, 已下载大小: {currentDownloadBytes}");
         float progress = (float)currentDownloadBytes / totalDownloadBytes;
-        hotFixWindow.SetLoadingProgress(progress);
+        _hotFixWindow.SetLoadingProgress(progress);
     }
 
     private void OnStartDownloadFileFunction(string fileName, long sizeBytes)
@@ -242,7 +242,7 @@ public class HotFixService : MonoBehaviour
 
     private static byte[] GetAssetData(string dllName)
     {
-        return dllAssetDataDict[dllName];
+        return _dllAssetDataDict[dllName];
     }
 
     private static void LoadMetadataForAOTAssemblies()
