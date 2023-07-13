@@ -25,7 +25,7 @@ public class HotFixRoot : MonoBehaviour
 
     private void Update()
     {
-        NetService.Instance.IsGetReceivedMessage();
+        //NetService.Instance.IsGetReceivedMessage();
     }
 
     private void InitHotFixRoot()

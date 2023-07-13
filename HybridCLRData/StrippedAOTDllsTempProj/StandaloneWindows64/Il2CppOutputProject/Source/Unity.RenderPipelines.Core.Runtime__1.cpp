@@ -10501,7 +10501,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializableEnum__ctor_m0EC8862E7D14F1C0
 		Type_t* L_0 = ___0_enumType;
 		NullCheck(L_0);
 		String_t* L_1;
-		L_1 = VirtualFuncInvoker0< String_t* >::Invoke(24, L_0);
+		L_1 = VirtualFuncInvoker0< String_t* >::Invoke(30, L_0);
 		__this->___m_EnumTypeAsString = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_EnumTypeAsString), (void*)L_1);
 		Type_t* L_2 = ___0_enumType;
@@ -12011,10 +12011,10 @@ IL_0146:
 		L_68 = IntrospectionExtensions_GetTypeInfo_mF4497C8656153A91554F7DC469CE223AF2784FF5(L_67, NULL);
 		NullCheck(L_68);
 		Type_t* L_69;
-		L_69 = VirtualFuncInvoker0< Type_t* >::Invoke(107, L_68);
+		L_69 = VirtualFuncInvoker0< Type_t* >::Invoke(148, L_68);
 		NullCheck(L_69);
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_70;
-		L_70 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(48, L_69);
+		L_70 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(57, L_69);
 		V_4 = L_70;
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_71 = V_4;
 		NullCheck(L_71);
@@ -13659,7 +13659,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec__DisplayClass3_0_U3CCreateVol
 		Type_t* L_0 = ___0_type;
 		NullCheck(L_0);
 		FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8* L_1;
-		L_1 = VirtualFuncInvoker1< FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8*, int32_t >::Invoke(83, L_0, ((int32_t)52));
+		L_1 = VirtualFuncInvoker1< FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8*, int32_t >::Invoke(114, L_0, ((int32_t)52));
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t668406372DBF254C4B4D26D515BD64B768B722AB_il2cpp_TypeInfo_var);
 		Func_2_t77AF745C0F9B082CCA8A895BCF11881A4E488892* L_2 = ((U3CU3Ec_t668406372DBF254C4B4D26D515BD64B768B722AB_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t668406372DBF254C4B4D26D515BD64B768B722AB_il2cpp_TypeInfo_var))->___U3CU3E9__3_9;
 		Func_2_t77AF745C0F9B082CCA8A895BCF11881A4E488892* L_3 = L_2;
@@ -13765,7 +13765,7 @@ IL_0059_1:
 				L_22 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_21, NULL);
 				NullCheck(L_20);
 				bool L_23;
-				L_23 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(20, L_20, L_22);
+				L_23 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(26, L_20, L_22);
 				if (!L_23)
 				{
 					goto IL_0086_1;

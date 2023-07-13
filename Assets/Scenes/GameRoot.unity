@@ -241,6 +241,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HotFixRoot
       objectReference: {fileID: 0}
+    - target: {fileID: 5861137881373137343, guid: eae6eb79710a9224491b488ea72a1699,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

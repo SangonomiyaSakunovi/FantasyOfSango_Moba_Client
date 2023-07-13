@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
@@ -16,11 +17,11 @@ public class AudioService : MonoBehaviour
         Instance = this;
     }
 
-    public void PlayBGAudio(string name, bool isLoop = true, bool isCache = true)
+    public async void PlayBGAudio(string name, bool isLoop = true, bool isCache = true)
     {
         if (!_isTurnOnAudio) { return; }
         string path = ResourcePath.BGAudioPath + name;
-        AudioClip audioClip = ResourceService.Instance.LoadAudioClip(path, isCache);
+        AudioClip audioClip = await ResourceService.Instance.LoadAudioClipAsync(path, isCache);
         if (_bgAudioSource.clip == null || _bgAudioSource.clip.name != audioClip.name)
         {
             _bgAudioSource.clip = audioClip;
@@ -29,11 +30,11 @@ public class AudioService : MonoBehaviour
         }
     }
 
-    public void PlayUIAudio(string name, bool isCache = true)
+    public async void PlayUIAudio(string name, bool isCache = true)
     {
         if (!_isTurnOnAudio) { return; }
         string path = ResourcePath.UIAudioPath + name;
-        AudioClip audioClip = ResourceService.Instance.LoadAudioClip(path, isCache);
+        AudioClip audioClip = await ResourceService.Instance.LoadAudioClipAsync(path, isCache);
         _uiAudioSource.clip = audioClip;
         _uiAudioSource.Play();
     }
