@@ -469,19 +469,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8913469889496827338}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HotFixWindow, Assembly-CSharp
-        m_MethodName: OnCancelButtonClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &8112040730504572910
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,19 +727,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4414436773456965150}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HotFixWindow, Assembly-CSharp
-        m_MethodName: OnConfirmButtonClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &8372635064853897010
 GameObject:
   m_ObjectHideFlags: 0

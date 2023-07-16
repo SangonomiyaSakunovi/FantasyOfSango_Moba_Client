@@ -25,6 +25,7 @@ public class HotFixRoot : MonoBehaviour
 
     private void Update()
     {
+        EventService.Instance.OnUpdate();
         //NetService.Instance.IsGetReceivedMessage();
     }
 
@@ -48,6 +49,8 @@ public class HotFixRoot : MonoBehaviour
         netService.InitService();
         AudioService audioService = _servicesRoot.GetComponent<AudioService>();
         audioService.InitService();
+        EventService eventService = _servicesRoot.GetComponent<EventService>();
+        eventService.InitService();
     }
 
     private void InitSystems()

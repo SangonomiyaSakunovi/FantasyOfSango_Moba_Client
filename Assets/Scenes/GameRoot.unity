@@ -241,11 +241,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HotFixRoot
       objectReference: {fileID: 0}
-    - target: {fileID: 5861137881373137343, guid: eae6eb79710a9224491b488ea72a1699,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -869,11 +864,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HotFixProgressPanel
       objectReference: {fileID: 0}
-    - target: {fileID: 1123701429321701316, guid: cea1159a7e85b3f40a118294ede251a2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5456539686814339195, guid: cea1159a7e85b3f40a118294ede251a2,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1102,11 +1092,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HotFixBG
       objectReference: {fileID: 0}
-    - target: {fileID: 1664767977149602139, guid: 1dc08fa7887ec744bba872b6d80d5e69,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1283,16 +1268,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6191708688828735877, guid: c68d29858286fe8409e7ce75f46b6885,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 6229925161293975506}
-    - target: {fileID: 6268533488412776771, guid: c68d29858286fe8409e7ce75f46b6885,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 6229925161293975506}
     - target: {fileID: 8372635064853897010, guid: c68d29858286fe8409e7ce75f46b6885,
         type: 3}
       propertyPath: m_Name
@@ -1303,6 +1278,30 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c68d29858286fe8409e7ce75f46b6885, type: 3}
+--- !u!114 &5733272217598463842 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6191708688828735877, guid: c68d29858286fe8409e7ce75f46b6885,
+    type: 3}
+  m_PrefabInstance: {fileID: 5733272217598463841}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5733272217598463843 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6268533488412776771, guid: c68d29858286fe8409e7ce75f46b6885,
+    type: 3}
+  m_PrefabInstance: {fileID: 5733272217598463841}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &6229925161293975506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1321,6 +1320,8 @@ MonoBehaviour:
   _loadingProgressFG: {fileID: 7405877146174751985}
   _loadingProgressPoint: {fileID: 3373508033127495001}
   _loadingProgressText: {fileID: 270152201484817466}
+  _confirmButton: {fileID: 5733272217598463843}
+  _cancelButton: {fileID: 5733272217598463842}
 --- !u!224 &7023733560459392033 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5456539686814339195, guid: cea1159a7e85b3f40a118294ede251a2,

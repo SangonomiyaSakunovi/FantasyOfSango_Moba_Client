@@ -1077,19 +1077,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8627059565143621821}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7018185776744928135}
-        m_TargetAssemblyTypeName: LoginWindow, FOSMobaHotFix
-        m_MethodName: OnLoginButtonClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1076314758075777479
 GameObject:
   m_ObjectHideFlags: 0
@@ -3830,6 +3818,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _accountInput: {fileID: 6883398742002329626}
   _passwordInput: {fileID: 5881121204460047799}
+  _loginButton: {fileID: 3353854167525548591}
+  _registButton: {fileID: 2384739292729473880}
 --- !u!1 &4130543126840661923
 GameObject:
   m_ObjectHideFlags: 0
@@ -5379,7 +5369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &332082570275033524
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6988,6 +6978,7 @@ GameObject:
   - component: {fileID: 5107817262080680833}
   - component: {fileID: 3870274079620151048}
   - component: {fileID: 4778730341055610592}
+  - component: {fileID: 8436477162619853398}
   m_Layer: 0
   m_Name: ServicesRoot
   m_TagString: Untagged
@@ -7052,6 +7043,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a13eac8fcd4582248a884b9fc7cb82be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8436477162619853398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7638226671050735953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5524007918587054f98036f52cb75238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7647527699902866847
@@ -7537,19 +7540,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7617220743348280125}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7018185776744928135}
-        m_TargetAssemblyTypeName: LoginWindow, FOSMobaHotFix
-        m_MethodName: OnRegistButtonClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &8234763057738099582
 GameObject:
   m_ObjectHideFlags: 0

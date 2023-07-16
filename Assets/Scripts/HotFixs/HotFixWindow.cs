@@ -12,6 +12,8 @@ public class HotFixWindow : MonoBehaviour
     public Image _loadingProgressFG;
     public Image _loadingProgressPoint;
     public TMP_Text _loadingProgressText;
+    public Button _confirmButton;
+    public Button _cancelButton;
 
     private float _loadingProgressFGWidth;
     private float _loadingProgressPointYPos;
@@ -29,6 +31,8 @@ public class HotFixWindow : MonoBehaviour
         _loadingProgressText.text = "0%";
         _loadingProgressFG.fillAmount = 0;
         _loadingProgressPoint.transform.localPosition = new Vector3(-_loadingProgressFGWidth / 2, _loadingProgressPointYPos, 0);
+        _confirmButton.onClick.AddListener(OnConfirmButtonClick);
+        _cancelButton.onClick.AddListener(OnCancelButtonClick);
     }
 
     public void OnConfirmButtonClick()
