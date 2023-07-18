@@ -2,12 +2,34 @@
 <linker>
   <assembly fullname="FOSMobaProxy">
     <type fullname="MobaNetProxy" preserve="all" />
+    <type fullname="NetProxyStruct" preserve="all" />
+  </assembly>
+  <assembly fullname="Kcp">
+    <type fullname="System.Net.Sockets.Kcp.IKcpCallback" preserve="all" />
+    <type fullname="System.Net.Sockets.Kcp.IRentable" preserve="all" />
+    <type fullname="System.Net.Sockets.Kcp.KcpCore`1" preserve="all" />
+    <type fullname="System.Net.Sockets.Kcp.KcpSegment" preserve="all" />
+    <type fullname="System.Net.Sockets.Kcp.Kcp`1" preserve="all" />
+    <type fullname="System.Net.Sockets.Kcp.SimpleSegManager" preserve="all" />
+    <type fullname="System.Net.Sockets.Kcp.SimpleSegManager/Kcp" preserve="all" />
   </assembly>
   <assembly fullname="System">
     <type fullname="System.CodeDom.Compiler.GeneratedCodeAttribute" preserve="all" />
+    <type fullname="System.Collections.Generic.LinkedListNode`1" preserve="all" />
+    <type fullname="System.Collections.Generic.LinkedList`1" preserve="all" />
+    <type fullname="System.Collections.Generic.LinkedList`1/Enumerator" preserve="all" />
     <type fullname="System.Collections.Generic.Queue`1" preserve="all" />
+    <type fullname="System.ComponentModel.DefaultValueAttribute" preserve="all" />
     <type fullname="System.ComponentModel.EditorBrowsableAttribute" preserve="all" />
     <type fullname="System.ComponentModel.EditorBrowsableState" preserve="all" />
+    <type fullname="System.IO.Compression.CompressionMode" preserve="all" />
+    <type fullname="System.IO.Compression.GZipStream" preserve="all" />
+    <type fullname="System.Net.IPAddress" preserve="all" />
+    <type fullname="System.Net.IPEndPoint" preserve="all" />
+    <type fullname="System.Net.Sockets.IOControlCode" preserve="all" />
+    <type fullname="System.Net.Sockets.Socket" preserve="all" />
+    <type fullname="System.Net.Sockets.UdpClient" preserve="all" />
+    <type fullname="System.Net.Sockets.UdpReceiveResult" preserve="all" />
   </assembly>
   <assembly fullname="UniTask">
     <type fullname="Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder`1" preserve="all" />
@@ -26,17 +48,31 @@
     <type fullname="UnityEngine.AudioSource" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.CoreModule">
+    <type fullname="UnityEngine.Color" preserve="all" />
     <type fullname="UnityEngine.Component" preserve="all" />
     <type fullname="UnityEngine.Debug" preserve="all" />
+    <type fullname="UnityEngine.Events.UnityAction" preserve="all" />
+    <type fullname="UnityEngine.Events.UnityEvent" preserve="all" />
     <type fullname="UnityEngine.GameObject" preserve="all" />
     <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
+    <type fullname="UnityEngine.Screen" preserve="all" />
     <type fullname="UnityEngine.Time" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
     <type fullname="UnityEngine.Vector2" preserve="all" />
+    <type fullname="UnityEngine.Vector3" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.UI">
+    <type fullname="UnityEngine.EventSystems.IDragHandler" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.IEventSystemHandler" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.IPointerClickHandler" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.IPointerDownHandler" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.IPointerUpHandler" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.PointerEventData" preserve="all" />
+    <type fullname="UnityEngine.UI.Button" preserve="all" />
+    <type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="all" />
+    <type fullname="UnityEngine.UI.Graphic" preserve="all" />
     <type fullname="UnityEngine.UI.Image" preserve="all" />
   </assembly>
   <assembly fullname="YooAsset">
@@ -46,15 +82,40 @@
     <type fullname="YooAsset.YooAssets" preserve="all" />
   </assembly>
   <assembly fullname="mscorlib">
+    <type fullname="System.Action" preserve="all" />
+    <type fullname="System.Action`1" preserve="all" />
+    <type fullname="System.Action`2" preserve="all" />
+    <type fullname="System.Activator" preserve="all" />
     <type fullname="System.Array" preserve="all" />
+    <type fullname="System.BitConverter" preserve="all" />
+    <type fullname="System.Buffers.IMemoryOwner`1" preserve="all" />
     <type fullname="System.Byte" preserve="all" />
     <type fullname="System.Collections.Generic.Dictionary`2" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2/Enumerator" preserve="all" />
+    <type fullname="System.Collections.Generic.KeyValuePair`2" preserve="all" />
+    <type fullname="System.Console" preserve="all" />
+    <type fullname="System.ConsoleColor" preserve="all" />
+    <type fullname="System.DateTime" preserve="all" />
+    <type fullname="System.DateTimeKind" preserve="all" />
+    <type fullname="System.DateTimeOffset" preserve="all" />
+    <type fullname="System.Delegate" preserve="all" />
     <type fullname="System.Diagnostics.DebuggableAttribute" preserve="all" />
     <type fullname="System.Diagnostics.DebuggableAttribute/DebuggingModes" preserve="all" />
     <type fullname="System.Diagnostics.DebuggerHiddenAttribute" preserve="all" />
+    <type fullname="System.Enum" preserve="all" />
     <type fullname="System.Exception" preserve="all" />
+    <type fullname="System.Func`1" preserve="all" />
+    <type fullname="System.IDisposable" preserve="all" />
+    <type fullname="System.IO.MemoryStream" preserve="all" />
+    <type fullname="System.IO.Stream" preserve="all" />
+    <type fullname="System.Int32" preserve="all" />
+    <type fullname="System.MemoryExtensions" preserve="all" />
+    <type fullname="System.Memory`1" preserve="all" />
     <type fullname="System.Object" preserve="all" />
+    <type fullname="System.ParamArrayAttribute" preserve="all" />
+    <type fullname="System.ReadOnlySpan`1" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.AsyncStateMachineAttribute" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.AsyncVoidMethodBuilder" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.CompilationRelaxationsAttribute" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.CompilerGeneratedAttribute" preserve="all" />
@@ -62,10 +123,29 @@
     <type fullname="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.RuntimeHelpers" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.TaskAwaiter" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.TaskAwaiter`1" preserve="all" />
+    <type fullname="System.Runtime.InteropServices.OSPlatform" preserve="all" />
+    <type fullname="System.Runtime.InteropServices.RuntimeInformation" preserve="all" />
     <type fullname="System.RuntimeFieldHandle" preserve="all" />
+    <type fullname="System.Span`1" preserve="all" />
     <type fullname="System.String" preserve="all" />
+    <type fullname="System.Threading.CancellationToken" preserve="all" />
+    <type fullname="System.Threading.CancellationTokenSource" preserve="all" />
+    <type fullname="System.Threading.Monitor" preserve="all" />
     <type fullname="System.Threading.Tasks.Task" preserve="all" />
+    <type fullname="System.Threading.Tasks.Task`1" preserve="all" />
+    <type fullname="System.Threading.Thread" preserve="all" />
+    <type fullname="System.TimeSpan" preserve="all" />
     <type fullname="System.Type" preserve="all" />
+    <type fullname="System.UInt32" preserve="all" />
     <type fullname="System.ValueType" preserve="all" />
+  </assembly>
+  <assembly fullname="protobuf-net.Core">
+    <type fullname="ProtoBuf.Extensible" preserve="all" />
+    <type fullname="ProtoBuf.IExtensible" preserve="all" />
+    <type fullname="ProtoBuf.IExtension" preserve="all" />
+    <type fullname="ProtoBuf.ProtoContractAttribute" preserve="all" />
+    <type fullname="ProtoBuf.ProtoEnumAttribute" preserve="all" />
+    <type fullname="ProtoBuf.ProtoMemberAttribute" preserve="all" />
   </assembly>
 </linker>

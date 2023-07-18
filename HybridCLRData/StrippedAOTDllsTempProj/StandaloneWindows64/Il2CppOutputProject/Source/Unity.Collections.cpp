@@ -12668,7 +12668,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CollectionHelper_WriteLayout_m5A3898F494
 		Type_t* L_5 = ___0_type;
 		NullCheck(L_5);
 		FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8* L_6;
-		L_6 = VirtualFuncInvoker1< FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8*, int32_t >::Invoke(114, L_5, ((int32_t)52));
+		L_6 = VirtualFuncInvoker1< FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8*, int32_t >::Invoke(118, L_5, ((int32_t)52));
 		V_0 = L_6;
 		V_1 = 0;
 		goto IL_0061;
@@ -12695,7 +12695,7 @@ IL_0028:
 		FieldInfo_t* L_17 = V_2;
 		NullCheck(L_17);
 		Type_t* L_18;
-		L_18 = VirtualFuncInvoker0< Type_t* >::Invoke(16, L_17);
+		L_18 = VirtualFuncInvoker0< Type_t* >::Invoke(20, L_17);
 		int32_t L_19;
 		L_19 = Marshal_SizeOf_mED64846722033D6F60C2973CA604B7C2D7D4A1B7(L_18, NULL);
 		int32_t L_20 = L_19;

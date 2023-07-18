@@ -523,9 +523,6 @@
     <ClCompile Include="Source\Assembly-CSharp.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Source\FOSMobaProxy.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
     <ClCompile Include="Source\GenericMethods.cpp">
       <Filter>Source</Filter>
     </ClCompile>
@@ -569,6 +566,9 @@
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\GenericMethods__21.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GenericMethods__22.cpp">
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\GenericMethods__3.cpp">
@@ -628,7 +628,34 @@
     <ClCompile Include="Source\Generics__108.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Generics__109.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
     <ClCompile Include="Source\Generics__11.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Generics__110.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Generics__111.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Generics__112.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Generics__113.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Generics__114.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Generics__115.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Generics__116.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Generics__117.cpp">
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\Generics__12.cpp">
@@ -958,6 +985,9 @@
     <ClCompile Include="Source\Il2CppUnresolvedIndirectCallStubs.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Kcp.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
     <ClCompile Include="Source\Mono.Security.cpp">
       <Filter>Source</Filter>
     </ClCompile>
@@ -1000,6 +1030,15 @@
     <ClCompile Include="Source\mscorlib__2.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="Source\mscorlib__20.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\mscorlib__21.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\mscorlib__22.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
     <ClCompile Include="Source\mscorlib__3.cpp">
       <Filter>Source</Filter>
     </ClCompile>
@@ -1021,6 +1060,15 @@
     <ClCompile Include="Source\mscorlib__9.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="Source\protobuf-net.Core.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\protobuf-net.Core__1.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System.Collections.Immutable.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
     <ClCompile Include="Source\System.Configuration.cpp">
       <Filter>Source</Filter>
     </ClCompile>
@@ -1040,6 +1088,9 @@
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\System__3.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System__4.cpp">
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\UniTask.Addressables.cpp">
@@ -1231,6 +1282,9 @@
     <ClCompile Include="Source\UnityEngine.CoreModule__3.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="Source\UnityEngine.CoreModule__4.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
     <ClCompile Include="Source\UnityEngine.cpp">
       <Filter>Source</Filter>
     </ClCompile>
@@ -1393,9 +1447,6 @@
     <ClCompile Include="Source\Assembly-CSharp_CodeGen.c">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Source\FOSMobaProxy_CodeGen.c">
-      <Filter>Source</Filter>
-    </ClCompile>
     <ClCompile Include="Source\HybridCLR.Runtime_CodeGen.c">
       <Filter>Source</Filter>
     </ClCompile>
@@ -1429,10 +1480,19 @@
     <ClCompile Include="Source\Il2CppTypeDefinitions.c">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Kcp_CodeGen.c">
+      <Filter>Source</Filter>
+    </ClCompile>
     <ClCompile Include="Source\Mono.Security_CodeGen.c">
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\mscorlib_CodeGen.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\protobuf-net.Core_CodeGen.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System.Collections.Immutable_CodeGen.c">
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\System.Configuration_CodeGen.c">

@@ -11,6 +11,8 @@ public class HotFixService : MonoBehaviour
 {
     public static List<string> AOTMetaAssemblyNames { get; } = new List<string>()
     {
+        "Assets/AssetBundles/ABScripts/Kcp.dll.bytes",
+        "Assets/AssetBundles/ABScripts/System.dll.bytes",
         "Assets/AssetBundles/ABScripts/UniTask.dll.bytes",
         "Assets/AssetBundles/ABScripts/UnityEngine.CoreModule.dll.bytes",
         "Assets/AssetBundles/ABScripts/YooAsset.dll.bytes",

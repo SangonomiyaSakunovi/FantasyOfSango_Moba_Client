@@ -34,9 +34,11 @@ struct ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129;
 struct AssetBundle_tB38418819A49060CD738CB21541649340F082943;
 struct AssetBundleCreateRequest_t73B8714B9459A01540E091C3770A408E67188CF6;
 struct AssetBundleRequest_tED9F5504E75ED1BCFF8DA9B51F5C7356617E6621;
+struct AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C;
 struct AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C;
 struct Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235;
 struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+struct IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5;
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
 struct MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553;
 struct MethodInfo_t;
@@ -711,7 +713,7 @@ IL_0019:
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_3 = ___0_stream;
 		NullCheck(L_3);
 		bool L_4;
-		L_4 = VirtualFuncInvoker0< bool >::Invoke(7, L_3);
+		L_4 = VirtualFuncInvoker0< bool >::Invoke(8, L_3);
 		V_1 = (bool)((((int32_t)L_4) == ((int32_t)0))? 1 : 0);
 		bool L_5 = V_1;
 		if (!L_5)
@@ -730,7 +732,7 @@ IL_0036:
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_7 = ___0_stream;
 		NullCheck(L_7);
 		bool L_8;
-		L_8 = VirtualFuncInvoker0< bool >::Invoke(8, L_7);
+		L_8 = VirtualFuncInvoker0< bool >::Invoke(9, L_7);
 		V_2 = (bool)((((int32_t)L_8) == ((int32_t)0))? 1 : 0);
 		bool L_9 = V_2;
 		if (!L_9)

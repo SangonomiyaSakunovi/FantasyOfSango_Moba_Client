@@ -217,6 +217,7 @@ struct AggregateException_t51B6205846DFB356B94452702201DD239D44422F;
 struct ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263;
 struct ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129;
 struct ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F;
+struct AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C;
 struct AsyncDestroyTrigger_tF133DB5250A84ED63DCDD2ADA7F71E980AB2A4EF;
 struct AsyncLazy_tC2D2FF376A412D9E8F5EA71F4CDE18BB963D682D;
 struct AsyncMethodBuilderAttribute_tB1DB7C1EDE31C90D884411F6D92630C707BC5185;
@@ -245,6 +246,7 @@ struct ExceptionHolder_t877D929A153D46C3BDA043B4058034AF85FB73B1;
 struct ExecutionContext_t9D6EDFD92F0B2D391751963E2D77A8B03CB81710;
 struct FieldInfo_t;
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
+struct IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5;
 struct IAsyncStateMachine_t0680C7F905C553076B552D5A1A6E39E2F0F36AA2;
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
 struct IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5;
@@ -7406,7 +7408,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumeratorPromise__cctor_m989F31F2647E24
 		L_1 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_0, NULL);
 		NullCheck(L_1);
 		FieldInfo_t* L_2;
-		L_2 = VirtualFuncInvoker2< FieldInfo_t*, String_t*, int32_t >::Invoke(112, L_1, _stringLiteralD52E59BBFEACE46A3C5843C28646CA2C1122B398, ((int32_t)1060));
+		L_2 = VirtualFuncInvoker2< FieldInfo_t*, String_t*, int32_t >::Invoke(116, L_1, _stringLiteralD52E59BBFEACE46A3C5843C28646CA2C1122B398, ((int32_t)1060));
 		((EnumeratorPromise_tFBFF7AFED3575B30D2BEBA0303B68FE74462D5D4_StaticFields*)il2cpp_codegen_static_fields_for(EnumeratorPromise_tFBFF7AFED3575B30D2BEBA0303B68FE74462D5D4_il2cpp_TypeInfo_var))->___waitForSeconds_Seconds = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&((EnumeratorPromise_tFBFF7AFED3575B30D2BEBA0303B68FE74462D5D4_StaticFields*)il2cpp_codegen_static_fields_for(EnumeratorPromise_tFBFF7AFED3575B30D2BEBA0303B68FE74462D5D4_il2cpp_TypeInfo_var))->___waitForSeconds_Seconds), (void*)L_2);
 		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_3 = { reinterpret_cast<intptr_t> (EnumeratorPromise_tFBFF7AFED3575B30D2BEBA0303B68FE74462D5D4_0_0_0_var) };
@@ -8444,7 +8446,7 @@ IL_0010:
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_4 = __this->___waitForSeconds;
 		NullCheck(L_3);
 		RuntimeObject* L_5;
-		L_5 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(23, L_3, L_4);
+		L_5 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(27, L_3, L_4);
 		__this->___U3CsecondU3E5__2 = ((*(float*)((float*)(float*)UnBox(L_5, Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var))));
 		__this->___U3CelapsedU3E5__3 = (0.0f);
 	}
@@ -8876,7 +8878,7 @@ IL_002b:
 		Type_t* L_10 = ___0_type;
 		NullCheck(L_10);
 		bool L_11;
-		L_11 = VirtualFuncInvoker0< bool >::Invoke(47, L_10);
+		L_11 = VirtualFuncInvoker0< bool >::Invoke(51, L_10);
 		if (!L_11)
 		{
 			goto IL_00b8;
@@ -8935,7 +8937,7 @@ IL_006e:
 		Type_t* L_28 = ___0_type;
 		NullCheck(L_28);
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_29;
-		L_29 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(58, L_28);
+		L_29 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(62, L_28);
 		V_2 = L_29;
 		V_3 = 0;
 		goto IL_00a5;
@@ -10051,7 +10053,7 @@ IL_001e:
 		Type_t* L_9 = ___1_systemType;
 		NullCheck(L_9);
 		String_t* L_10;
-		L_10 = VirtualFuncInvoker0< String_t* >::Invoke(31, L_9);
+		L_10 = VirtualFuncInvoker0< String_t* >::Invoke(35, L_9);
 		String_t* L_11;
 		L_11 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral274D7A67411D065B4D9B3241ECEAD063425BEF2F)), L_10, NULL);
 		Exception_t* L_12 = (Exception_t*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)));

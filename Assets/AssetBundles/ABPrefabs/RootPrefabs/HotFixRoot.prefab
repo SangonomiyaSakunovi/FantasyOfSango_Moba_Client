@@ -5369,7 +5369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &332082570275033524
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6979,6 +6979,7 @@ GameObject:
   - component: {fileID: 3870274079620151048}
   - component: {fileID: 4778730341055610592}
   - component: {fileID: 8436477162619853398}
+  - component: {fileID: 524548756699638234}
   m_Layer: 0
   m_Name: ServicesRoot
   m_TagString: Untagged
@@ -7055,6 +7056,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5524007918587054f98036f52cb75238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &524548756699638234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7638226671050735953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 221804458dae4094caf83b3ad6d66eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7647527699902866847

@@ -12,23 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71b02dfa7aa9d4545b3417a18477fbee, type: 3}
   m_Name: BuildinFileManifest
   m_EditorClassIdentifier: 
-  BuildinFiles:
-  - 0476051995bc6597cd7f2781405b35b8.bundle
-  - 13b78763de1414c64c7f05f3d597c8a6.bundle
-  - 32342dba02d9242a8703bb38f514e89b.bundle
-  - 45edaf31d74539c4a3d90798ab0a1fd3.rawfile
-  - 57634e3fbd48637ea4e7f738c4b0a964.bundle
-  - 57dbc780fb90674a00aadc5ca479214d.rawfile
-  - 6d610a393d85a463a9d791952d331367.bundle
-  - 71d9317c453f4655c32f6575fb1000a2.bundle
-  - 8ec9c9614f54e7fd4625f8f3468bf6c8.rawfile
-  - 9c2a66dbfb36f2f74118e65c40e1b60b.bundle
-  - 9e1da33f488cb890f60e2b6aafb4689d.bundle
-  - a160c206373bb4e346815f783805ee08.rawfile
-  - a27b48b97dd482faefb5ab6afce8e6d6.bundle
-  - b1acbacbb7796d11c770b47b02044ff5.bundle
-  - ed841dc40ca8191a9ac5f8ee5fb4a319.bundle
-  - f151ab0ef122064772bb78b9706d10e9.bundle
-  - f8e9cae1551166089ac4dbfca41c709b.rawfile
-  - fdfe5ec9c9e81ab2d5f7bf568ebaec25.bundle
-  - ff834a41a5fb8c9a4a41f303c7f40a78.bundle
+  BuildinFiles: []

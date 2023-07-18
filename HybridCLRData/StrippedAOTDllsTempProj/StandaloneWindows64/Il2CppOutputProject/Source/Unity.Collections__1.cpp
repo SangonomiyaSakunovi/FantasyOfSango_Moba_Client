@@ -9089,12 +9089,14 @@ struct uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9_StaticFields
 struct AppDomain_tFF7010567CBABAEEA7BB19835234D6485E16AD5F_StaticFields
 {
 	String_t* ____process_guid;
+	AppDomain_tFF7010567CBABAEEA7BB19835234D6485E16AD5F* ___default_domain;
 };
 struct AppDomain_tFF7010567CBABAEEA7BB19835234D6485E16AD5F_ThreadStaticFields
 {
 	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* ___type_resolve_in_progress;
 	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* ___assembly_resolve_in_progress;
 	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* ___assembly_resolve_in_progress_refonly;
+	RuntimeObject* ____principal;
 };
 struct Exception_t_StaticFields
 {

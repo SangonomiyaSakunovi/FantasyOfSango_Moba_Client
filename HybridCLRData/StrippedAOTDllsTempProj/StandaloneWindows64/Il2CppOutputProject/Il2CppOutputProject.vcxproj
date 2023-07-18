@@ -44,8 +44,6 @@
   <ItemGroup>
     <ClCompile Include="Source\Assembly-CSharp.cpp">
     </ClCompile>
-    <ClCompile Include="Source\FOSMobaProxy.cpp">
-    </ClCompile>
     <ClCompile Include="Source\GenericMethods.cpp">
     </ClCompile>
     <ClCompile Include="Source\GenericMethods__1.cpp">
@@ -75,6 +73,8 @@
     <ClCompile Include="Source\GenericMethods__20.cpp">
     </ClCompile>
     <ClCompile Include="Source\GenericMethods__21.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\GenericMethods__22.cpp">
     </ClCompile>
     <ClCompile Include="Source\GenericMethods__3.cpp">
     </ClCompile>
@@ -114,7 +114,25 @@
     </ClCompile>
     <ClCompile Include="Source\Generics__108.cpp">
     </ClCompile>
+    <ClCompile Include="Source\Generics__109.cpp">
+    </ClCompile>
     <ClCompile Include="Source\Generics__11.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\Generics__110.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\Generics__111.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\Generics__112.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\Generics__113.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\Generics__114.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\Generics__115.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\Generics__116.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\Generics__117.cpp">
     </ClCompile>
     <ClCompile Include="Source\Generics__12.cpp">
     </ClCompile>
@@ -334,6 +352,8 @@
     </ClCompile>
     <ClCompile Include="Source\Il2CppUnresolvedIndirectCallStubs.cpp">
     </ClCompile>
+    <ClCompile Include="Source\Kcp.cpp">
+    </ClCompile>
     <ClCompile Include="Source\Mono.Security.cpp">
     </ClCompile>
     <ClCompile Include="Source\mscorlib.cpp">
@@ -362,6 +382,12 @@
     </ClCompile>
     <ClCompile Include="Source\mscorlib__2.cpp">
     </ClCompile>
+    <ClCompile Include="Source\mscorlib__20.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\mscorlib__21.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\mscorlib__22.cpp">
+    </ClCompile>
     <ClCompile Include="Source\mscorlib__3.cpp">
     </ClCompile>
     <ClCompile Include="Source\mscorlib__4.cpp">
@@ -376,6 +402,12 @@
     </ClCompile>
     <ClCompile Include="Source\mscorlib__9.cpp">
     </ClCompile>
+    <ClCompile Include="Source\protobuf-net.Core.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\protobuf-net.Core__1.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\System.Collections.Immutable.cpp">
+    </ClCompile>
     <ClCompile Include="Source\System.Configuration.cpp">
     </ClCompile>
     <ClCompile Include="Source\System.Core.cpp">
@@ -389,6 +421,8 @@
     <ClCompile Include="Source\System__2.cpp">
     </ClCompile>
     <ClCompile Include="Source\System__3.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\System__4.cpp">
     </ClCompile>
     <ClCompile Include="Source\UniTask.Addressables.cpp">
     </ClCompile>
@@ -516,6 +550,8 @@
     </ClCompile>
     <ClCompile Include="Source\UnityEngine.CoreModule__3.cpp">
     </ClCompile>
+    <ClCompile Include="Source\UnityEngine.CoreModule__4.cpp">
+    </ClCompile>
     <ClCompile Include="Source\UnityEngine.cpp">
     </ClCompile>
     <ClCompile Include="Source\UnityEngine.DirectorModule.cpp">
@@ -624,8 +660,6 @@
     </ClCompile>
     <ClCompile Include="Source\Assembly-CSharp_CodeGen.c">
     </ClCompile>
-    <ClCompile Include="Source\FOSMobaProxy_CodeGen.c">
-    </ClCompile>
     <ClCompile Include="Source\HybridCLR.Runtime_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\Il2CppGenericAdjustorThunkTable.c">
@@ -648,9 +682,15 @@
     </ClCompile>
     <ClCompile Include="Source\Il2CppTypeDefinitions.c">
     </ClCompile>
+    <ClCompile Include="Source\Kcp_CodeGen.c">
+    </ClCompile>
     <ClCompile Include="Source\Mono.Security_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\mscorlib_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\protobuf-net.Core_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\System.Collections.Immutable_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\System.Configuration_CodeGen.c">
     </ClCompile>

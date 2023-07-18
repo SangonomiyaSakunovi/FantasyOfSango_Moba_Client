@@ -8993,7 +8993,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssetBundleFileLoader_Destroy_m5BE246995
 	{
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_2 = __this->____stream;
 		NullCheck(L_2);
-		VirtualActionInvoker0::Invoke(13, L_2);
+		VirtualActionInvoker0::Invoke(21, L_2);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_3 = __this->____stream;
 		NullCheck(L_3);
 		Stream_Dispose_mCDB42F32A17541CCA6D3A5906827A401570B07A8(L_3, NULL);
@@ -15631,7 +15631,7 @@ IL_0046:
 			BufferWriter_WriteToStream_mA997D1C5E4CB380C7DAE16E0BF243D0160759B72(L_9, L_10, NULL);
 			FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_11 = V_0;
 			NullCheck(L_11);
-			VirtualActionInvoker0::Invoke(15, L_11);
+			VirtualActionInvoker0::Invoke(23, L_11);
 			goto IL_0047;
 		}
 		catch(Il2CppExceptionWrapper& e)
@@ -15888,7 +15888,7 @@ IL_0013:
 			FileInfo_t62782BBAFA832A78724E4CF2EE96548B8466AB1C* L_11 = V_2;
 			NullCheck(L_11);
 			bool L_12;
-			L_12 = VirtualFuncInvoker0< bool >::Invoke(10, L_11);
+			L_12 = VirtualFuncInvoker0< bool >::Invoke(11, L_11);
 			if (!L_12)
 			{
 				goto IL_003a_1;
@@ -16921,7 +16921,7 @@ IL_0012:
 		DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_7 = V_0;
 		NullCheck(L_7);
 		bool L_8;
-		L_8 = VirtualFuncInvoker0< bool >::Invoke(10, L_7);
+		L_8 = VirtualFuncInvoker0< bool >::Invoke(11, L_7);
 		if (!L_8)
 		{
 			goto IL_004c;
@@ -16956,7 +16956,7 @@ IL_004c:
 		DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_17 = V_2;
 		NullCheck(L_17);
 		bool L_18;
-		L_18 = VirtualFuncInvoker0< bool >::Invoke(10, L_17);
+		L_18 = VirtualFuncInvoker0< bool >::Invoke(11, L_17);
 		if (!L_18)
 		{
 			goto IL_007d;
@@ -17112,7 +17112,7 @@ IL_0031:
 		DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_11 = V_3;
 		NullCheck(L_11);
 		String_t* L_12;
-		L_12 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_11);
+		L_12 = VirtualFuncInvoker0< String_t* >::Invoke(10, L_11);
 		V_4 = L_12;
 		String_t* L_13 = __this->____packageName;
 		String_t* L_14 = V_4;
@@ -17128,7 +17128,7 @@ IL_0031:
 		DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_16 = V_3;
 		NullCheck(L_16);
 		String_t* L_17;
-		L_17 = VirtualFuncInvoker0< String_t* >::Invoke(8, L_16);
+		L_17 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_16);
 		V_5 = L_17;
 		String_t* L_18 = V_5;
 		String_t* L_19;
@@ -17263,7 +17263,7 @@ IL_0034:
 		DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_11 = V_3;
 		NullCheck(L_11);
 		String_t* L_12;
-		L_12 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_11);
+		L_12 = VirtualFuncInvoker0< String_t* >::Invoke(10, L_11);
 		V_4 = L_12;
 		String_t* L_13 = __this->____packageName;
 		String_t* L_14 = V_4;
@@ -17310,7 +17310,7 @@ IL_0066:
 		FileInfo_t62782BBAFA832A78724E4CF2EE96548B8466AB1C* L_26 = V_12;
 		NullCheck(L_26);
 		String_t* L_27;
-		L_27 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_26);
+		L_27 = VirtualFuncInvoker0< String_t* >::Invoke(10, L_26);
 		NullCheck(L_27);
 		bool L_28;
 		L_28 = String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0(L_27, _stringLiteralC10ABA6F888AE7331BB3E59CE6D73DAE1B854902, NULL);
@@ -17350,7 +17350,7 @@ IL_00ac:
 		DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_34 = V_3;
 		NullCheck(L_34);
 		String_t* L_35;
-		L_35 = VirtualFuncInvoker0< String_t* >::Invoke(8, L_34);
+		L_35 = VirtualFuncInvoker0< String_t* >::Invoke(9, L_34);
 		V_6 = L_35;
 		String_t* L_36 = V_6;
 		String_t* L_37 = V_5;
@@ -19985,7 +19985,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 		L_2 = JsonUtility_ToJson_m28CC6843B9D3723D88AD13EA3829B71FDE7826BA(L_1, NULL);
 		NullCheck(L_0);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3;
-		L_3 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(16, L_0, L_2);
+		L_3 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(17, L_0, L_2);
 		return L_3;
 	}
 }
@@ -20003,7 +20003,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DebugReport_t2F8AACB640E9A3E19946C870E83EF27A
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___0_data;
 		NullCheck(L_0);
 		String_t* L_2;
-		L_2 = VirtualFuncInvoker1< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(32, L_0, L_1);
+		L_2 = VirtualFuncInvoker1< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(33, L_0, L_1);
 		DebugReport_t2F8AACB640E9A3E19946C870E83EF27A0C54AB3D* L_3;
 		L_3 = JsonUtility_FromJson_TisDebugReport_t2F8AACB640E9A3E19946C870E83EF27A0C54AB3D_m23AB78866B64CF4BF432C50A2330BEEA3128AB93(L_2, JsonUtility_FromJson_TisDebugReport_t2F8AACB640E9A3E19946C870E83EF27A0C54AB3D_m23AB78866B64CF4BF432C50A2330BEEA3128AB93_RuntimeMethod_var);
 		return L_3;
@@ -20045,7 +20045,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 		L_2 = JsonUtility_ToJson_m28CC6843B9D3723D88AD13EA3829B71FDE7826BA(L_1, NULL);
 		NullCheck(L_0);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3;
-		L_3 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(16, L_0, L_2);
+		L_3 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(17, L_0, L_2);
 		return L_3;
 	}
 }
@@ -20063,7 +20063,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RemoteCommand_t466FB028DEAE7B5B639BF517212C17
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___0_data;
 		NullCheck(L_0);
 		String_t* L_2;
-		L_2 = VirtualFuncInvoker1< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(32, L_0, L_1);
+		L_2 = VirtualFuncInvoker1< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(33, L_0, L_1);
 		RemoteCommand_t466FB028DEAE7B5B639BF517212C173CB3487CDE* L_3;
 		L_3 = JsonUtility_FromJson_TisRemoteCommand_t466FB028DEAE7B5B639BF517212C173CB3487CDE_m575F760AEB728795D5812846EE98FEF93696631B(L_2, JsonUtility_FromJson_TisRemoteCommand_t466FB028DEAE7B5B639BF517212C173CB3487CDE_m575F760AEB728795D5812846EE98FEF93696631B_RuntimeMethod_var);
 		return L_3;
@@ -20501,7 +20501,7 @@ IL_0025:
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = ___0_data;
 		int32_t L_7 = ___1_dataLength;
 		NullCheck(L_5);
-		VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(24, L_5, L_6, 0, L_7);
+		VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(39, L_5, L_6, 0, L_7);
 		int64_t L_8 = __this->____curFileSize;
 		int32_t L_9 = ___1_dataLength;
 		__this->____curFileSize = ((int64_t)il2cpp_codegen_add(L_8, ((int64_t)L_9)));
@@ -20552,7 +20552,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DownloadHandlerFileRange_Cleanup_m99B3F8
 	{
 		FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_1 = __this->____fileStream;
 		NullCheck(L_1);
-		VirtualActionInvoker0::Invoke(15, L_1);
+		VirtualActionInvoker0::Invoke(23, L_1);
 		FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_2 = __this->____fileStream;
 		NullCheck(L_2);
 		Stream_Dispose_mCDB42F32A17541CCA6D3A5906827A401570B07A8(L_2, NULL);

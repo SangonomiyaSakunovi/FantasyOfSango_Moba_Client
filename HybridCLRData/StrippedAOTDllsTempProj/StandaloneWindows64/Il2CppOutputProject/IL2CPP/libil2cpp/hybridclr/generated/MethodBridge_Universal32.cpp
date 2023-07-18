@@ -44,10 +44,45 @@ static void __M2N_C16C16C16C16(const MethodInfo* method, uint16_t* argVarIndexs,
 }
 
 
+static void __M2N_C16C16C8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<16> (*NativeMethod)(ValueTypeSizeAlign8<16> __arg0, ValueTypeSizeAlign8<8> __arg1, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
 static void __M2N_C16C16i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSizeAlign8<16> (*NativeMethod)(ValueTypeSizeAlign8<16> __arg0, int32_t __arg1, const MethodInfo* method);
     *(ValueTypeSizeAlign8<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_C16C16i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<16> (*NativeMethod)(ValueTypeSizeAlign8<16> __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_C16C24(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<16> (*NativeMethod)(ValueTypeSizeAlign8<24> __arg0, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSizeAlign8<24>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_C16C8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<16> (*NativeMethod)(ValueTypeSizeAlign8<8> __arg0, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_C16C8u1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<16> (*NativeMethod)(ValueTypeSizeAlign8<8> __arg0, uint8_t __arg1, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[0]), *(uint8_t*)(localVarBase+argVarIndexs[1]), method);
 }
 
 
@@ -69,6 +104,27 @@ static void __M2N_C16S8C16(const MethodInfo* method, uint16_t* argVarIndexs, Sta
 {
     typedef ValueTypeSizeAlign8<16> (*NativeMethod)(ValueTypeSize<8> __arg0, ValueTypeSizeAlign8<16> __arg1, const MethodInfo* method);
     *(ValueTypeSizeAlign8<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_C16S8S8i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<16> (*NativeMethod)(ValueTypeSize<8> __arg0, ValueTypeSize<8> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_C16S8i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<16> (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_C16S8i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<16> (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
 }
 
 
@@ -100,6 +156,13 @@ static void __M2N_C16i4C16(const MethodInfo* method, uint16_t* argVarIndexs, Sta
 }
 
 
+static void __M2N_C16i4C8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<16> (*NativeMethod)(int32_t __arg0, ValueTypeSizeAlign8<8> __arg1, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
 static void __M2N_C16i4S4C16(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSizeAlign8<16> (*NativeMethod)(int32_t __arg0, ValueTypeSize<4> __arg1, ValueTypeSizeAlign8<16> __arg2, const MethodInfo* method);
@@ -128,6 +191,13 @@ static void __M2N_C16i4i4C168S12i4(const MethodInfo* method, uint16_t* argVarInd
 }
 
 
+static void __M2N_C16i4i4C16i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<16> (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<16> __arg2, int32_t __arg3, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
 static void __M2N_C16i4i4S16(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSizeAlign8<16> (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<16> __arg2, const MethodInfo* method);
@@ -153,6 +223,27 @@ static void __M2N_C16i4i4i4C16(const MethodInfo* method, uint16_t* argVarIndexs,
 {
     typedef ValueTypeSizeAlign8<16> (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSizeAlign8<16> __arg3, const MethodInfo* method);
     *(ValueTypeSizeAlign8<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_C16i4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<16> (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_C16i4i8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<16> (*NativeMethod)(int32_t __arg0, int64_t __arg1, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int64_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_C16i4r8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<16> (*NativeMethod)(int32_t __arg0, double __arg1, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(double*)(localVarBase+argVarIndexs[1]), method);
 }
 
 
@@ -212,6 +303,13 @@ static void __M2N_C24(const MethodInfo* method, uint16_t* argVarIndexs, StackObj
 }
 
 
+static void __M2N_C24C16(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<24> (*NativeMethod)(ValueTypeSizeAlign8<16> __arg0, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<24>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
 static void __M2N_C24C8i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSizeAlign8<24> (*NativeMethod)(ValueTypeSizeAlign8<8> __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
@@ -237,6 +335,27 @@ static void __M2N_C24i4i4(const MethodInfo* method, uint16_t* argVarIndexs, Stac
 {
     typedef ValueTypeSizeAlign8<24> (*NativeMethod)(int32_t __arg0, int32_t __arg1, const MethodInfo* method);
     *(ValueTypeSizeAlign8<24>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_C24i4i4C24(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<24> (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<24> __arg2, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<24>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSizeAlign8<24>*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_C24i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<24> (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<24>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_C24i4i4i4i8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<24> (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int64_t __arg3, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<24>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int64_t*)(localVarBase+argVarIndexs[3]), method);
 }
 
 
@@ -310,6 +429,20 @@ static void __M2N_C80i4(const MethodInfo* method, uint16_t* argVarIndexs, StackO
 }
 
 
+static void __M2N_C8C16(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<8> (*NativeMethod)(ValueTypeSizeAlign8<16> __arg0, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_C8C16C16(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<8> (*NativeMethod)(ValueTypeSizeAlign8<16> __arg0, ValueTypeSizeAlign8<16> __arg1, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
 static void __M2N_C8C8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSizeAlign8<8> (*NativeMethod)(ValueTypeSizeAlign8<8> __arg0, const MethodInfo* method);
@@ -331,10 +464,52 @@ static void __M2N_C8C8i4(const MethodInfo* method, uint16_t* argVarIndexs, Stack
 }
 
 
+static void __M2N_C8C8r8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<8> (*NativeMethod)(ValueTypeSizeAlign8<8> __arg0, double __arg1, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[0]), *(double*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_C8S8S8i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<8> (*NativeMethod)(ValueTypeSize<8> __arg0, ValueTypeSize<8> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_C8S8i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<8> (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_C8S8i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<8> (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_C8S8i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<8> (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
 static void __M2N_C8i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSizeAlign8<8> (*NativeMethod)(int32_t __arg0, const MethodInfo* method);
     *(ValueTypeSizeAlign8<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_C8i4C16(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<8> (*NativeMethod)(int32_t __arg0, ValueTypeSizeAlign8<16> __arg1, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[1]), method);
 }
 
 
@@ -349,6 +524,34 @@ static void __M2N_C8i4i4(const MethodInfo* method, uint16_t* argVarIndexs, Stack
 {
     typedef ValueTypeSizeAlign8<8> (*NativeMethod)(int32_t __arg0, int32_t __arg1, const MethodInfo* method);
     *(ValueTypeSizeAlign8<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_C8i4i4C8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<8> (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<8> __arg2, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_C8i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<8> (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_C8i4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<8> (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_C8i4i4i4i4i4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<8> (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, int32_t __arg7, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(int32_t*)(localVarBase+argVarIndexs[5]), *(int32_t*)(localVarBase+argVarIndexs[6]), *(int32_t*)(localVarBase+argVarIndexs[7]), method);
 }
 
 
@@ -387,6 +590,13 @@ static void __M2N_C8r8(const MethodInfo* method, uint16_t* argVarIndexs, StackOb
 }
 
 
+static void __M2N_C8r8C8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSizeAlign8<8> (*NativeMethod)(double __arg0, ValueTypeSizeAlign8<8> __arg1, const MethodInfo* method);
+    *(ValueTypeSizeAlign8<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(double*)(localVarBase+argVarIndexs[0]), *(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
 static void __M2N_S1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSize<1> (*NativeMethod)(const MethodInfo* method);
@@ -408,10 +618,24 @@ static void __M2N_S108(const MethodInfo* method, uint16_t* argVarIndexs, StackOb
 }
 
 
+static void __M2N_S108S112(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<108> (*NativeMethod)(ValueTypeSize<112> __arg0, const MethodInfo* method);
+    *(ValueTypeSize<108>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<112>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
 static void __M2N_S108i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSize<108> (*NativeMethod)(int32_t __arg0, const MethodInfo* method);
     *(ValueTypeSize<108>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_S108i4S108(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<108> (*NativeMethod)(int32_t __arg0, ValueTypeSize<108> __arg1, const MethodInfo* method);
+    *(ValueTypeSize<108>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<108>*)(localVarBase+argVarIndexs[1]), method);
 }
 
 
@@ -433,6 +657,13 @@ static void __M2N_S10i4i2(const MethodInfo* method, uint16_t* argVarIndexs, Stac
 {
     typedef ValueTypeSize<10> (*NativeMethod)(int32_t __arg0, int16_t __arg1, const MethodInfo* method);
     *(ValueTypeSize<10>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int16_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_S112S108(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<112> (*NativeMethod)(ValueTypeSize<108> __arg0, const MethodInfo* method);
+    *(ValueTypeSize<112>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<108>*)(localVarBase+argVarIndexs[0]), method);
 }
 
 
@@ -513,10 +744,38 @@ static void __M2N_S12S12S12(const MethodInfo* method, uint16_t* argVarIndexs, St
 }
 
 
+static void __M2N_S12S12S12i4r4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<12> (*NativeMethod)(ValueTypeSize<12> __arg0, ValueTypeSize<12> __arg1, int32_t __arg2, float __arg3, const MethodInfo* method);
+    *(ValueTypeSize<12>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<12>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<12>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(float*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_S12S12S12i4r4r4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<12> (*NativeMethod)(ValueTypeSize<12> __arg0, ValueTypeSize<12> __arg1, int32_t __arg2, float __arg3, float __arg4, const MethodInfo* method);
+    *(ValueTypeSize<12>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<12>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<12>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(float*)(localVarBase+argVarIndexs[3]), *(float*)(localVarBase+argVarIndexs[4]), method);
+}
+
+
+static void __M2N_S12S12S12i4r4r4r4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<12> (*NativeMethod)(ValueTypeSize<12> __arg0, ValueTypeSize<12> __arg1, int32_t __arg2, float __arg3, float __arg4, float __arg5, const MethodInfo* method);
+    *(ValueTypeSize<12>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<12>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<12>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(float*)(localVarBase+argVarIndexs[3]), *(float*)(localVarBase+argVarIndexs[4]), *(float*)(localVarBase+argVarIndexs[5]), method);
+}
+
+
 static void __M2N_S12S12S12r4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSize<12> (*NativeMethod)(ValueTypeSize<12> __arg0, ValueTypeSize<12> __arg1, float __arg2, const MethodInfo* method);
     *(ValueTypeSize<12>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<12>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<12>*)(localVarBase+argVarIndexs[1]), *(float*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_S12S12S12r4r4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<12> (*NativeMethod)(ValueTypeSize<12> __arg0, ValueTypeSize<12> __arg1, float __arg2, float __arg3, const MethodInfo* method);
+    *(ValueTypeSize<12>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<12>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<12>*)(localVarBase+argVarIndexs[1]), *(float*)(localVarBase+argVarIndexs[2]), *(float*)(localVarBase+argVarIndexs[3]), method);
 }
 
 
@@ -632,6 +891,13 @@ static void __M2N_S12i4S12S12i4(const MethodInfo* method, uint16_t* argVarIndexs
 }
 
 
+static void __M2N_S12i4S12S4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<12> (*NativeMethod)(int32_t __arg0, ValueTypeSize<12> __arg1, ValueTypeSize<4> __arg2, const MethodInfo* method);
+    *(ValueTypeSize<12>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<12>*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<4>*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
 static void __M2N_S12i4S12i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSize<12> (*NativeMethod)(int32_t __arg0, ValueTypeSize<12> __arg1, int32_t __arg2, const MethodInfo* method);
@@ -643,6 +909,13 @@ static void __M2N_S12i4S4(const MethodInfo* method, uint16_t* argVarIndexs, Stac
 {
     typedef ValueTypeSize<12> (*NativeMethod)(int32_t __arg0, ValueTypeSize<4> __arg1, const MethodInfo* method);
     *(ValueTypeSize<12>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<4>*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_S12i4S8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<12> (*NativeMethod)(int32_t __arg0, ValueTypeSize<8> __arg1, const MethodInfo* method);
+    *(ValueTypeSize<12>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[1]), method);
 }
 
 
@@ -660,6 +933,13 @@ static void __M2N_S12i4i4(const MethodInfo* method, uint16_t* argVarIndexs, Stac
 }
 
 
+static void __M2N_S12i4i4S12(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<12> (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<12> __arg2, const MethodInfo* method);
+    *(ValueTypeSize<12>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<12>*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
 static void __M2N_S12i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSize<12> (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
@@ -671,6 +951,13 @@ static void __M2N_S12i4i4i4S4(const MethodInfo* method, uint16_t* argVarIndexs, 
 {
     typedef ValueTypeSize<12> (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<4> __arg3, const MethodInfo* method);
     *(ValueTypeSize<12>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(ValueTypeSize<4>*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_S12i4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<12> (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
+    *(ValueTypeSize<12>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
 }
 
 
@@ -863,6 +1150,13 @@ static void __M2N_S16S16r4(const MethodInfo* method, uint16_t* argVarIndexs, Sta
 }
 
 
+static void __M2N_S16S20(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<16> (*NativeMethod)(ValueTypeSize<20> __arg0, const MethodInfo* method);
+    *(ValueTypeSize<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<20>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
 static void __M2N_S16S24(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSize<16> (*NativeMethod)(ValueTypeSize<24> __arg0, const MethodInfo* method);
@@ -961,6 +1255,34 @@ static void __M2N_S16i4S4(const MethodInfo* method, uint16_t* argVarIndexs, Stac
 }
 
 
+static void __M2N_S16i4S8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<16> (*NativeMethod)(int32_t __arg0, ValueTypeSize<8> __arg1, const MethodInfo* method);
+    *(ValueTypeSize<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_S16i4S8S8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<16> (*NativeMethod)(int32_t __arg0, ValueTypeSize<8> __arg1, ValueTypeSize<8> __arg2, const MethodInfo* method);
+    *(ValueTypeSize<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_S16i4S8i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<16> (*NativeMethod)(int32_t __arg0, ValueTypeSize<8> __arg1, int32_t __arg2, const MethodInfo* method);
+    *(ValueTypeSize<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_S16i4S8i8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<16> (*NativeMethod)(int32_t __arg0, ValueTypeSize<8> __arg1, int64_t __arg2, const MethodInfo* method);
+    *(ValueTypeSize<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[1]), *(int64_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
 static void __M2N_S16i4i2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSize<16> (*NativeMethod)(int32_t __arg0, int16_t __arg1, const MethodInfo* method);
@@ -972,6 +1294,27 @@ static void __M2N_S16i4i4(const MethodInfo* method, uint16_t* argVarIndexs, Stac
 {
     typedef ValueTypeSize<16> (*NativeMethod)(int32_t __arg0, int32_t __arg1, const MethodInfo* method);
     *(ValueTypeSize<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_S16i4i4S16(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<16> (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<16> __arg2, const MethodInfo* method);
+    *(ValueTypeSize<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<16>*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_S16i4i4S16i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<16> (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<16> __arg2, int32_t __arg3, const MethodInfo* method);
+    *(ValueTypeSize<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<16>*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_S16i4i4S8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<16> (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<8> __arg2, const MethodInfo* method);
+    *(ValueTypeSize<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[2]), method);
 }
 
 
@@ -1000,6 +1343,27 @@ static void __M2N_S16i4i4u1(const MethodInfo* method, uint16_t* argVarIndexs, St
 {
     typedef ValueTypeSize<16> (*NativeMethod)(int32_t __arg0, int32_t __arg1, uint8_t __arg2, const MethodInfo* method);
     *(ValueTypeSize<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(uint8_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_S16i4i8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<16> (*NativeMethod)(int32_t __arg0, int64_t __arg1, const MethodInfo* method);
+    *(ValueTypeSize<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int64_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_S16i4i8S8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<16> (*NativeMethod)(int32_t __arg0, int64_t __arg1, ValueTypeSize<8> __arg2, const MethodInfo* method);
+    *(ValueTypeSize<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int64_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_S16i4i8i8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<16> (*NativeMethod)(int32_t __arg0, int64_t __arg1, int64_t __arg2, const MethodInfo* method);
+    *(ValueTypeSize<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int64_t*)(localVarBase+argVarIndexs[1]), *(int64_t*)(localVarBase+argVarIndexs[2]), method);
 }
 
 
@@ -1066,6 +1430,13 @@ static void __M2N_S16r4r4r4r4(const MethodInfo* method, uint16_t* argVarIndexs, 
 }
 
 
+static void __M2N_S16r4r4r4u1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<16> (*NativeMethod)(float __arg0, float __arg1, float __arg2, uint8_t __arg3, const MethodInfo* method);
+    *(ValueTypeSize<16>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(float*)(localVarBase+argVarIndexs[0]), *(float*)(localVarBase+argVarIndexs[1]), *(float*)(localVarBase+argVarIndexs[2]), *(uint8_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
 static void __M2N_S188i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSize<188> (*NativeMethod)(int32_t __arg0, const MethodInfo* method);
@@ -1073,10 +1444,24 @@ static void __M2N_S188i4(const MethodInfo* method, uint16_t* argVarIndexs, Stack
 }
 
 
+static void __M2N_S1S2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<1> (*NativeMethod)(ValueTypeSize<2> __arg0, const MethodInfo* method);
+    *(ValueTypeSize<1>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<2>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
 static void __M2N_S1i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSize<1> (*NativeMethod)(int32_t __arg0, const MethodInfo* method);
     *(ValueTypeSize<1>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_S1i4S1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<1> (*NativeMethod)(int32_t __arg0, ValueTypeSize<1> __arg1, const MethodInfo* method);
+    *(ValueTypeSize<1>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<1>*)(localVarBase+argVarIndexs[1]), method);
 }
 
 
@@ -1098,6 +1483,20 @@ static void __M2N_S1i4i4(const MethodInfo* method, uint16_t* argVarIndexs, Stack
 {
     typedef ValueTypeSize<1> (*NativeMethod)(int32_t __arg0, int32_t __arg1, const MethodInfo* method);
     *(ValueTypeSize<1>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_S1i4i4S1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<1> (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<1> __arg2, const MethodInfo* method);
+    *(ValueTypeSize<1>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<1>*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_S1i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<1> (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
+    *(ValueTypeSize<1>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
 }
 
 
@@ -1189,6 +1588,13 @@ static void __M2N_S20i4i4(const MethodInfo* method, uint16_t* argVarIndexs, Stac
 {
     typedef ValueTypeSize<20> (*NativeMethod)(int32_t __arg0, int32_t __arg1, const MethodInfo* method);
     *(ValueTypeSize<20>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_S20i4i4S20(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<20> (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<20> __arg2, const MethodInfo* method);
+    *(ValueTypeSize<20>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<20>*)(localVarBase+argVarIndexs[2]), method);
 }
 
 
@@ -1402,6 +1808,20 @@ static void __M2N_S28i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, St
 }
 
 
+static void __M2N_S2S1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<2> (*NativeMethod)(ValueTypeSize<1> __arg0, const MethodInfo* method);
+    *(ValueTypeSize<2>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<1>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_S2i1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<2> (*NativeMethod)(int8_t __arg0, const MethodInfo* method);
+    *(ValueTypeSize<2>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int8_t*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
 static void __M2N_S2i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSize<2> (*NativeMethod)(int32_t __arg0, const MethodInfo* method);
@@ -1416,6 +1836,27 @@ static void __M2N_S2i4i2(const MethodInfo* method, uint16_t* argVarIndexs, Stack
 }
 
 
+static void __M2N_S2i4i4S2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<2> (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<2> __arg2, const MethodInfo* method);
+    *(ValueTypeSize<2>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<2>*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_S2u1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<2> (*NativeMethod)(uint8_t __arg0, const MethodInfo* method);
+    *(ValueTypeSize<2>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(uint8_t*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_S2u2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<2> (*NativeMethod)(uint16_t __arg0, const MethodInfo* method);
+    *(ValueTypeSize<2>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(uint16_t*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
 static void __M2N_S32S12S12S12S12S12(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSize<32> (*NativeMethod)(ValueTypeSize<12> __arg0, ValueTypeSize<12> __arg1, ValueTypeSize<12> __arg2, ValueTypeSize<12> __arg3, ValueTypeSize<12> __arg4, const MethodInfo* method);
@@ -1427,6 +1868,20 @@ static void __M2N_S32S12S12S12S12S12S12(const MethodInfo* method, uint16_t* argV
 {
     typedef ValueTypeSize<32> (*NativeMethod)(ValueTypeSize<12> __arg0, ValueTypeSize<12> __arg1, ValueTypeSize<12> __arg2, ValueTypeSize<12> __arg3, ValueTypeSize<12> __arg4, ValueTypeSize<12> __arg5, const MethodInfo* method);
     *(ValueTypeSize<32>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<12>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<12>*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<12>*)(localVarBase+argVarIndexs[2]), *(ValueTypeSize<12>*)(localVarBase+argVarIndexs[3]), *(ValueTypeSize<12>*)(localVarBase+argVarIndexs[4]), *(ValueTypeSize<12>*)(localVarBase+argVarIndexs[5]), method);
+}
+
+
+static void __M2N_S32S12i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<32> (*NativeMethod)(ValueTypeSize<12> __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
+    *(ValueTypeSize<32>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<12>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_S32S16i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<32> (*NativeMethod)(ValueTypeSize<16> __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
+    *(ValueTypeSize<32>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<16>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
 }
 
 
@@ -1455,6 +1910,20 @@ static void __M2N_S32i4i4(const MethodInfo* method, uint16_t* argVarIndexs, Stac
 {
     typedef ValueTypeSize<32> (*NativeMethod)(int32_t __arg0, int32_t __arg1, const MethodInfo* method);
     *(ValueTypeSize<32>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_S32i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<32> (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
+    *(ValueTypeSize<32>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_S32i4i4i4i8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<32> (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int64_t __arg3, const MethodInfo* method);
+    *(ValueTypeSize<32>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int64_t*)(localVarBase+argVarIndexs[3]), method);
 }
 
 
@@ -1955,6 +2424,13 @@ static void __M2N_S4S8S4(const MethodInfo* method, uint16_t* argVarIndexs, Stack
 }
 
 
+static void __M2N_S4i2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<4> (*NativeMethod)(int16_t __arg0, const MethodInfo* method);
+    *(ValueTypeSize<4>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int16_t*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
 static void __M2N_S4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSize<4> (*NativeMethod)(int32_t __arg0, const MethodInfo* method);
@@ -1976,10 +2452,31 @@ static void __M2N_S4i4S16(const MethodInfo* method, uint16_t* argVarIndexs, Stac
 }
 
 
+static void __M2N_S4i4S4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<4> (*NativeMethod)(int32_t __arg0, ValueTypeSize<4> __arg1, const MethodInfo* method);
+    *(ValueTypeSize<4>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<4>*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
 static void __M2N_S4i4S4S4r4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSize<4> (*NativeMethod)(int32_t __arg0, ValueTypeSize<4> __arg1, ValueTypeSize<4> __arg2, float __arg3, const MethodInfo* method);
     *(ValueTypeSize<4>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<4>*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<4>*)(localVarBase+argVarIndexs[2]), *(float*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_S4i4S4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<4> (*NativeMethod)(int32_t __arg0, ValueTypeSize<4> __arg1, int32_t __arg2, const MethodInfo* method);
+    *(ValueTypeSize<4>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<4>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_S4i4S4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<4> (*NativeMethod)(int32_t __arg0, ValueTypeSize<4> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
+    *(ValueTypeSize<4>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<4>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
 }
 
 
@@ -2004,6 +2501,20 @@ static void __M2N_S4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, Stack
 }
 
 
+static void __M2N_S4i4i4S4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<4> (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<4> __arg2, const MethodInfo* method);
+    *(ValueTypeSize<4>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<4>*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_S4i4i4S8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<4> (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<8> __arg2, const MethodInfo* method);
+    *(ValueTypeSize<4>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
 static void __M2N_S4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSize<4> (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
@@ -2011,10 +2522,24 @@ static void __M2N_S4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, Sta
 }
 
 
+static void __M2N_S4i4i4i4S4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<4> (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<4> __arg3, int32_t __arg4, const MethodInfo* method);
+    *(ValueTypeSize<4>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(ValueTypeSize<4>*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
+}
+
+
 static void __M2N_S4i4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSize<4> (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
     *(ValueTypeSize<4>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_S4u2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<4> (*NativeMethod)(uint16_t __arg0, const MethodInfo* method);
+    *(ValueTypeSize<4>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(uint16_t*)(localVarBase+argVarIndexs[0]), method);
 }
 
 
@@ -2508,10 +3033,31 @@ static void __M2N_S8S120(const MethodInfo* method, uint16_t* argVarIndexs, Stack
 }
 
 
+static void __M2N_S8S12S4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<8> (*NativeMethod)(ValueTypeSize<12> __arg0, ValueTypeSize<4> __arg1, const MethodInfo* method);
+    *(ValueTypeSize<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<12>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<4>*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_S8S12S8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<8> (*NativeMethod)(ValueTypeSize<12> __arg0, ValueTypeSize<8> __arg1, const MethodInfo* method);
+    *(ValueTypeSize<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<12>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
 static void __M2N_S8S12i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSize<8> (*NativeMethod)(ValueTypeSize<12> __arg0, int32_t __arg1, const MethodInfo* method);
     *(ValueTypeSize<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<12>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_S8S12i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<8> (*NativeMethod)(ValueTypeSize<12> __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
+    *(ValueTypeSize<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<12>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
 }
 
 
@@ -2795,6 +3341,13 @@ static void __M2N_S8S8r4(const MethodInfo* method, uint16_t* argVarIndexs, Stack
 }
 
 
+static void __M2N_S8S8u2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<8> (*NativeMethod)(ValueTypeSize<8> __arg0, uint16_t __arg1, const MethodInfo* method);
+    *(ValueTypeSize<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(uint16_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
 static void __M2N_S8S96(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSize<8> (*NativeMethod)(ValueTypeSize<96> __arg0, const MethodInfo* method);
@@ -2820,6 +3373,13 @@ static void __M2N_S8i4S12S12(const MethodInfo* method, uint16_t* argVarIndexs, S
 {
     typedef ValueTypeSize<8> (*NativeMethod)(int32_t __arg0, ValueTypeSize<12> __arg1, ValueTypeSize<12> __arg2, const MethodInfo* method);
     *(ValueTypeSize<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<12>*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<12>*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_S8i4S12S4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<8> (*NativeMethod)(int32_t __arg0, ValueTypeSize<12> __arg1, ValueTypeSize<4> __arg2, const MethodInfo* method);
+    *(ValueTypeSize<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<12>*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<4>*)(localVarBase+argVarIndexs[2]), method);
 }
 
 
@@ -2879,6 +3439,13 @@ static void __M2N_S8i4i4S8(const MethodInfo* method, uint16_t* argVarIndexs, Sta
 }
 
 
+static void __M2N_S8i4i4S8i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<8> (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<8> __arg2, int32_t __arg3, const MethodInfo* method);
+    *(ValueTypeSize<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
 static void __M2N_S8i4i4S8u1i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSize<8> (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<8> __arg2, uint8_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, const MethodInfo* method);
@@ -2904,6 +3471,13 @@ static void __M2N_S8i4i4i4S4(const MethodInfo* method, uint16_t* argVarIndexs, S
 {
     typedef ValueTypeSize<8> (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<4> __arg3, const MethodInfo* method);
     *(ValueTypeSize<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(ValueTypeSize<4>*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_S8i4i4i4S8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<8> (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<8> __arg3, const MethodInfo* method);
+    *(ValueTypeSize<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[3]), method);
 }
 
 
@@ -2939,6 +3513,20 @@ static void __M2N_S8i4i4u1u1(const MethodInfo* method, uint16_t* argVarIndexs, S
 {
     typedef ValueTypeSize<8> (*NativeMethod)(int32_t __arg0, int32_t __arg1, uint8_t __arg2, uint8_t __arg3, const MethodInfo* method);
     *(ValueTypeSize<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(uint8_t*)(localVarBase+argVarIndexs[2]), *(uint8_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_S8i4i8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<8> (*NativeMethod)(int32_t __arg0, int64_t __arg1, const MethodInfo* method);
+    *(ValueTypeSize<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int64_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_S8i4i8S8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<8> (*NativeMethod)(int32_t __arg0, int64_t __arg1, ValueTypeSize<8> __arg2, const MethodInfo* method);
+    *(ValueTypeSize<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int64_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[2]), method);
 }
 
 
@@ -3019,6 +3607,13 @@ static void __M2N_S8u1(const MethodInfo* method, uint16_t* argVarIndexs, StackOb
 }
 
 
+static void __M2N_S8u4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef ValueTypeSize<8> (*NativeMethod)(uint32_t __arg0, const MethodInfo* method);
+    *(ValueTypeSize<8>*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(uint32_t*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
 static void __M2N_S92i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef ValueTypeSize<92> (*NativeMethod)(int32_t __arg0, const MethodInfo* method);
@@ -3082,6 +3677,20 @@ static void __M2N_i1C16(const MethodInfo* method, uint16_t* argVarIndexs, StackO
 }
 
 
+static void __M2N_i1S2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int8_t (*NativeMethod)(ValueTypeSize<2> __arg0, const MethodInfo* method);
+    *(int8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<2>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_i1S8i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int8_t (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
+    *(int8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
 static void __M2N_i1i1i1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef int8_t (*NativeMethod)(int8_t __arg0, int8_t __arg1, const MethodInfo* method);
@@ -3103,10 +3712,24 @@ static void __M2N_i1i4(const MethodInfo* method, uint16_t* argVarIndexs, StackOb
 }
 
 
+static void __M2N_i1i4i1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int8_t (*NativeMethod)(int32_t __arg0, int8_t __arg1, const MethodInfo* method);
+    *(int8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int8_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
 static void __M2N_i1i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef int8_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, const MethodInfo* method);
     *(int8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_i1i4i4i1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int8_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int8_t __arg2, const MethodInfo* method);
+    *(int8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int8_t*)(localVarBase+argVarIndexs[2]), method);
 }
 
 
@@ -3180,10 +3803,38 @@ static void __M2N_i2C16(const MethodInfo* method, uint16_t* argVarIndexs, StackO
 }
 
 
+static void __M2N_i2S4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int16_t (*NativeMethod)(ValueTypeSize<4> __arg0, const MethodInfo* method);
+    *(int16_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<4>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_i2S8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int16_t (*NativeMethod)(ValueTypeSize<8> __arg0, const MethodInfo* method);
+    *(int16_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_i2S8i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int16_t (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
+    *(int16_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
 static void __M2N_i2i1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef int16_t (*NativeMethod)(int8_t __arg0, const MethodInfo* method);
     *(int16_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int8_t*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_i2i2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int16_t (*NativeMethod)(int16_t __arg0, const MethodInfo* method);
+    *(int16_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int16_t*)(localVarBase+argVarIndexs[0]), method);
 }
 
 
@@ -3201,10 +3852,24 @@ static void __M2N_i2i4(const MethodInfo* method, uint16_t* argVarIndexs, StackOb
 }
 
 
+static void __M2N_i2i4i2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int16_t (*NativeMethod)(int32_t __arg0, int16_t __arg1, const MethodInfo* method);
+    *(int16_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int16_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
 static void __M2N_i2i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef int16_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, const MethodInfo* method);
     *(int16_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_i2i4i4i2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int16_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int16_t __arg2, const MethodInfo* method);
+    *(int16_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int16_t*)(localVarBase+argVarIndexs[2]), method);
 }
 
 
@@ -3600,6 +4265,20 @@ static void __M2N_i4S8S8S8(const MethodInfo* method, uint16_t* argVarIndexs, Sta
 }
 
 
+static void __M2N_i4S8S8i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(ValueTypeSize<8> __arg0, ValueTypeSize<8> __arg1, int32_t __arg2, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_i4S8S8u1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(ValueTypeSize<8> __arg0, ValueTypeSize<8> __arg1, uint8_t __arg2, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[1]), *(uint8_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
 static void __M2N_i4S8i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef int32_t (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, const MethodInfo* method);
@@ -3614,10 +4293,24 @@ static void __M2N_i4S8i4S4i4(const MethodInfo* method, uint16_t* argVarIndexs, S
 }
 
 
+static void __M2N_i4S8i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
 static void __M2N_i4S8i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef int32_t (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
     *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_i4S8i4i4i4i4i4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, int32_t __arg7, int32_t __arg8, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(int32_t*)(localVarBase+argVarIndexs[5]), *(int32_t*)(localVarBase+argVarIndexs[6]), *(int32_t*)(localVarBase+argVarIndexs[7]), *(int32_t*)(localVarBase+argVarIndexs[8]), method);
 }
 
 
@@ -3667,6 +4360,13 @@ static void __M2N_i4i4C16(const MethodInfo* method, uint16_t* argVarIndexs, Stac
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, ValueTypeSizeAlign8<16> __arg1, const MethodInfo* method);
     *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_i4i4C16i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, ValueTypeSizeAlign8<16> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
 }
 
 
@@ -3901,6 +4601,13 @@ static void __M2N_i4i4S12i4i4(const MethodInfo* method, uint16_t* argVarIndexs, 
 }
 
 
+static void __M2N_i4i4S12i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, ValueTypeSize<12> __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<12>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
+}
+
+
 static void __M2N_i4i4S12i4i4u1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, ValueTypeSize<12> __arg1, int32_t __arg2, int32_t __arg3, uint8_t __arg4, const MethodInfo* method);
@@ -3996,6 +4703,13 @@ static void __M2N_i4i4S16i4i4(const MethodInfo* method, uint16_t* argVarIndexs, 
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, ValueTypeSize<16> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
     *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<16>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_i4i4S16i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, ValueTypeSize<16> __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<16>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
 }
 
 
@@ -4122,6 +4836,13 @@ static void __M2N_i4i4S28i4(const MethodInfo* method, uint16_t* argVarIndexs, St
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, ValueTypeSize<28> __arg1, int32_t __arg2, const MethodInfo* method);
     *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<28>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_i4i4S28i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, ValueTypeSize<28> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<28>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
 }
 
 
@@ -4405,6 +5126,13 @@ static void __M2N_i4i4S48i4i4(const MethodInfo* method, uint16_t* argVarIndexs, 
 }
 
 
+static void __M2N_i4i4S4S12i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, ValueTypeSize<4> __arg1, ValueTypeSize<12> __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<4>*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<12>*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
+}
+
+
 static void __M2N_i4i4S4S4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, ValueTypeSize<4> __arg1, ValueTypeSize<4> __arg2, const MethodInfo* method);
@@ -4423,6 +5151,13 @@ static void __M2N_i4i4S4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, S
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, ValueTypeSize<4> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
     *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<4>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_i4i4S4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, ValueTypeSize<4> __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<4>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
 }
 
 
@@ -4874,6 +5609,13 @@ static void __M2N_i4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, Sta
 }
 
 
+static void __M2N_i4i4i4i4C16(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSizeAlign8<16> __arg3, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
 static void __M2N_i4i4i4i4C32i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSizeAlign8<32> __arg3, int32_t __arg4, const MethodInfo* method);
@@ -4895,6 +5637,13 @@ static void __M2N_i4i4i4i4S108i4(const MethodInfo* method, uint16_t* argVarIndex
 }
 
 
+static void __M2N_i4i4i4i4S12(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<12> __arg3, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(ValueTypeSize<12>*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
 static void __M2N_i4i4i4i4S12i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<12> __arg3, int32_t __arg4, const MethodInfo* method);
@@ -4906,6 +5655,13 @@ static void __M2N_i4i4i4i4S16i4(const MethodInfo* method, uint16_t* argVarIndexs
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<16> __arg3, int32_t __arg4, const MethodInfo* method);
     *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(ValueTypeSize<16>*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
+}
+
+
+static void __M2N_i4i4i4i4S2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<2> __arg3, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(ValueTypeSize<2>*)(localVarBase+argVarIndexs[3]), method);
 }
 
 
@@ -4993,6 +5749,13 @@ static void __M2N_i4i4i4i4S72i4(const MethodInfo* method, uint16_t* argVarIndexs
 }
 
 
+static void __M2N_i4i4i4i4S8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<8> __arg3, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
 static void __M2N_i4i4i4i4S8i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<8> __arg3, int32_t __arg4, const MethodInfo* method);
@@ -5004,6 +5767,20 @@ static void __M2N_i4i4i4i4S8u1(const MethodInfo* method, uint16_t* argVarIndexs,
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<8> __arg3, uint8_t __arg4, const MethodInfo* method);
     *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[3]), *(uint8_t*)(localVarBase+argVarIndexs[4]), method);
+}
+
+
+static void __M2N_i4i4i4i4i1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int8_t __arg3, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int8_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_i4i4i4i4i2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int16_t __arg3, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int16_t*)(localVarBase+argVarIndexs[3]), method);
 }
 
 
@@ -5067,6 +5844,13 @@ static void __M2N_i4i4i4i4i4S32i4(const MethodInfo* method, uint16_t* argVarInde
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, ValueTypeSize<32> __arg4, int32_t __arg5, const MethodInfo* method);
     *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(ValueTypeSize<32>*)(localVarBase+argVarIndexs[4]), *(int32_t*)(localVarBase+argVarIndexs[5]), method);
+}
+
+
+static void __M2N_i4i4i4i4i4S4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, ValueTypeSize<4> __arg4, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(ValueTypeSize<4>*)(localVarBase+argVarIndexs[4]), method);
 }
 
 
@@ -5238,6 +6022,13 @@ static void __M2N_i4i4i4i4i4i4i4u4u4u1i4u1(const MethodInfo* method, uint16_t* a
 }
 
 
+static void __M2N_i4i4i4i4i4i4i8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int64_t __arg5, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(int64_t*)(localVarBase+argVarIndexs[5]), method);
+}
+
+
 static void __M2N_i4i4i4i4i4i4u1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, uint8_t __arg5, const MethodInfo* method);
@@ -5249,6 +6040,13 @@ static void __M2N_i4i4i4i4i4i4u1i4(const MethodInfo* method, uint16_t* argVarInd
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, uint8_t __arg5, int32_t __arg6, const MethodInfo* method);
     *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(uint8_t*)(localVarBase+argVarIndexs[5]), *(int32_t*)(localVarBase+argVarIndexs[6]), method);
+}
+
+
+static void __M2N_i4i4i4i4i4i8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int64_t __arg4, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int64_t*)(localVarBase+argVarIndexs[4]), method);
 }
 
 
@@ -5329,6 +6127,13 @@ static void __M2N_i4i4i4i4i4u8i4(const MethodInfo* method, uint16_t* argVarIndex
 }
 
 
+static void __M2N_i4i4i4i4i8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int64_t __arg3, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int64_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
 static void __M2N_i4i4i4i4i8i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int64_t __arg3, int32_t __arg4, const MethodInfo* method);
@@ -5347,6 +6152,13 @@ static void __M2N_i4i4i4i4r4(const MethodInfo* method, uint16_t* argVarIndexs, S
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, float __arg3, const MethodInfo* method);
     *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(float*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_i4i4i4i4r8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, double __arg3, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(double*)(localVarBase+argVarIndexs[3]), method);
 }
 
 
@@ -5371,10 +6183,38 @@ static void __M2N_i4i4i4i4u1i4(const MethodInfo* method, uint16_t* argVarIndexs,
 }
 
 
+static void __M2N_i4i4i4i4u1i4i4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint8_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, int32_t __arg7, int32_t __arg8, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(uint8_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(int32_t*)(localVarBase+argVarIndexs[5]), *(int32_t*)(localVarBase+argVarIndexs[6]), *(int32_t*)(localVarBase+argVarIndexs[7]), *(int32_t*)(localVarBase+argVarIndexs[8]), method);
+}
+
+
+static void __M2N_i4i4i4i4u1i4i4i4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint8_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, int32_t __arg7, int32_t __arg8, int32_t __arg9, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(uint8_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(int32_t*)(localVarBase+argVarIndexs[5]), *(int32_t*)(localVarBase+argVarIndexs[6]), *(int32_t*)(localVarBase+argVarIndexs[7]), *(int32_t*)(localVarBase+argVarIndexs[8]), *(int32_t*)(localVarBase+argVarIndexs[9]), method);
+}
+
+
 static void __M2N_i4i4i4i4u1u1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint8_t __arg3, uint8_t __arg4, const MethodInfo* method);
     *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(uint8_t*)(localVarBase+argVarIndexs[3]), *(uint8_t*)(localVarBase+argVarIndexs[4]), method);
+}
+
+
+static void __M2N_i4i4i4i4u1u1i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint8_t __arg3, uint8_t __arg4, int32_t __arg5, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(uint8_t*)(localVarBase+argVarIndexs[3]), *(uint8_t*)(localVarBase+argVarIndexs[4]), *(int32_t*)(localVarBase+argVarIndexs[5]), method);
+}
+
+
+static void __M2N_i4i4i4i4u2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint16_t __arg3, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(uint16_t*)(localVarBase+argVarIndexs[3]), method);
 }
 
 
@@ -5392,10 +6232,24 @@ static void __M2N_i4i4i4i4u2i4i4(const MethodInfo* method, uint16_t* argVarIndex
 }
 
 
+static void __M2N_i4i4i4i4u4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint32_t __arg3, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(uint32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
 static void __M2N_i4i4i4i4u4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint32_t __arg3, int32_t __arg4, const MethodInfo* method);
     *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(uint32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
+}
+
+
+static void __M2N_i4i4i4i4u8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint64_t __arg3, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(uint64_t*)(localVarBase+argVarIndexs[3]), method);
 }
 
 
@@ -5417,6 +6271,13 @@ static void __M2N_i4i4i4i8i4i4(const MethodInfo* method, uint16_t* argVarIndexs,
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int64_t __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method);
     *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int64_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
+}
+
+
+static void __M2N_i4i4i4r4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, float __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(float*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
 }
 
 
@@ -5445,6 +6306,20 @@ static void __M2N_i4i4i4u1i4i4(const MethodInfo* method, uint16_t* argVarIndexs,
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, uint8_t __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method);
     *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(uint8_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
+}
+
+
+static void __M2N_i4i4i4u1i4i4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, uint8_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, int32_t __arg7, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(uint8_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(int32_t*)(localVarBase+argVarIndexs[5]), *(int32_t*)(localVarBase+argVarIndexs[6]), *(int32_t*)(localVarBase+argVarIndexs[7]), method);
+}
+
+
+static void __M2N_i4i4i4u1i4i4i4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, uint8_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, int32_t __arg7, int32_t __arg8, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(uint8_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(int32_t*)(localVarBase+argVarIndexs[5]), *(int32_t*)(localVarBase+argVarIndexs[6]), *(int32_t*)(localVarBase+argVarIndexs[7]), *(int32_t*)(localVarBase+argVarIndexs[8]), method);
 }
 
 
@@ -5504,6 +6379,13 @@ static void __M2N_i4i4i4u2i4i4i4(const MethodInfo* method, uint16_t* argVarIndex
 }
 
 
+static void __M2N_i4i4i4u4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, uint32_t __arg2, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(uint32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
 static void __M2N_i4i4i4u4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, uint32_t __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method);
@@ -5557,6 +6439,13 @@ static void __M2N_i4i4r4(const MethodInfo* method, uint16_t* argVarIndexs, Stack
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, float __arg1, const MethodInfo* method);
     *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(float*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_i4i4r4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, float __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(float*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
 }
 
 
@@ -5623,6 +6512,13 @@ static void __M2N_i4i4u1i4i4(const MethodInfo* method, uint16_t* argVarIndexs, S
 }
 
 
+static void __M2N_i4i4u1i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, uint8_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(uint8_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
+}
+
+
 static void __M2N_i4i4u1i4i4i4i4i4i4i4i4u1i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, uint8_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, int32_t __arg7, int32_t __arg8, int32_t __arg9, uint8_t __arg10, int32_t __arg11, const MethodInfo* method);
@@ -5634,6 +6530,20 @@ static void __M2N_i4i4u1u1(const MethodInfo* method, uint16_t* argVarIndexs, Sta
 {
     typedef int32_t (*NativeMethod)(int32_t __arg0, uint8_t __arg1, uint8_t __arg2, const MethodInfo* method);
     *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(uint8_t*)(localVarBase+argVarIndexs[1]), *(uint8_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_i4i4u1u1i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, uint8_t __arg1, uint8_t __arg2, int32_t __arg3, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(uint8_t*)(localVarBase+argVarIndexs[1]), *(uint8_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_i4i4u1u1u1i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int32_t (*NativeMethod)(int32_t __arg0, uint8_t __arg1, uint8_t __arg2, uint8_t __arg3, int32_t __arg4, const MethodInfo* method);
+    *(int32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(uint8_t*)(localVarBase+argVarIndexs[1]), *(uint8_t*)(localVarBase+argVarIndexs[2]), *(uint8_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
 }
 
 
@@ -6029,6 +6939,20 @@ static void __M2N_i8C16(const MethodInfo* method, uint16_t* argVarIndexs, StackO
 }
 
 
+static void __M2N_i8S8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int64_t (*NativeMethod)(ValueTypeSize<8> __arg0, const MethodInfo* method);
+    *(int64_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_i8S8i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int64_t (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
+    *(int64_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
 static void __M2N_i8S8i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef int64_t (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
@@ -6057,6 +6981,13 @@ static void __M2N_i8i4(const MethodInfo* method, uint16_t* argVarIndexs, StackOb
 }
 
 
+static void __M2N_i8i4S8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int64_t (*NativeMethod)(int32_t __arg0, ValueTypeSize<8> __arg1, const MethodInfo* method);
+    *(int64_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
 static void __M2N_i8i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef int64_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, const MethodInfo* method);
@@ -6082,6 +7013,13 @@ static void __M2N_i8i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, Sta
 {
     typedef int64_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
     *(int64_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_i8i4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int64_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
+    *(int64_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
 }
 
 
@@ -6117,6 +7055,13 @@ static void __M2N_i8i4i8i8(const MethodInfo* method, uint16_t* argVarIndexs, Sta
 {
     typedef int64_t (*NativeMethod)(int32_t __arg0, int64_t __arg1, int64_t __arg2, const MethodInfo* method);
     *(int64_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int64_t*)(localVarBase+argVarIndexs[1]), *(int64_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_i8i4u1i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef int64_t (*NativeMethod)(int32_t __arg0, uint8_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method);
+    *(int64_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(uint8_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
 }
 
 
@@ -6236,6 +7181,13 @@ static void __M2N_r4S8S8(const MethodInfo* method, uint16_t* argVarIndexs, Stack
 {
     typedef float (*NativeMethod)(ValueTypeSize<8> __arg0, ValueTypeSize<8> __arg1, const MethodInfo* method);
     *(float*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_r4S8i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef float (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
+    *(float*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
 }
 
 
@@ -6484,6 +7436,27 @@ static void __M2N_r8C16(const MethodInfo* method, uint16_t* argVarIndexs, StackO
 }
 
 
+static void __M2N_r8C8C8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef double (*NativeMethod)(ValueTypeSizeAlign8<8> __arg0, ValueTypeSizeAlign8<8> __arg1, const MethodInfo* method);
+    *(double*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_r8S8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef double (*NativeMethod)(ValueTypeSize<8> __arg0, const MethodInfo* method);
+    *(double*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_r8S8i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef double (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
+    *(double*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
 static void __M2N_r8i1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef double (*NativeMethod)(int8_t __arg0, const MethodInfo* method);
@@ -6502,6 +7475,13 @@ static void __M2N_r8i4(const MethodInfo* method, uint16_t* argVarIndexs, StackOb
 {
     typedef double (*NativeMethod)(int32_t __arg0, const MethodInfo* method);
     *(double*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_r8i4C8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef double (*NativeMethod)(int32_t __arg0, ValueTypeSizeAlign8<8> __arg1, const MethodInfo* method);
+    *(double*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[1]), method);
 }
 
 
@@ -6645,6 +7625,13 @@ static void __M2N_u1C16C16(const MethodInfo* method, uint16_t* argVarIndexs, Sta
 }
 
 
+static void __M2N_u1C16S8i4S2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(ValueTypeSizeAlign8<16> __arg0, ValueTypeSize<8> __arg1, int32_t __arg2, ValueTypeSize<2> __arg3, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(ValueTypeSize<2>*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
 static void __M2N_u1C16S8i4S8i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef uint8_t (*NativeMethod)(ValueTypeSizeAlign8<16> __arg0, ValueTypeSize<8> __arg1, int32_t __arg2, ValueTypeSize<8> __arg3, int32_t __arg4, const MethodInfo* method);
@@ -6736,6 +7723,20 @@ static void __M2N_u1S12S12r4i4i4(const MethodInfo* method, uint16_t* argVarIndex
 }
 
 
+static void __M2N_u1S12i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(ValueTypeSize<12> __arg0, int32_t __arg1, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<12>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_u1S12i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(ValueTypeSize<12> __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<12>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
 static void __M2N_u1S16S16(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef uint8_t (*NativeMethod)(ValueTypeSize<16> __arg0, ValueTypeSize<16> __arg1, const MethodInfo* method);
@@ -6750,6 +7751,13 @@ static void __M2N_u1S16S16i4(const MethodInfo* method, uint16_t* argVarIndexs, S
 }
 
 
+static void __M2N_u1S16S8i4S2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(ValueTypeSize<16> __arg0, ValueTypeSize<8> __arg1, int32_t __arg2, ValueTypeSize<2> __arg3, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<16>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(ValueTypeSize<2>*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
 static void __M2N_u1S188S188(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef uint8_t (*NativeMethod)(ValueTypeSize<188> __arg0, ValueTypeSize<188> __arg1, const MethodInfo* method);
@@ -6761,6 +7769,13 @@ static void __M2N_u1S196S196(const MethodInfo* method, uint16_t* argVarIndexs, S
 {
     typedef uint8_t (*NativeMethod)(ValueTypeSize<196> __arg0, ValueTypeSize<196> __arg1, const MethodInfo* method);
     *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<196>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<196>*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_u1S2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(ValueTypeSize<2> __arg0, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<2>*)(localVarBase+argVarIndexs[0]), method);
 }
 
 
@@ -6918,10 +7933,31 @@ static void __M2N_u1S8S8i4(const MethodInfo* method, uint16_t* argVarIndexs, Sta
 }
 
 
+static void __M2N_u1S8S8i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(ValueTypeSize<8> __arg0, ValueTypeSize<8> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_u1S8S8i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(ValueTypeSize<8> __arg0, ValueTypeSize<8> __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
+}
+
+
 static void __M2N_u1S8S8u1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef uint8_t (*NativeMethod)(ValueTypeSize<8> __arg0, ValueTypeSize<8> __arg1, uint8_t __arg2, const MethodInfo* method);
     *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[1]), *(uint8_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_u1S8i2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(ValueTypeSize<8> __arg0, int16_t __arg1, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int16_t*)(localVarBase+argVarIndexs[1]), method);
 }
 
 
@@ -6946,10 +7982,66 @@ static void __M2N_u1S8i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, S
 }
 
 
+static void __M2N_u1S8i4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
+}
+
+
+static void __M2N_u1S8i4i4u2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, int32_t __arg2, uint16_t __arg3, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(uint16_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_u1S8i8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(ValueTypeSize<8> __arg0, int64_t __arg1, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int64_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_u1S8r4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(ValueTypeSize<8> __arg0, float __arg1, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(float*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_u1S8r8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(ValueTypeSize<8> __arg0, double __arg1, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(double*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_u1S8u1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(ValueTypeSize<8> __arg0, uint8_t __arg1, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(uint8_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_u1S8u2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(ValueTypeSize<8> __arg0, uint16_t __arg1, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(uint16_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
 static void __M2N_u1S8u4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef uint8_t (*NativeMethod)(ValueTypeSize<8> __arg0, uint32_t __arg1, const MethodInfo* method);
     *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(uint32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_u1S8u8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(ValueTypeSize<8> __arg0, uint64_t __arg1, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(uint64_t*)(localVarBase+argVarIndexs[1]), method);
 }
 
 
@@ -7062,6 +8154,13 @@ static void __M2N_u1i4C8C8(const MethodInfo* method, uint16_t* argVarIndexs, Sta
 {
     typedef uint8_t (*NativeMethod)(int32_t __arg0, ValueTypeSizeAlign8<8> __arg1, ValueTypeSizeAlign8<8> __arg2, const MethodInfo* method);
     *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[1]), *(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_u1i4C8u1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(int32_t __arg0, ValueTypeSizeAlign8<8> __arg1, uint8_t __arg2, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[1]), *(uint8_t*)(localVarBase+argVarIndexs[2]), method);
 }
 
 
@@ -7772,6 +8871,13 @@ static void __M2N_u1i4S8i4i4(const MethodInfo* method, uint16_t* argVarIndexs, S
 }
 
 
+static void __M2N_u1i4S8i8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(int32_t __arg0, ValueTypeSize<8> __arg1, int64_t __arg2, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[1]), *(int64_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
 static void __M2N_u1i4S9(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef uint8_t (*NativeMethod)(int32_t __arg0, ValueTypeSize<9> __arg1, const MethodInfo* method);
@@ -8115,10 +9221,31 @@ static void __M2N_u1i4i4i4i4i4i4i4i4(const MethodInfo* method, uint16_t* argVarI
 }
 
 
+static void __M2N_u1i4i4i4i4i4i4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, int32_t __arg7, int32_t __arg8, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(int32_t*)(localVarBase+argVarIndexs[5]), *(int32_t*)(localVarBase+argVarIndexs[6]), *(int32_t*)(localVarBase+argVarIndexs[7]), *(int32_t*)(localVarBase+argVarIndexs[8]), method);
+}
+
+
 static void __M2N_u1i4i4i4i4i4i4i4i4i8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef uint8_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, int32_t __arg7, int64_t __arg8, const MethodInfo* method);
     *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(int32_t*)(localVarBase+argVarIndexs[5]), *(int32_t*)(localVarBase+argVarIndexs[6]), *(int32_t*)(localVarBase+argVarIndexs[7]), *(int64_t*)(localVarBase+argVarIndexs[8]), method);
+}
+
+
+static void __M2N_u1i4i4i4i4i4u1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, uint8_t __arg5, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(uint8_t*)(localVarBase+argVarIndexs[5]), method);
+}
+
+
+static void __M2N_u1i4i4i4i4i4u1i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, uint8_t __arg5, int32_t __arg6, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(uint8_t*)(localVarBase+argVarIndexs[5]), *(int32_t*)(localVarBase+argVarIndexs[6]), method);
 }
 
 
@@ -8154,6 +9281,13 @@ static void __M2N_u1i4i4i4u1(const MethodInfo* method, uint16_t* argVarIndexs, S
 {
     typedef uint8_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint8_t __arg3, const MethodInfo* method);
     *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(uint8_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_u1i4i4i4u1i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint8_t __arg3, int32_t __arg4, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(uint8_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
 }
 
 
@@ -8458,6 +9592,13 @@ static void __M2N_u1r8S8i4S8i4(const MethodInfo* method, uint16_t* argVarIndexs,
 }
 
 
+static void __M2N_u1r8r8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint8_t (*NativeMethod)(double __arg0, double __arg1, const MethodInfo* method);
+    *(uint8_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(double*)(localVarBase+argVarIndexs[0]), *(double*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
 static void __M2N_u1u1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef uint8_t (*NativeMethod)(uint8_t __arg0, const MethodInfo* method);
@@ -8556,6 +9697,27 @@ static void __M2N_u2S2(const MethodInfo* method, uint16_t* argVarIndexs, StackOb
 }
 
 
+static void __M2N_u2S4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint16_t (*NativeMethod)(ValueTypeSize<4> __arg0, const MethodInfo* method);
+    *(uint16_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<4>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_u2S8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint16_t (*NativeMethod)(ValueTypeSize<8> __arg0, const MethodInfo* method);
+    *(uint16_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_u2S8i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint16_t (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
+    *(uint16_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
 static void __M2N_u2i1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef uint16_t (*NativeMethod)(int8_t __arg0, const MethodInfo* method);
@@ -8595,6 +9757,13 @@ static void __M2N_u2i4i4i4u2(const MethodInfo* method, uint16_t* argVarIndexs, S
 {
     typedef uint16_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint16_t __arg3, const MethodInfo* method);
     *(uint16_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(uint16_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_u2i4i4u2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint16_t (*NativeMethod)(int32_t __arg0, int32_t __arg1, uint16_t __arg2, const MethodInfo* method);
+    *(uint16_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(uint16_t*)(localVarBase+argVarIndexs[2]), method);
 }
 
 
@@ -8640,6 +9809,13 @@ static void __M2N_u2u2(const MethodInfo* method, uint16_t* argVarIndexs, StackOb
 }
 
 
+static void __M2N_u2u2i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint16_t (*NativeMethod)(uint16_t __arg0, int32_t __arg1, const MethodInfo* method);
+    *(uint16_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(uint16_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
 static void __M2N_u2u2u2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef uint16_t (*NativeMethod)(uint16_t __arg0, uint16_t __arg1, const MethodInfo* method);
@@ -8675,10 +9851,24 @@ static void __M2N_u4C16(const MethodInfo* method, uint16_t* argVarIndexs, StackO
 }
 
 
+static void __M2N_u4S8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint32_t (*NativeMethod)(ValueTypeSize<8> __arg0, const MethodInfo* method);
+    *(uint32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
 static void __M2N_u4S8i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef uint32_t (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, const MethodInfo* method);
     *(uint32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_u4S8i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint32_t (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
+    *(uint32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
 }
 
 
@@ -8829,6 +10019,13 @@ static void __M2N_u4u4u4(const MethodInfo* method, uint16_t* argVarIndexs, Stack
 }
 
 
+static void __M2N_u4u4u4u4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint32_t (*NativeMethod)(uint32_t __arg0, uint32_t __arg1, uint32_t __arg2, const MethodInfo* method);
+    *(uint32_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(uint32_t*)(localVarBase+argVarIndexs[0]), *(uint32_t*)(localVarBase+argVarIndexs[1]), *(uint32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
 static void __M2N_u4u4u4u4u4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef uint32_t (*NativeMethod)(uint32_t __arg0, uint32_t __arg1, uint32_t __arg2, uint32_t __arg3, const MethodInfo* method);
@@ -8854,6 +10051,20 @@ static void __M2N_u8C16(const MethodInfo* method, uint16_t* argVarIndexs, StackO
 {
     typedef uint64_t (*NativeMethod)(ValueTypeSizeAlign8<16> __arg0, const MethodInfo* method);
     *(uint64_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_u8S8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint64_t (*NativeMethod)(ValueTypeSize<8> __arg0, const MethodInfo* method);
+    *(uint64_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_u8S8i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint64_t (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method);
+    *(uint64_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
 }
 
 
@@ -8969,6 +10180,13 @@ static void __M2N_u8u4(const MethodInfo* method, uint16_t* argVarIndexs, StackOb
 }
 
 
+static void __M2N_u8u8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef uint64_t (*NativeMethod)(uint64_t __arg0, const MethodInfo* method);
+    *(uint64_t*)ret = ((NativeMethod)(method->methodPointerCallByInterp))(*(uint64_t*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
 static void __M2N_u8u8u8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef uint64_t (*NativeMethod)(uint64_t __arg0, uint64_t __arg1, const MethodInfo* method);
@@ -8983,10 +10201,31 @@ static void __M2N_v(const MethodInfo* method, uint16_t* argVarIndexs, StackObjec
 }
 
 
+static void __M2N_vC16(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(ValueTypeSizeAlign8<16> __arg0, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_vC16i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(ValueTypeSizeAlign8<16> __arg0, int32_t __arg1, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
 static void __M2N_vC8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(ValueTypeSizeAlign8<8> __arg0, const MethodInfo* method);
     ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_vC8i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(ValueTypeSizeAlign8<8> __arg0, int32_t __arg1, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
 }
 
 
@@ -9095,6 +10334,13 @@ static void __M2N_vS16i4i4(const MethodInfo* method, uint16_t* argVarIndexs, Sta
 }
 
 
+static void __M2N_vS16i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(ValueTypeSize<16> __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<16>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
 static void __M2N_vS20(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(ValueTypeSize<20> __arg0, const MethodInfo* method);
@@ -9137,10 +10383,52 @@ static void __M2N_vS8(const MethodInfo* method, uint16_t* argVarIndexs, StackObj
 }
 
 
+static void __M2N_vS8i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
 static void __M2N_vS8i4u1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(ValueTypeSize<8> __arg0, int32_t __arg1, uint8_t __arg2, const MethodInfo* method);
     ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(uint8_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_vS8u2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(ValueTypeSize<8> __arg0, uint16_t __arg1, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(uint16_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_vS8u4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(ValueTypeSize<8> __arg0, uint32_t __arg1, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(uint32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_vS8u8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(ValueTypeSize<8> __arg0, uint64_t __arg1, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(ValueTypeSize<8>*)(localVarBase+argVarIndexs[0]), *(uint64_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_vi1i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int8_t __arg0, int32_t __arg1, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int8_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_vi2i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int16_t __arg0, int32_t __arg1, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int16_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
 }
 
 
@@ -9162,6 +10450,13 @@ static void __M2N_vi4C16i4(const MethodInfo* method, uint16_t* argVarIndexs, Sta
 {
     typedef void (*NativeMethod)(int32_t __arg0, ValueTypeSizeAlign8<16> __arg1, int32_t __arg2, const MethodInfo* method);
     ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_vi4C24i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, ValueTypeSizeAlign8<24> __arg1, int32_t __arg2, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSizeAlign8<24>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
 }
 
 
@@ -9193,10 +10488,24 @@ static void __M2N_vi4C8(const MethodInfo* method, uint16_t* argVarIndexs, StackO
 }
 
 
+static void __M2N_vi4C8C8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, ValueTypeSizeAlign8<8> __arg1, ValueTypeSizeAlign8<8> __arg2, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[1]), *(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
 static void __M2N_vi4C8C8C8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(int32_t __arg0, ValueTypeSizeAlign8<8> __arg1, ValueTypeSizeAlign8<8> __arg2, ValueTypeSizeAlign8<8> __arg3, const MethodInfo* method);
     ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[1]), *(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[2]), *(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_vi4C8i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, ValueTypeSizeAlign8<8> __arg1, int32_t __arg2, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), method);
 }
 
 
@@ -10397,6 +11706,13 @@ static void __M2N_vi4S96(const MethodInfo* method, uint16_t* argVarIndexs, Stack
 }
 
 
+static void __M2N_vi4i1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int8_t __arg1, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int8_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
 static void __M2N_vi4i2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(int32_t __arg0, int16_t __arg1, const MethodInfo* method);
@@ -10422,6 +11738,20 @@ static void __M2N_vi4i4C16(const MethodInfo* method, uint16_t* argVarIndexs, Sta
 {
     typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<16> __arg2, const MethodInfo* method);
     ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_vi4i4C16i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<16> __arg2, int32_t __arg3, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_vi4i4C16i4i4u1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<16> __arg2, int32_t __arg3, int32_t __arg4, uint8_t __arg5, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSizeAlign8<16>*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(uint8_t*)(localVarBase+argVarIndexs[5]), method);
 }
 
 
@@ -10509,6 +11839,13 @@ static void __M2N_vi4i4C8i4(const MethodInfo* method, uint16_t* argVarIndexs, St
 }
 
 
+static void __M2N_vi4i4S1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<1> __arg2, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<1>*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
 static void __M2N_vi4i4S108(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<108> __arg2, const MethodInfo* method);
@@ -10530,6 +11867,13 @@ static void __M2N_vi4i4S128(const MethodInfo* method, uint16_t* argVarIndexs, St
 }
 
 
+static void __M2N_vi4i4S12i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<12> __arg2, int32_t __arg3, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<12>*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
 static void __M2N_vi4i4S16(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<16> __arg2, const MethodInfo* method);
@@ -10544,10 +11888,24 @@ static void __M2N_vi4i4S16S8u1S16(const MethodInfo* method, uint16_t* argVarInde
 }
 
 
+static void __M2N_vi4i4S16i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<16> __arg2, int32_t __arg3, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<16>*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
 static void __M2N_vi4i4S16i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<16> __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method);
     ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<16>*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
+}
+
+
+static void __M2N_vi4i4S16i4i4u1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<16> __arg2, int32_t __arg3, int32_t __arg4, uint8_t __arg5, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<16>*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(uint8_t*)(localVarBase+argVarIndexs[5]), method);
 }
 
 
@@ -10618,6 +11976,13 @@ static void __M2N_vi4i4S1r4(const MethodInfo* method, uint16_t* argVarIndexs, St
 {
     typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<1> __arg2, float __arg3, const MethodInfo* method);
     ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<1>*)(localVarBase+argVarIndexs[2]), *(float*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
+static void __M2N_vi4i4S2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, ValueTypeSize<2> __arg2, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<2>*)(localVarBase+argVarIndexs[2]), method);
 }
 
 
@@ -10838,10 +12203,24 @@ static void __M2N_vi4i4S96(const MethodInfo* method, uint16_t* argVarIndexs, Sta
 }
 
 
+static void __M2N_vi4i4i1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int8_t __arg2, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int8_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
 static void __M2N_vi4i4i2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int16_t __arg2, const MethodInfo* method);
     ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int16_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
+static void __M2N_vi4i4i2i2i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int16_t __arg2, int16_t __arg3, int32_t __arg4, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int16_t*)(localVarBase+argVarIndexs[2]), *(int16_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
 }
 
 
@@ -11111,6 +12490,13 @@ static void __M2N_vi4i4i4i2(const MethodInfo* method, uint16_t* argVarIndexs, St
 }
 
 
+static void __M2N_vi4i4i4i2i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int16_t __arg3, int32_t __arg4, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int16_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
+}
+
+
 static void __M2N_vi4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method);
@@ -11153,6 +12539,20 @@ static void __M2N_vi4i4i4i4S28(const MethodInfo* method, uint16_t* argVarIndexs,
 }
 
 
+static void __M2N_vi4i4i4i4S4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, ValueTypeSize<4> __arg4, int32_t __arg5, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(ValueTypeSize<4>*)(localVarBase+argVarIndexs[4]), *(int32_t*)(localVarBase+argVarIndexs[5]), method);
+}
+
+
+static void __M2N_vi4i4i4i4S8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, ValueTypeSize<8> __arg4, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[4]), method);
+}
+
+
 static void __M2N_vi4i4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method);
@@ -11174,6 +12574,13 @@ static void __M2N_vi4i4i4i4i4i4i4(const MethodInfo* method, uint16_t* argVarInde
 }
 
 
+static void __M2N_vi4i4i4i4i4i4i4C8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, ValueTypeSizeAlign8<8> __arg7, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(int32_t*)(localVarBase+argVarIndexs[5]), *(int32_t*)(localVarBase+argVarIndexs[6]), *(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[7]), method);
+}
+
+
 static void __M2N_vi4i4i4i4i4i4i4S12i4u1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, ValueTypeSize<12> __arg7, int32_t __arg8, uint8_t __arg9, const MethodInfo* method);
@@ -11188,10 +12595,24 @@ static void __M2N_vi4i4i4i4i4i4i4i4(const MethodInfo* method, uint16_t* argVarIn
 }
 
 
+static void __M2N_vi4i4i4i4i4i4i4i4C8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, int32_t __arg7, ValueTypeSizeAlign8<8> __arg8, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(int32_t*)(localVarBase+argVarIndexs[5]), *(int32_t*)(localVarBase+argVarIndexs[6]), *(int32_t*)(localVarBase+argVarIndexs[7]), *(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[8]), method);
+}
+
+
 static void __M2N_vi4i4i4i4i4i4i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, int32_t __arg7, int32_t __arg8, const MethodInfo* method);
     ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(int32_t*)(localVarBase+argVarIndexs[5]), *(int32_t*)(localVarBase+argVarIndexs[6]), *(int32_t*)(localVarBase+argVarIndexs[7]), *(int32_t*)(localVarBase+argVarIndexs[8]), method);
+}
+
+
+static void __M2N_vi4i4i4i4i4i4i4i4i4C8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, int32_t __arg7, int32_t __arg8, ValueTypeSizeAlign8<8> __arg9, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(int32_t*)(localVarBase+argVarIndexs[5]), *(int32_t*)(localVarBase+argVarIndexs[6]), *(int32_t*)(localVarBase+argVarIndexs[7]), *(int32_t*)(localVarBase+argVarIndexs[8]), *(ValueTypeSizeAlign8<8>*)(localVarBase+argVarIndexs[9]), method);
 }
 
 
@@ -11237,6 +12658,13 @@ static void __M2N_vi4i4i4i4i4i4i4u1i4i4i4i4(const MethodInfo* method, uint16_t* 
 }
 
 
+static void __M2N_vi4i4i4i4i4i4i4u2i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, uint16_t __arg7, int32_t __arg8, int32_t __arg9, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(int32_t*)(localVarBase+argVarIndexs[5]), *(int32_t*)(localVarBase+argVarIndexs[6]), *(uint16_t*)(localVarBase+argVarIndexs[7]), *(int32_t*)(localVarBase+argVarIndexs[8]), *(int32_t*)(localVarBase+argVarIndexs[9]), method);
+}
+
+
 static void __M2N_vi4i4i4i4i4i4r4S12S12i4u1i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, float __arg6, ValueTypeSize<12> __arg7, ValueTypeSize<12> __arg8, int32_t __arg9, uint8_t __arg10, int32_t __arg11, const MethodInfo* method);
@@ -11262,6 +12690,13 @@ static void __M2N_vi4i4i4i4i4i4u1u1(const MethodInfo* method, uint16_t* argVarIn
 {
     typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, uint8_t __arg6, uint8_t __arg7, const MethodInfo* method);
     ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(int32_t*)(localVarBase+argVarIndexs[5]), *(uint8_t*)(localVarBase+argVarIndexs[6]), *(uint8_t*)(localVarBase+argVarIndexs[7]), method);
+}
+
+
+static void __M2N_vi4i4i4i4i4i4u2i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, uint16_t __arg6, int32_t __arg7, int32_t __arg8, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), *(int32_t*)(localVarBase+argVarIndexs[5]), *(uint16_t*)(localVarBase+argVarIndexs[6]), *(int32_t*)(localVarBase+argVarIndexs[7]), *(int32_t*)(localVarBase+argVarIndexs[8]), method);
 }
 
 
@@ -11398,6 +12833,13 @@ static void __M2N_vi4i4i4r4u1(const MethodInfo* method, uint16_t* argVarIndexs, 
 }
 
 
+static void __M2N_vi4i4i4r8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, double __arg3, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(double*)(localVarBase+argVarIndexs[3]), method);
+}
+
+
 static void __M2N_vi4i4i4u1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint8_t __arg3, const MethodInfo* method);
@@ -11451,6 +12893,13 @@ static void __M2N_vi4i4i4u2i4(const MethodInfo* method, uint16_t* argVarIndexs, 
 {
     typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint16_t __arg3, int32_t __arg4, const MethodInfo* method);
     ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(uint16_t*)(localVarBase+argVarIndexs[3]), *(int32_t*)(localVarBase+argVarIndexs[4]), method);
+}
+
+
+static void __M2N_vi4i4i4u4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint32_t __arg3, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(uint32_t*)(localVarBase+argVarIndexs[3]), method);
 }
 
 
@@ -11923,6 +13372,13 @@ static void __M2N_vi4u1S16(const MethodInfo* method, uint16_t* argVarIndexs, Sta
 }
 
 
+static void __M2N_vi4u1S1i4S4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, uint8_t __arg1, ValueTypeSize<1> __arg2, int32_t __arg3, ValueTypeSize<4> __arg4, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(uint8_t*)(localVarBase+argVarIndexs[1]), *(ValueTypeSize<1>*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(ValueTypeSize<4>*)(localVarBase+argVarIndexs[4]), method);
+}
+
+
 static void __M2N_vi4u1S2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(int32_t __arg0, uint8_t __arg1, ValueTypeSize<2> __arg2, const MethodInfo* method);
@@ -12126,6 +13582,13 @@ static void __M2N_vi4u1i4i4S4(const MethodInfo* method, uint16_t* argVarIndexs, 
 }
 
 
+static void __M2N_vi4u1i4i4S8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, uint8_t __arg1, int32_t __arg2, int32_t __arg3, ValueTypeSize<8> __arg4, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(uint8_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(int32_t*)(localVarBase+argVarIndexs[3]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[4]), method);
+}
+
+
 static void __M2N_vi4u1i4i4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(int32_t __arg0, uint8_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method);
@@ -12231,6 +13694,13 @@ static void __M2N_vi4u1u1u4u4u4(const MethodInfo* method, uint16_t* argVarIndexs
 }
 
 
+static void __M2N_vi4u1u4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, uint8_t __arg1, uint32_t __arg2, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(uint8_t*)(localVarBase+argVarIndexs[1]), *(uint32_t*)(localVarBase+argVarIndexs[2]), method);
+}
+
+
 static void __M2N_vi4u2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(int32_t __arg0, uint16_t __arg1, const MethodInfo* method);
@@ -12256,6 +13726,13 @@ static void __M2N_vi4u2i4u1u1u1(const MethodInfo* method, uint16_t* argVarIndexs
 {
     typedef void (*NativeMethod)(int32_t __arg0, uint16_t __arg1, int32_t __arg2, uint8_t __arg3, uint8_t __arg4, uint8_t __arg5, const MethodInfo* method);
     ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(uint16_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(uint8_t*)(localVarBase+argVarIndexs[3]), *(uint8_t*)(localVarBase+argVarIndexs[4]), *(uint8_t*)(localVarBase+argVarIndexs[5]), method);
+}
+
+
+static void __M2N_vi4u2u1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, uint16_t __arg1, uint8_t __arg2, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(uint16_t*)(localVarBase+argVarIndexs[1]), *(uint8_t*)(localVarBase+argVarIndexs[2]), method);
 }
 
 
@@ -12347,6 +13824,13 @@ static void __M2N_vi4u4i4u4i2i4i4i4i4(const MethodInfo* method, uint16_t* argVar
 {
     typedef void (*NativeMethod)(int32_t __arg0, uint32_t __arg1, int32_t __arg2, uint32_t __arg3, int16_t __arg4, int32_t __arg5, int32_t __arg6, int32_t __arg7, int32_t __arg8, const MethodInfo* method);
     ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(uint32_t*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(uint32_t*)(localVarBase+argVarIndexs[3]), *(int16_t*)(localVarBase+argVarIndexs[4]), *(int32_t*)(localVarBase+argVarIndexs[5]), *(int32_t*)(localVarBase+argVarIndexs[6]), *(int32_t*)(localVarBase+argVarIndexs[7]), *(int32_t*)(localVarBase+argVarIndexs[8]), method);
+}
+
+
+static void __M2N_vi4u4u2u2u1u1u1u1u1u1u1u1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(int32_t __arg0, uint32_t __arg1, uint16_t __arg2, uint16_t __arg3, uint8_t __arg4, uint8_t __arg5, uint8_t __arg6, uint8_t __arg7, uint8_t __arg8, uint8_t __arg9, uint8_t __arg10, uint8_t __arg11, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(int32_t*)(localVarBase+argVarIndexs[0]), *(uint32_t*)(localVarBase+argVarIndexs[1]), *(uint16_t*)(localVarBase+argVarIndexs[2]), *(uint16_t*)(localVarBase+argVarIndexs[3]), *(uint8_t*)(localVarBase+argVarIndexs[4]), *(uint8_t*)(localVarBase+argVarIndexs[5]), *(uint8_t*)(localVarBase+argVarIndexs[6]), *(uint8_t*)(localVarBase+argVarIndexs[7]), *(uint8_t*)(localVarBase+argVarIndexs[8]), *(uint8_t*)(localVarBase+argVarIndexs[9]), *(uint8_t*)(localVarBase+argVarIndexs[10]), *(uint8_t*)(localVarBase+argVarIndexs[11]), method);
 }
 
 
@@ -12448,6 +13932,13 @@ static void __M2N_vr4(const MethodInfo* method, uint16_t* argVarIndexs, StackObj
 }
 
 
+static void __M2N_vr4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(float __arg0, int32_t __arg1, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(float*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
 static void __M2N_vr4r4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(float __arg0, float __arg1, const MethodInfo* method);
@@ -12469,10 +13960,31 @@ static void __M2N_vr4r4r4r4(const MethodInfo* method, uint16_t* argVarIndexs, St
 }
 
 
+static void __M2N_vr8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(double __arg0, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(double*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_vr8i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(double __arg0, int32_t __arg1, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(double*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
 static void __M2N_vu1(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(uint8_t __arg0, const MethodInfo* method);
     ((NativeMethod)(method->methodPointerCallByInterp))(*(uint8_t*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_vu1S8i4u4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(uint8_t __arg0, ValueTypeSize<8> __arg1, int32_t __arg2, uint32_t __arg3, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(uint8_t*)(localVarBase+argVarIndexs[0]), *(ValueTypeSize<8>*)(localVarBase+argVarIndexs[1]), *(int32_t*)(localVarBase+argVarIndexs[2]), *(uint32_t*)(localVarBase+argVarIndexs[3]), method);
 }
 
 
@@ -12511,10 +14023,45 @@ static void __M2N_vu1u1S16r4(const MethodInfo* method, uint16_t* argVarIndexs, S
 }
 
 
+static void __M2N_vu2(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(uint16_t __arg0, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(uint16_t*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_vu2i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(uint16_t __arg0, int32_t __arg1, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(uint16_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
 static void __M2N_vu4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
 {
     typedef void (*NativeMethod)(uint32_t __arg0, const MethodInfo* method);
     ((NativeMethod)(method->methodPointerCallByInterp))(*(uint32_t*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_vu4i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(uint32_t __arg0, int32_t __arg1, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(uint32_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
+}
+
+
+static void __M2N_vu8(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(uint64_t __arg0, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(uint64_t*)(localVarBase+argVarIndexs[0]), method);
+}
+
+
+static void __M2N_vu8i4(const MethodInfo* method, uint16_t* argVarIndexs, StackObject* localVarBase, void* ret)
+{
+    typedef void (*NativeMethod)(uint64_t __arg0, int32_t __arg1, const MethodInfo* method);
+    ((NativeMethod)(method->methodPointerCallByInterp))(*(uint64_t*)(localVarBase+argVarIndexs[0]), *(int32_t*)(localVarBase+argVarIndexs[1]), method);
 }
 
 
@@ -12525,22 +14072,35 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"C16C16", __M2N_C16C16},
 	{"C16C16C16", __M2N_C16C16C16},
 	{"C16C16C16C16", __M2N_C16C16C16C16},
+	{"C16C16C8", __M2N_C16C16C8},
 	{"C16C16i4", __M2N_C16C16i4},
+	{"C16C16i4i4", __M2N_C16C16i4i4},
+	{"C16C24", __M2N_C16C24},
+	{"C16C8", __M2N_C16C8},
+	{"C16C8u1", __M2N_C16C8u1},
 	{"C16S12", __M2N_C16S12},
 	{"C16S28i4i4C16", __M2N_C16S28i4i4C16},
 	{"C16S8C16", __M2N_C16S8C16},
+	{"C16S8S8i4i4", __M2N_C16S8S8i4i4},
+	{"C16S8i4i4", __M2N_C16S8i4i4},
+	{"C16S8i4i4i4", __M2N_C16S8i4i4i4},
 	{"C16i1", __M2N_C16i1},
 	{"C16i2", __M2N_C16i2},
 	{"C16i4", __M2N_C16i4},
 	{"C16i4C16", __M2N_C16i4C16},
+	{"C16i4C8", __M2N_C16i4C8},
 	{"C16i4S4C16", __M2N_C16i4S4C16},
 	{"C16i4i4", __M2N_C16i4i4},
 	{"C16i4i4C16", __M2N_C16i4i4C16},
 	{"C16i4i4C168S12i4", __M2N_C16i4i4C168S12i4},
+	{"C16i4i4C16i4", __M2N_C16i4i4C16i4},
 	{"C16i4i4S16", __M2N_C16i4i4S16},
 	{"C16i4i4S16i4C16", __M2N_C16i4i4S16i4C16},
 	{"C16i4i4i4", __M2N_C16i4i4i4},
 	{"C16i4i4i4C16", __M2N_C16i4i4i4C16},
+	{"C16i4i4i4i4", __M2N_C16i4i4i4i4},
+	{"C16i4i8", __M2N_C16i4i8},
+	{"C16i4r8", __M2N_C16i4r8},
 	{"C16i8", __M2N_C16i8},
 	{"C16r4", __M2N_C16r4},
 	{"C16r8", __M2N_C16r8},
@@ -12549,10 +14109,14 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"C16u4", __M2N_C16u4},
 	{"C16u8", __M2N_C16u8},
 	{"C24", __M2N_C24},
+	{"C24C16", __M2N_C24C16},
 	{"C24C8i4i4", __M2N_C24C8i4i4},
 	{"C24C8i4i4i4", __M2N_C24C8i4i4i4},
 	{"C24i4", __M2N_C24i4},
 	{"C24i4i4", __M2N_C24i4i4},
+	{"C24i4i4C24", __M2N_C24i4i4C24},
+	{"C24i4i4i4", __M2N_C24i4i4i4},
+	{"C24i4i4i4i8", __M2N_C24i4i4i4i8},
 	{"C32i4", __M2N_C32i4},
 	{"C32i4i4", __M2N_C32i4i4},
 	{"C40i4", __M2N_C40i4},
@@ -12563,24 +14127,40 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"C64i4", __M2N_C64i4},
 	{"C8", __M2N_C8},
 	{"C80i4", __M2N_C80i4},
+	{"C8C16", __M2N_C8C16},
+	{"C8C16C16", __M2N_C8C16C16},
 	{"C8C8", __M2N_C8C8},
 	{"C8C8C8", __M2N_C8C8C8},
 	{"C8C8i4", __M2N_C8C8i4},
+	{"C8C8r8", __M2N_C8C8r8},
+	{"C8S8S8i4i4", __M2N_C8S8S8i4i4},
+	{"C8S8i4", __M2N_C8S8i4},
+	{"C8S8i4i4", __M2N_C8S8i4i4},
+	{"C8S8i4i4i4", __M2N_C8S8i4i4i4},
 	{"C8i4", __M2N_C8i4},
+	{"C8i4C16", __M2N_C8i4C16},
 	{"C8i4C8", __M2N_C8i4C8},
 	{"C8i4i4", __M2N_C8i4i4},
+	{"C8i4i4C8", __M2N_C8i4i4C8},
+	{"C8i4i4i4", __M2N_C8i4i4i4},
+	{"C8i4i4i4i4", __M2N_C8i4i4i4i4},
+	{"C8i4i4i4i4i4i4i4i4", __M2N_C8i4i4i4i4i4i4i4i4},
 	{"C8i4i4i4i4i4i4i4i4i4", __M2N_C8i4i4i4i4i4i4i4i4i4},
 	{"C8i4i8", __M2N_C8i4i8},
 	{"C8i4r8", __M2N_C8i4r8},
 	{"C8i8", __M2N_C8i8},
 	{"C8r8", __M2N_C8r8},
+	{"C8r8C8", __M2N_C8r8C8},
 	{"S1", __M2N_S1},
 	{"S104i4", __M2N_S104i4},
 	{"S108", __M2N_S108},
+	{"S108S112", __M2N_S108S112},
 	{"S108i4", __M2N_S108i4},
+	{"S108i4S108", __M2N_S108i4S108},
 	{"S108i4i4", __M2N_S108i4i4},
 	{"S10i4", __M2N_S10i4},
 	{"S10i4i2", __M2N_S10i4i2},
+	{"S112S108", __M2N_S112S108},
 	{"S112i4", __M2N_S112i4},
 	{"S11i4i2", __M2N_S11i4i2},
 	{"S12", __M2N_S12},
@@ -12592,7 +14172,11 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"S12S12", __M2N_S12S12},
 	{"S12S12C8i4i4i4", __M2N_S12S12C8i4i4i4},
 	{"S12S12S12", __M2N_S12S12S12},
+	{"S12S12S12i4r4", __M2N_S12S12S12i4r4},
+	{"S12S12S12i4r4r4", __M2N_S12S12S12i4r4r4},
+	{"S12S12S12i4r4r4r4", __M2N_S12S12S12i4r4r4r4},
 	{"S12S12S12r4", __M2N_S12S12S12r4},
+	{"S12S12S12r4r4", __M2N_S12S12S12r4r4},
 	{"S12S12S4", __M2N_S12S12S4},
 	{"S12S12i4", __M2N_S12S12i4},
 	{"S12S12i4i4", __M2N_S12S12i4i4},
@@ -12609,12 +14193,16 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"S12i4", __M2N_S12i4},
 	{"S12i4S12", __M2N_S12i4S12},
 	{"S12i4S12S12i4", __M2N_S12i4S12S12i4},
+	{"S12i4S12S4", __M2N_S12i4S12S4},
 	{"S12i4S12i4", __M2N_S12i4S12i4},
 	{"S12i4S4", __M2N_S12i4S4},
+	{"S12i4S8", __M2N_S12i4S8},
 	{"S12i4i2", __M2N_S12i4i2},
 	{"S12i4i4", __M2N_S12i4i4},
+	{"S12i4i4S12", __M2N_S12i4i4S12},
 	{"S12i4i4i4", __M2N_S12i4i4i4},
 	{"S12i4i4i4S4", __M2N_S12i4i4i4S4},
+	{"S12i4i4i4i4", __M2N_S12i4i4i4i4},
 	{"S12i4i4i4i4S4", __M2N_S12i4i4i4i4S4},
 	{"S12i4i4i4u1", __M2N_S12i4i4i4u1},
 	{"S12i4i4i4u1u1", __M2N_S12i4i4i4u1u1},
@@ -12642,6 +14230,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"S16S16S16r4", __M2N_S16S16S16r4},
 	{"S16S16i4i4", __M2N_S16S16i4i4},
 	{"S16S16r4", __M2N_S16S16r4},
+	{"S16S20", __M2N_S16S20},
 	{"S16S24", __M2N_S16S24},
 	{"S16S4", __M2N_S16S4},
 	{"S16S64S16", __M2N_S16S64S16},
@@ -12656,12 +14245,22 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"S16i4S176", __M2N_S16i4S176},
 	{"S16i4S24", __M2N_S16i4S24},
 	{"S16i4S4", __M2N_S16i4S4},
+	{"S16i4S8", __M2N_S16i4S8},
+	{"S16i4S8S8", __M2N_S16i4S8S8},
+	{"S16i4S8i4", __M2N_S16i4S8i4},
+	{"S16i4S8i8", __M2N_S16i4S8i8},
 	{"S16i4i2", __M2N_S16i4i2},
 	{"S16i4i4", __M2N_S16i4i4},
+	{"S16i4i4S16", __M2N_S16i4i4S16},
+	{"S16i4i4S16i4", __M2N_S16i4i4S16i4},
+	{"S16i4i4S8", __M2N_S16i4i4S8},
 	{"S16i4i4i4", __M2N_S16i4i4i4},
 	{"S16i4i4r4r4S16S16S16S8i4", __M2N_S16i4i4r4r4S16S16S16S8i4},
 	{"S16i4i4r4r4S16S16i4S16S8i4i4i4", __M2N_S16i4i4r4r4S16S16i4S16S8i4i4i4},
 	{"S16i4i4u1", __M2N_S16i4i4u1},
+	{"S16i4i8", __M2N_S16i4i8},
+	{"S16i4i8S8", __M2N_S16i4i8S8},
+	{"S16i4i8i8", __M2N_S16i4i8i8},
 	{"S16i4r4", __M2N_S16i4r4},
 	{"S16i4r4r4", __M2N_S16i4r4r4},
 	{"S16i4u4", __M2N_S16i4u4},
@@ -12671,11 +14270,16 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"S16r4S16", __M2N_S16r4S16},
 	{"S16r4r4r4", __M2N_S16r4r4r4},
 	{"S16r4r4r4r4", __M2N_S16r4r4r4r4},
+	{"S16r4r4r4u1", __M2N_S16r4r4r4u1},
 	{"S188i4", __M2N_S188i4},
+	{"S1S2", __M2N_S1S2},
 	{"S1i4", __M2N_S1i4},
+	{"S1i4S1", __M2N_S1i4S1},
 	{"S1i4S4", __M2N_S1i4S4},
 	{"S1i4i2", __M2N_S1i4i2},
 	{"S1i4i4", __M2N_S1i4i4},
+	{"S1i4i4S1", __M2N_S1i4i4S1},
+	{"S1i4i4i4", __M2N_S1i4i4i4},
 	{"S2", __M2N_S2},
 	{"S20", __M2N_S20},
 	{"S208i4", __M2N_S208i4},
@@ -12689,6 +14293,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"S20i4S12S12S12", __M2N_S20i4S12S12S12},
 	{"S20i4i2", __M2N_S20i4i2},
 	{"S20i4i4", __M2N_S20i4i4},
+	{"S20i4i4S20", __M2N_S20i4i4S20},
 	{"S24", __M2N_S24},
 	{"S248S16S16i4i4i4", __M2N_S248S16S16i4i4i4},
 	{"S248S16S16i4i4i4u1i4u1", __M2N_S248S16S16i4i4i4u1i4u1},
@@ -12719,14 +14324,23 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"S28i4i2", __M2N_S28i4i2},
 	{"S28i4i4", __M2N_S28i4i4},
 	{"S28i4i4i4", __M2N_S28i4i4i4},
+	{"S2S1", __M2N_S2S1},
+	{"S2i1", __M2N_S2i1},
 	{"S2i4", __M2N_S2i4},
 	{"S2i4i2", __M2N_S2i4i2},
+	{"S2i4i4S2", __M2N_S2i4i4S2},
+	{"S2u1", __M2N_S2u1},
+	{"S2u2", __M2N_S2u2},
 	{"S32S12S12S12S12S12", __M2N_S32S12S12S12S12S12},
 	{"S32S12S12S12S12S12S12", __M2N_S32S12S12S12S12S12S12},
+	{"S32S12i4i4", __M2N_S32S12i4i4},
+	{"S32S16i4i4", __M2N_S32S16i4i4},
 	{"S32S72", __M2N_S32S72},
 	{"S32i4", __M2N_S32i4},
 	{"S32i4i2", __M2N_S32i4i2},
 	{"S32i4i4", __M2N_S32i4i4},
+	{"S32i4i4i4", __M2N_S32i4i4i4},
+	{"S32i4i4i4i8", __M2N_S32i4i4i4i8},
 	{"S36S12S12S12S12S12S12", __M2N_S36S12S12S12S12S12S12},
 	{"S36S12S12S12S12S12S12S12", __M2N_S36S12S12S12S12S12S12S12},
 	{"S36S84", __M2N_S36S84},
@@ -12798,15 +14412,23 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"S4S4r4", __M2N_S4S4r4},
 	{"S4S8", __M2N_S4S8},
 	{"S4S8S4", __M2N_S4S8S4},
+	{"S4i2", __M2N_S4i2},
 	{"S4i4", __M2N_S4i4},
 	{"S4i4C8", __M2N_S4i4C8},
 	{"S4i4S16", __M2N_S4i4S16},
+	{"S4i4S4", __M2N_S4i4S4},
 	{"S4i4S4S4r4", __M2N_S4i4S4S4r4},
+	{"S4i4S4i4", __M2N_S4i4S4i4},
+	{"S4i4S4i4i4", __M2N_S4i4S4i4i4},
 	{"S4i4S8", __M2N_S4i4S8},
 	{"S4i4i2", __M2N_S4i4i2},
 	{"S4i4i4", __M2N_S4i4i4},
+	{"S4i4i4S4", __M2N_S4i4i4S4},
+	{"S4i4i4S8", __M2N_S4i4i4S8},
 	{"S4i4i4i4", __M2N_S4i4i4i4},
+	{"S4i4i4i4S4i4", __M2N_S4i4i4i4S4i4},
 	{"S4i4i4i4i4", __M2N_S4i4i4i4i4},
+	{"S4u2", __M2N_S4u2},
 	{"S4u4", __M2N_S4u4},
 	{"S52S12S12S12S12S12S12S12S12S12S12", __M2N_S52S12S12S12S12S12S12S12S12S12S12},
 	{"S52S12S12S12S12S12S12S12S12S12S12S12", __M2N_S52S12S12S12S12S12S12S12S12S12S12S12},
@@ -12877,7 +14499,10 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"S8S112", __M2N_S8S112},
 	{"S8S12", __M2N_S8S12},
 	{"S8S120", __M2N_S8S120},
+	{"S8S12S4", __M2N_S8S12S4},
+	{"S8S12S8", __M2N_S8S12S8},
 	{"S8S12i4", __M2N_S8S12i4},
+	{"S8S12i4i4", __M2N_S8S12i4i4},
 	{"S8S12u1", __M2N_S8S12u1},
 	{"S8S16", __M2N_S8S16},
 	{"S8S20", __M2N_S8S20},
@@ -12918,10 +14543,12 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"S8S8i4", __M2N_S8S8i4},
 	{"S8S8i4i4", __M2N_S8S8i4i4},
 	{"S8S8r4", __M2N_S8S8r4},
+	{"S8S8u2", __M2N_S8S8u2},
 	{"S8S96", __M2N_S8S96},
 	{"S8i4", __M2N_S8i4},
 	{"S8i4S12", __M2N_S8i4S12},
 	{"S8i4S12S12", __M2N_S8i4S12S12},
+	{"S8i4S12S4", __M2N_S8i4S12S4},
 	{"S8i4S4", __M2N_S8i4S4},
 	{"S8i4S64", __M2N_S8i4S64},
 	{"S8i4S8", __M2N_S8i4S8},
@@ -12930,15 +14557,19 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"S8i4i4", __M2N_S8i4i4},
 	{"S8i4i4S4", __M2N_S8i4i4S4},
 	{"S8i4i4S8", __M2N_S8i4i4S8},
+	{"S8i4i4S8i4", __M2N_S8i4i4S8i4},
 	{"S8i4i4S8u1i4i4i4", __M2N_S8i4i4S8u1i4i4i4},
 	{"S8i4i4S8u1u1", __M2N_S8i4i4S8u1u1},
 	{"S8i4i4i4", __M2N_S8i4i4i4},
 	{"S8i4i4i4S4", __M2N_S8i4i4i4S4},
+	{"S8i4i4i4S8", __M2N_S8i4i4i4S8},
 	{"S8i4i4r4i4r4i4", __M2N_S8i4i4r4i4r4i4},
 	{"S8i4i4r4r4", __M2N_S8i4i4r4r4},
 	{"S8i4i4u1", __M2N_S8i4i4u1},
 	{"S8i4i4u1S4", __M2N_S8i4i4u1S4},
 	{"S8i4i4u1u1", __M2N_S8i4i4u1u1},
+	{"S8i4i8", __M2N_S8i4i8},
+	{"S8i4i8S8", __M2N_S8i4i8S8},
 	{"S8i4r4i4r4i4", __M2N_S8i4r4i4r4i4},
 	{"S8i4r4r4", __M2N_S8i4r4r4},
 	{"S8i4r4r4r4", __M2N_S8i4r4r4r4},
@@ -12950,6 +14581,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"S8r4r4", __M2N_S8r4r4},
 	{"S8r4r4r4", __M2N_S8r4r4r4},
 	{"S8u1", __M2N_S8u1},
+	{"S8u4", __M2N_S8u4},
 	{"S92i4", __M2N_S92i4},
 	{"S92i4i4", __M2N_S92i4i4},
 	{"S96i4", __M2N_S96i4},
@@ -12959,10 +14591,14 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"S9i4i2", __M2N_S9i4i2},
 	{"i1", __M2N_i1},
 	{"i1C16", __M2N_i1C16},
+	{"i1S2", __M2N_i1S2},
+	{"i1S8i4i4", __M2N_i1S8i4i4},
 	{"i1i1i1", __M2N_i1i1i1},
 	{"i1i2", __M2N_i1i2},
 	{"i1i4", __M2N_i1i4},
+	{"i1i4i1", __M2N_i1i4i1},
 	{"i1i4i4", __M2N_i1i4i4},
+	{"i1i4i4i1", __M2N_i1i4i4i1},
 	{"i1i4i4i4", __M2N_i1i4i4i4},
 	{"i1i8", __M2N_i1i8},
 	{"i1r4", __M2N_i1r4},
@@ -12973,10 +14609,16 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"i1u8", __M2N_i1u8},
 	{"i2", __M2N_i2},
 	{"i2C16", __M2N_i2C16},
+	{"i2S4", __M2N_i2S4},
+	{"i2S8", __M2N_i2S8},
+	{"i2S8i4i4", __M2N_i2S8i4i4},
 	{"i2i1", __M2N_i2i1},
+	{"i2i2", __M2N_i2i2},
 	{"i2i2i2", __M2N_i2i2i2},
 	{"i2i4", __M2N_i2i4},
+	{"i2i4i2", __M2N_i2i4i2},
 	{"i2i4i4", __M2N_i2i4i4},
+	{"i2i4i4i2", __M2N_i2i4i4i2},
 	{"i2i4i4i4", __M2N_i2i4i4i4},
 	{"i2i8", __M2N_i2i8},
 	{"i2r4", __M2N_i2r4},
@@ -13033,9 +14675,13 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"i4S8S8S28i4", __M2N_i4S8S8S28i4},
 	{"i4S8S8S28i4r4", __M2N_i4S8S8S28i4r4},
 	{"i4S8S8S8", __M2N_i4S8S8S8},
+	{"i4S8S8i4", __M2N_i4S8S8i4},
+	{"i4S8S8u1", __M2N_i4S8S8u1},
 	{"i4S8i4", __M2N_i4S8i4},
 	{"i4S8i4S4i4", __M2N_i4S8i4S4i4},
+	{"i4S8i4i4", __M2N_i4S8i4i4},
 	{"i4S8i4i4i4", __M2N_i4S8i4i4i4},
+	{"i4S8i4i4i4i4i4i4i4i4", __M2N_i4S8i4i4i4i4i4i4i4i4},
 	{"i4S8r8", __M2N_i4S8r8},
 	{"i4S8u1", __M2N_i4S8u1},
 	{"i4S8u2", __M2N_i4S8u2},
@@ -13043,6 +14689,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"i4i2", __M2N_i4i2},
 	{"i4i4", __M2N_i4i4},
 	{"i4i4C16", __M2N_i4i4C16},
+	{"i4i4C16i4i4", __M2N_i4i4C16i4i4},
 	{"i4i4C16u4", __M2N_i4i4C16u4},
 	{"i4i4C24", __M2N_i4i4C24},
 	{"i4i4C32", __M2N_i4i4C32},
@@ -13076,6 +14723,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"i4i4S12S8i4i4i4", __M2N_i4i4S12S8i4i4i4},
 	{"i4i4S12i4", __M2N_i4i4S12i4},
 	{"i4i4S12i4i4", __M2N_i4i4S12i4i4},
+	{"i4i4S12i4i4i4", __M2N_i4i4S12i4i4i4},
 	{"i4i4S12i4i4u1", __M2N_i4i4S12i4i4u1},
 	{"i4i4S12i4u1", __M2N_i4i4S12i4u1},
 	{"i4i4S12u1", __M2N_i4i4S12u1},
@@ -13090,6 +14738,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"i4i4S16S8r4u4i4S16u1i4", __M2N_i4i4S16S8r4u4i4S16u1i4},
 	{"i4i4S16i4", __M2N_i4i4S16i4},
 	{"i4i4S16i4i4", __M2N_i4i4S16i4i4},
+	{"i4i4S16i4i4i4", __M2N_i4i4S16i4i4i4},
 	{"i4i4S1S1", __M2N_i4i4S1S1},
 	{"i4i4S2", __M2N_i4i4S2},
 	{"i4i4S20", __M2N_i4i4S20},
@@ -13108,6 +14757,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"i4i4S28", __M2N_i4i4S28},
 	{"i4i4S28S28", __M2N_i4i4S28S28},
 	{"i4i4S28i4", __M2N_i4i4S28i4},
+	{"i4i4S28i4i4", __M2N_i4i4S28i4i4},
 	{"i4i4S2S2", __M2N_i4i4S2S2},
 	{"i4i4S3", __M2N_i4i4S3},
 	{"i4i4S32", __M2N_i4i4S32},
@@ -13148,9 +14798,11 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"i4i4S48S48", __M2N_i4i4S48S48},
 	{"i4i4S48i4", __M2N_i4i4S48i4},
 	{"i4i4S48i4i4", __M2N_i4i4S48i4i4},
+	{"i4i4S4S12i4i4", __M2N_i4i4S4S12i4i4},
 	{"i4i4S4S4", __M2N_i4i4S4S4},
 	{"i4i4S4i4", __M2N_i4i4S4i4},
 	{"i4i4S4i4i4", __M2N_i4i4S4i4i4},
+	{"i4i4S4i4i4i4", __M2N_i4i4S4i4i4i4},
 	{"i4i4S5", __M2N_i4i4S5},
 	{"i4i4S52", __M2N_i4i4S52},
 	{"i4i4S52S52", __M2N_i4i4S52S52},
@@ -13215,11 +14867,14 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"i4i4i4S8i4i4", __M2N_i4i4i4S8i4i4},
 	{"i4i4i4S8u1", __M2N_i4i4i4S8u1},
 	{"i4i4i4i4", __M2N_i4i4i4i4},
+	{"i4i4i4i4C16", __M2N_i4i4i4i4C16},
 	{"i4i4i4i4C32i4", __M2N_i4i4i4i4C32i4},
 	{"i4i4i4i4C8u1", __M2N_i4i4i4i4C8u1},
 	{"i4i4i4i4S108i4", __M2N_i4i4i4i4S108i4},
+	{"i4i4i4i4S12", __M2N_i4i4i4i4S12},
 	{"i4i4i4i4S12i4", __M2N_i4i4i4i4S12i4},
 	{"i4i4i4i4S16i4", __M2N_i4i4i4i4S16i4},
+	{"i4i4i4i4S2", __M2N_i4i4i4i4S2},
 	{"i4i4i4i4S20i4", __M2N_i4i4i4i4S20i4},
 	{"i4i4i4i4S24i4", __M2N_i4i4i4i4S24i4},
 	{"i4i4i4i4S32i4", __M2N_i4i4i4i4S32i4},
@@ -13232,8 +14887,11 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"i4i4i4i4S56i4", __M2N_i4i4i4i4S56i4},
 	{"i4i4i4i4S64i4", __M2N_i4i4i4i4S64i4},
 	{"i4i4i4i4S72i4", __M2N_i4i4i4i4S72i4},
+	{"i4i4i4i4S8", __M2N_i4i4i4i4S8},
 	{"i4i4i4i4S8i4", __M2N_i4i4i4i4S8i4},
 	{"i4i4i4i4S8u1", __M2N_i4i4i4i4S8u1},
+	{"i4i4i4i4i1", __M2N_i4i4i4i4i1},
+	{"i4i4i4i4i2", __M2N_i4i4i4i4i2},
 	{"i4i4i4i4i4", __M2N_i4i4i4i4i4},
 	{"i4i4i4i4i4C32i4", __M2N_i4i4i4i4i4C32i4},
 	{"i4i4i4i4i4C8", __M2N_i4i4i4i4i4C8},
@@ -13243,6 +14901,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"i4i4i4i4i4S20i4", __M2N_i4i4i4i4i4S20i4},
 	{"i4i4i4i4i4S24i4", __M2N_i4i4i4i4i4S24i4},
 	{"i4i4i4i4i4S32i4", __M2N_i4i4i4i4i4S32i4},
+	{"i4i4i4i4i4S4", __M2N_i4i4i4i4i4S4},
 	{"i4i4i4i4i4S44i4", __M2N_i4i4i4i4i4S44i4},
 	{"i4i4i4i4i4S48i4", __M2N_i4i4i4i4i4S48i4},
 	{"i4i4i4i4i4S4i4", __M2N_i4i4i4i4i4S4i4},
@@ -13267,8 +14926,10 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"i4i4i4i4i4i4i4i4u1C8", __M2N_i4i4i4i4i4i4i4i4u1C8},
 	{"i4i4i4i4i4i4i4u1", __M2N_i4i4i4i4i4i4i4u1},
 	{"i4i4i4i4i4i4i4u4u4u1i4u1", __M2N_i4i4i4i4i4i4i4u4u4u1i4u1},
+	{"i4i4i4i4i4i4i8", __M2N_i4i4i4i4i4i4i8},
 	{"i4i4i4i4i4i4u1", __M2N_i4i4i4i4i4i4u1},
 	{"i4i4i4i4i4i4u1i4", __M2N_i4i4i4i4i4i4u1i4},
+	{"i4i4i4i4i4i8", __M2N_i4i4i4i4i4i8},
 	{"i4i4i4i4i4i8i4", __M2N_i4i4i4i4i4i8i4},
 	{"i4i4i4i4i4r8i4", __M2N_i4i4i4i4i4r8i4},
 	{"i4i4i4i4i4u1", __M2N_i4i4i4i4i4u1},
@@ -13280,23 +14941,34 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"i4i4i4i4i4u2i4", __M2N_i4i4i4i4i4u2i4},
 	{"i4i4i4i4i4u4i4", __M2N_i4i4i4i4i4u4i4},
 	{"i4i4i4i4i4u8i4", __M2N_i4i4i4i4i4u8i4},
+	{"i4i4i4i4i8", __M2N_i4i4i4i4i8},
 	{"i4i4i4i4i8i4", __M2N_i4i4i4i4i8i4},
 	{"i4i4i4i4i8i8i4i4", __M2N_i4i4i4i4i8i8i4i4},
 	{"i4i4i4i4r4", __M2N_i4i4i4i4r4},
+	{"i4i4i4i4r8", __M2N_i4i4i4i4r8},
 	{"i4i4i4i4r8i4", __M2N_i4i4i4i4r8i4},
 	{"i4i4i4i4u1", __M2N_i4i4i4i4u1},
 	{"i4i4i4i4u1i4", __M2N_i4i4i4i4u1i4},
+	{"i4i4i4i4u1i4i4i4i4i4", __M2N_i4i4i4i4u1i4i4i4i4i4},
+	{"i4i4i4i4u1i4i4i4i4i4i4", __M2N_i4i4i4i4u1i4i4i4i4i4i4},
 	{"i4i4i4i4u1u1", __M2N_i4i4i4i4u1u1},
+	{"i4i4i4i4u1u1i4", __M2N_i4i4i4i4u1u1i4},
+	{"i4i4i4i4u2", __M2N_i4i4i4i4u2},
 	{"i4i4i4i4u2i4", __M2N_i4i4i4i4u2i4},
 	{"i4i4i4i4u2i4i4", __M2N_i4i4i4i4u2i4i4},
+	{"i4i4i4i4u4", __M2N_i4i4i4i4u4},
 	{"i4i4i4i4u4i4", __M2N_i4i4i4i4u4i4},
+	{"i4i4i4i4u8", __M2N_i4i4i4i4u8},
 	{"i4i4i4i4u8i4", __M2N_i4i4i4i4u8i4},
 	{"i4i4i4i8", __M2N_i4i4i4i8},
 	{"i4i4i4i8i4i4", __M2N_i4i4i4i8i4i4},
+	{"i4i4i4r4i4i4", __M2N_i4i4i4r4i4i4},
 	{"i4i4i4r8i4i4", __M2N_i4i4i4r8i4i4},
 	{"i4i4i4u1", __M2N_i4i4i4u1},
 	{"i4i4i4u1i4", __M2N_i4i4i4u1i4},
 	{"i4i4i4u1i4i4", __M2N_i4i4i4u1i4i4},
+	{"i4i4i4u1i4i4i4i4i4", __M2N_i4i4i4u1i4i4i4i4i4},
+	{"i4i4i4u1i4i4i4i4i4i4", __M2N_i4i4i4u1i4i4i4i4i4i4},
 	{"i4i4i4u1u1", __M2N_i4i4i4u1u1},
 	{"i4i4i4u1u1u1", __M2N_i4i4i4u1u1u1},
 	{"i4i4i4u1u1u1u1i4", __M2N_i4i4i4u1u1u1u1i4},
@@ -13305,6 +14977,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"i4i4i4u2i4", __M2N_i4i4i4u2i4},
 	{"i4i4i4u2i4i4", __M2N_i4i4i4u2i4i4},
 	{"i4i4i4u2i4i4i4", __M2N_i4i4i4u2i4i4i4},
+	{"i4i4i4u4", __M2N_i4i4i4u4},
 	{"i4i4i4u4i4i4", __M2N_i4i4i4u4i4i4},
 	{"i4i4i4u8", __M2N_i4i4i4u8},
 	{"i4i4i8", __M2N_i4i4i8},
@@ -13313,6 +14986,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"i4i4i8i8", __M2N_i4i4i8i8},
 	{"i4i4i8i8i8", __M2N_i4i4i8i8i8},
 	{"i4i4r4", __M2N_i4i4r4},
+	{"i4i4r4i4i4", __M2N_i4i4r4i4i4},
 	{"i4i4r4r4", __M2N_i4i4r4r4},
 	{"i4i4r4r4r4", __M2N_i4i4r4r4r4},
 	{"i4i4r8", __M2N_i4i4r8},
@@ -13322,8 +14996,11 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"i4i4u1", __M2N_i4i4u1},
 	{"i4i4u1i4", __M2N_i4i4u1i4},
 	{"i4i4u1i4i4", __M2N_i4i4u1i4i4},
+	{"i4i4u1i4i4i4", __M2N_i4i4u1i4i4i4},
 	{"i4i4u1i4i4i4i4i4i4i4i4u1i4", __M2N_i4i4u1i4i4i4i4i4i4i4i4u1i4},
 	{"i4i4u1u1", __M2N_i4i4u1u1},
+	{"i4i4u1u1i4", __M2N_i4i4u1u1i4},
+	{"i4i4u1u1u1i4", __M2N_i4i4u1u1u1i4},
 	{"i4i4u1u1u1u1i4", __M2N_i4i4u1u1u1u1i4},
 	{"i4i4u2", __M2N_i4i4u2},
 	{"i4i4u2i4", __M2N_i4i4u2i4},
@@ -13380,19 +15057,24 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"i4u8u8", __M2N_i4u8u8},
 	{"i8", __M2N_i8},
 	{"i8C16", __M2N_i8C16},
+	{"i8S8", __M2N_i8S8},
+	{"i8S8i4i4", __M2N_i8S8i4i4},
 	{"i8S8i4i4i4", __M2N_i8S8i4i4i4},
 	{"i8i1", __M2N_i8i1},
 	{"i8i2", __M2N_i8i2},
 	{"i8i4", __M2N_i8i4},
+	{"i8i4S8", __M2N_i8i4S8},
 	{"i8i4i4", __M2N_i8i4i4},
 	{"i8i4i4S16", __M2N_i8i4i4S16},
 	{"i8i4i4S16i4i8", __M2N_i8i4i4S16i4i8},
 	{"i8i4i4i4", __M2N_i8i4i4i4},
+	{"i8i4i4i4i4", __M2N_i8i4i4i4i4},
 	{"i8i4i4i8", __M2N_i8i4i4i8},
 	{"i8i4i8", __M2N_i8i4i8},
 	{"i8i4i8i4", __M2N_i8i4i8i4},
 	{"i8i4i8i4i4", __M2N_i8i4i8i4i4},
 	{"i8i4i8i8", __M2N_i8i4i8i8},
+	{"i8i4u1i4i4i4", __M2N_i8i4u1i4i4i4},
 	{"i8i8", __M2N_i8i8},
 	{"i8i8i8", __M2N_i8i8i8},
 	{"i8r4", __M2N_i8r4},
@@ -13410,6 +15092,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"r4S16S16", __M2N_r4S16S16},
 	{"r4S8", __M2N_r4S8},
 	{"r4S8S8", __M2N_r4S8S8},
+	{"r4S8i4i4", __M2N_r4S8i4i4},
 	{"r4i1", __M2N_r4i1},
 	{"r4i2", __M2N_r4i2},
 	{"r4i4", __M2N_r4i4},
@@ -13445,9 +15128,13 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"r4u8", __M2N_r4u8},
 	{"r8", __M2N_r8},
 	{"r8C16", __M2N_r8C16},
+	{"r8C8C8", __M2N_r8C8C8},
+	{"r8S8", __M2N_r8S8},
+	{"r8S8i4i4", __M2N_r8S8i4i4},
 	{"r8i1", __M2N_r8i1},
 	{"r8i2", __M2N_r8i2},
 	{"r8i4", __M2N_r8i4},
+	{"r8i4C8", __M2N_r8i4C8},
 	{"r8i4i4", __M2N_r8i4i4},
 	{"r8i4i4S16", __M2N_r8i4i4S16},
 	{"r8i4i4S16i4r8", __M2N_r8i4i4S16i4r8},
@@ -13468,6 +15155,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"u1", __M2N_u1},
 	{"u1C16", __M2N_u1C16},
 	{"u1C16C16", __M2N_u1C16C16},
+	{"u1C16S8i4S2", __M2N_u1C16S8i4S2},
 	{"u1C16S8i4S8i4", __M2N_u1C16S8i4S8i4},
 	{"u1C24C24", __M2N_u1C24C24},
 	{"u1C8C8", __M2N_u1C8C8},
@@ -13481,10 +15169,14 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"u1S12S12r4", __M2N_u1S12S12r4},
 	{"u1S12S12r4i4", __M2N_u1S12S12r4i4},
 	{"u1S12S12r4i4i4", __M2N_u1S12S12r4i4i4},
+	{"u1S12i4", __M2N_u1S12i4},
+	{"u1S12i4i4i4", __M2N_u1S12i4i4i4},
 	{"u1S16S16", __M2N_u1S16S16},
 	{"u1S16S16i4", __M2N_u1S16S16i4},
+	{"u1S16S8i4S2", __M2N_u1S16S8i4S2},
 	{"u1S188S188", __M2N_u1S188S188},
 	{"u1S196S196", __M2N_u1S196S196},
+	{"u1S2", __M2N_u1S2},
 	{"u1S208S208", __M2N_u1S208S208},
 	{"u1S20S20", __M2N_u1S20S20},
 	{"u1S24", __M2N_u1S24},
@@ -13507,11 +15199,22 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"u1S88S88", __M2N_u1S88S88},
 	{"u1S8S8", __M2N_u1S8S8},
 	{"u1S8S8i4", __M2N_u1S8S8i4},
+	{"u1S8S8i4i4", __M2N_u1S8S8i4i4},
+	{"u1S8S8i4i4i4", __M2N_u1S8S8i4i4i4},
 	{"u1S8S8u1", __M2N_u1S8S8u1},
+	{"u1S8i2", __M2N_u1S8i2},
 	{"u1S8i4", __M2N_u1S8i4},
 	{"u1S8i4i4", __M2N_u1S8i4i4},
 	{"u1S8i4i4i4", __M2N_u1S8i4i4i4},
+	{"u1S8i4i4i4i4", __M2N_u1S8i4i4i4i4},
+	{"u1S8i4i4u2", __M2N_u1S8i4i4u2},
+	{"u1S8i8", __M2N_u1S8i8},
+	{"u1S8r4", __M2N_u1S8r4},
+	{"u1S8r8", __M2N_u1S8r8},
+	{"u1S8u1", __M2N_u1S8u1},
+	{"u1S8u2", __M2N_u1S8u2},
 	{"u1S8u4", __M2N_u1S8u4},
+	{"u1S8u8", __M2N_u1S8u8},
 	{"u1S92S92", __M2N_u1S92S92},
 	{"u1i1", __M2N_u1i1},
 	{"u1i2", __M2N_u1i2},
@@ -13528,6 +15231,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"u1i4C56", __M2N_u1i4C56},
 	{"u1i4C8", __M2N_u1i4C8},
 	{"u1i4C8C8", __M2N_u1i4C8C8},
+	{"u1i4C8u1", __M2N_u1i4C8u1},
 	{"u1i4S1", __M2N_u1i4S1},
 	{"u1i4S10", __M2N_u1i4S10},
 	{"u1i4S104", __M2N_u1i4S104},
@@ -13629,6 +15333,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"u1i4S8i4S8", __M2N_u1i4S8i4S8},
 	{"u1i4S8i4S8i4", __M2N_u1i4S8i4S8i4},
 	{"u1i4S8i4i4", __M2N_u1i4S8i4i4},
+	{"u1i4S8i8", __M2N_u1i4S8i8},
 	{"u1i4S9", __M2N_u1i4S9},
 	{"u1i4S92", __M2N_u1i4S92},
 	{"u1i4S96", __M2N_u1i4S96},
@@ -13678,12 +15383,16 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"u1i4i4i4i4i4i4", __M2N_u1i4i4i4i4i4i4},
 	{"u1i4i4i4i4i4i4i4", __M2N_u1i4i4i4i4i4i4i4},
 	{"u1i4i4i4i4i4i4i4i4", __M2N_u1i4i4i4i4i4i4i4i4},
+	{"u1i4i4i4i4i4i4i4i4i4", __M2N_u1i4i4i4i4i4i4i4i4i4},
 	{"u1i4i4i4i4i4i4i4i4i8", __M2N_u1i4i4i4i4i4i4i4i4i8},
+	{"u1i4i4i4i4i4u1", __M2N_u1i4i4i4i4i4u1},
+	{"u1i4i4i4i4i4u1i4", __M2N_u1i4i4i4i4i4u1i4},
 	{"u1i4i4i4i4u1", __M2N_u1i4i4i4i4u1},
 	{"u1i4i4i4r4i4i4i4", __M2N_u1i4i4i4r4i4i4i4},
 	{"u1i4i4i4r4r4i4i4i4", __M2N_u1i4i4i4r4r4i4i4i4},
 	{"u1i4i4i4r4r4i4i4i4i8", __M2N_u1i4i4i4r4r4i4i4i4i8},
 	{"u1i4i4i4u1", __M2N_u1i4i4i4u1},
+	{"u1i4i4i4u1i4", __M2N_u1i4i4i4u1i4},
 	{"u1i4i4i4u1u1", __M2N_u1i4i4i4u1u1},
 	{"u1i4i4i8", __M2N_u1i4i4i8},
 	{"u1i4i4r4", __M2N_u1i4i4r4},
@@ -13727,6 +15436,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"u1r4r4", __M2N_u1r4r4},
 	{"u1r8", __M2N_u1r8},
 	{"u1r8S8i4S8i4", __M2N_u1r8S8i4S8i4},
+	{"u1r8r8", __M2N_u1r8r8},
 	{"u1u1", __M2N_u1u1},
 	{"u1u1u1", __M2N_u1u1u1},
 	{"u1u2", __M2N_u1u2},
@@ -13741,24 +15451,31 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"u2", __M2N_u2},
 	{"u2C16", __M2N_u2C16},
 	{"u2S2", __M2N_u2S2},
+	{"u2S4", __M2N_u2S4},
+	{"u2S8", __M2N_u2S8},
+	{"u2S8i4i4", __M2N_u2S8i4i4},
 	{"u2i1", __M2N_u2i1},
 	{"u2i2", __M2N_u2i2},
 	{"u2i4", __M2N_u2i4},
 	{"u2i4i4", __M2N_u2i4i4},
 	{"u2i4i4i4", __M2N_u2i4i4i4},
 	{"u2i4i4i4u2", __M2N_u2i4i4i4u2},
+	{"u2i4i4u2", __M2N_u2i4i4u2},
 	{"u2i4u2", __M2N_u2i4u2},
 	{"u2i8", __M2N_u2i8},
 	{"u2r4", __M2N_u2r4},
 	{"u2r8", __M2N_u2r8},
 	{"u2u1", __M2N_u2u1},
 	{"u2u2", __M2N_u2u2},
+	{"u2u2i4", __M2N_u2u2i4},
 	{"u2u2u2", __M2N_u2u2u2},
 	{"u2u4", __M2N_u2u4},
 	{"u2u8", __M2N_u2u8},
 	{"u4", __M2N_u4},
 	{"u4C16", __M2N_u4C16},
+	{"u4S8", __M2N_u4S8},
 	{"u4S8i4", __M2N_u4S8i4},
+	{"u4S8i4i4", __M2N_u4S8i4i4},
 	{"u4i1", __M2N_u4i1},
 	{"u4i2", __M2N_u4i2},
 	{"u4i4", __M2N_u4i4},
@@ -13780,10 +15497,13 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"u4u4i4", __M2N_u4u4i4},
 	{"u4u4i4i4i4", __M2N_u4u4i4i4i4},
 	{"u4u4u4", __M2N_u4u4u4},
+	{"u4u4u4u4", __M2N_u4u4u4u4},
 	{"u4u4u4u4u4", __M2N_u4u4u4u4u4},
 	{"u4u8", __M2N_u4u8},
 	{"u8", __M2N_u8},
 	{"u8C16", __M2N_u8C16},
+	{"u8S8", __M2N_u8S8},
+	{"u8S8i4i4", __M2N_u8S8i4i4},
 	{"u8i1", __M2N_u8i1},
 	{"u8i2", __M2N_u8i2},
 	{"u8i4", __M2N_u8i4},
@@ -13800,9 +15520,13 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"u8u1", __M2N_u8u1},
 	{"u8u2", __M2N_u8u2},
 	{"u8u4", __M2N_u8u4},
+	{"u8u8", __M2N_u8u8},
 	{"u8u8u8", __M2N_u8u8u8},
 	{"v", __M2N_v},
+	{"vC16", __M2N_vC16},
+	{"vC16i4", __M2N_vC16i4},
 	{"vC8", __M2N_vC8},
+	{"vC8i4", __M2N_vC8i4},
 	{"vS12", __M2N_vS12},
 	{"vS12S12", __M2N_vS12S12},
 	{"vS12S12S16", __M2N_vS12S12S16},
@@ -13818,21 +15542,31 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"vS16", __M2N_vS16},
 	{"vS16i4", __M2N_vS16i4},
 	{"vS16i4i4", __M2N_vS16i4i4},
+	{"vS16i4i4i4", __M2N_vS16i4i4i4},
 	{"vS20", __M2N_vS20},
 	{"vS4", __M2N_vS4},
 	{"vS4i4", __M2N_vS4i4},
 	{"vS64", __M2N_vS64},
 	{"vS64i4", __M2N_vS64i4},
 	{"vS8", __M2N_vS8},
+	{"vS8i4", __M2N_vS8i4},
 	{"vS8i4u1", __M2N_vS8i4u1},
+	{"vS8u2", __M2N_vS8u2},
+	{"vS8u4", __M2N_vS8u4},
+	{"vS8u8", __M2N_vS8u8},
+	{"vi1i4", __M2N_vi1i4},
+	{"vi2i4", __M2N_vi2i4},
 	{"vi4", __M2N_vi4},
 	{"vi4C16", __M2N_vi4C16},
 	{"vi4C16i4", __M2N_vi4C16i4},
+	{"vi4C24i4", __M2N_vi4C24i4},
 	{"vi4C32", __M2N_vi4C32},
 	{"vi4C40", __M2N_vi4C40},
 	{"vi4C56", __M2N_vi4C56},
 	{"vi4C8", __M2N_vi4C8},
+	{"vi4C8C8", __M2N_vi4C8C8},
 	{"vi4C8C8C8", __M2N_vi4C8C8C8},
+	{"vi4C8i4", __M2N_vi4C8i4},
 	{"vi4C8i4i4", __M2N_vi4C8i4i4},
 	{"vi4C8u1i4S4i4i4", __M2N_vi4C8u1i4S4i4i4},
 	{"vi4S1", __M2N_vi4S1},
@@ -14004,10 +15738,13 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"vi4S8u1", __M2N_vi4S8u1},
 	{"vi4S9", __M2N_vi4S9},
 	{"vi4S96", __M2N_vi4S96},
+	{"vi4i1", __M2N_vi4i1},
 	{"vi4i2", __M2N_vi4i2},
 	{"vi4i2i2", __M2N_vi4i2i2},
 	{"vi4i4", __M2N_vi4i4},
 	{"vi4i4C16", __M2N_vi4i4C16},
+	{"vi4i4C16i4", __M2N_vi4i4C16i4},
+	{"vi4i4C16i4i4u1", __M2N_vi4i4C16i4i4u1},
 	{"vi4i4C16u4", __M2N_vi4i4C16u4},
 	{"vi4i4C24", __M2N_vi4i4C24},
 	{"vi4i4C32", __M2N_vi4i4C32},
@@ -14020,12 +15757,16 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"vi4i4C32S96", __M2N_vi4i4C32S96},
 	{"vi4i4C8", __M2N_vi4i4C8},
 	{"vi4i4C8i4", __M2N_vi4i4C8i4},
+	{"vi4i4S1", __M2N_vi4i4S1},
 	{"vi4i4S108", __M2N_vi4i4S108},
 	{"vi4i4S12", __M2N_vi4i4S12},
 	{"vi4i4S128", __M2N_vi4i4S128},
+	{"vi4i4S12i4", __M2N_vi4i4S12i4},
 	{"vi4i4S16", __M2N_vi4i4S16},
 	{"vi4i4S16S8u1S16", __M2N_vi4i4S16S8u1S16},
+	{"vi4i4S16i4", __M2N_vi4i4S16i4},
 	{"vi4i4S16i4i4", __M2N_vi4i4S16i4i4},
+	{"vi4i4S16i4i4u1", __M2N_vi4i4S16i4i4u1},
 	{"vi4i4S16r4r4", __M2N_vi4i4S16r4r4},
 	{"vi4i4S16r4u4", __M2N_vi4i4S16r4u4},
 	{"vi4i4S1S12", __M2N_vi4i4S1S12},
@@ -14036,6 +15777,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"vi4i4S1S8", __M2N_vi4i4S1S8},
 	{"vi4i4S1i4", __M2N_vi4i4S1i4},
 	{"vi4i4S1r4", __M2N_vi4i4S1r4},
+	{"vi4i4S2", __M2N_vi4i4S2},
 	{"vi4i4S20", __M2N_vi4i4S20},
 	{"vi4i4S24", __M2N_vi4i4S24},
 	{"vi4i4S28", __M2N_vi4i4S28},
@@ -14067,7 +15809,9 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"vi4i4S8i4", __M2N_vi4i4S8i4},
 	{"vi4i4S92", __M2N_vi4i4S92},
 	{"vi4i4S96", __M2N_vi4i4S96},
+	{"vi4i4i1", __M2N_vi4i4i1},
 	{"vi4i4i2", __M2N_vi4i4i2},
+	{"vi4i4i2i2i4", __M2N_vi4i4i2i2i4},
 	{"vi4i4i2i2u1u1u1u1u1u1u1u1", __M2N_vi4i4i2i2u1u1u1u1u1u1u1u1},
 	{"vi4i4i4", __M2N_vi4i4i4},
 	{"vi4i4i4C16", __M2N_vi4i4i4C16},
@@ -14106,28 +15850,36 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"vi4i4i4S8S8", __M2N_vi4i4i4S8S8},
 	{"vi4i4i4S96", __M2N_vi4i4i4S96},
 	{"vi4i4i4i2", __M2N_vi4i4i4i2},
+	{"vi4i4i4i2i4", __M2N_vi4i4i4i2i4},
 	{"vi4i4i4i4", __M2N_vi4i4i4i4},
 	{"vi4i4i4i4C8i4", __M2N_vi4i4i4i4C8i4},
 	{"vi4i4i4i4S12i4", __M2N_vi4i4i4i4S12i4},
 	{"vi4i4i4i4S16", __M2N_vi4i4i4i4S16},
 	{"vi4i4i4i4S16i4", __M2N_vi4i4i4i4S16i4},
 	{"vi4i4i4i4S28", __M2N_vi4i4i4i4S28},
+	{"vi4i4i4i4S4i4", __M2N_vi4i4i4i4S4i4},
+	{"vi4i4i4i4S8", __M2N_vi4i4i4i4S8},
 	{"vi4i4i4i4i4", __M2N_vi4i4i4i4i4},
 	{"vi4i4i4i4i4i4", __M2N_vi4i4i4i4i4i4},
 	{"vi4i4i4i4i4i4i4", __M2N_vi4i4i4i4i4i4i4},
+	{"vi4i4i4i4i4i4i4C8", __M2N_vi4i4i4i4i4i4i4C8},
 	{"vi4i4i4i4i4i4i4S12i4u1", __M2N_vi4i4i4i4i4i4i4S12i4u1},
 	{"vi4i4i4i4i4i4i4i4", __M2N_vi4i4i4i4i4i4i4i4},
+	{"vi4i4i4i4i4i4i4i4C8", __M2N_vi4i4i4i4i4i4i4i4C8},
 	{"vi4i4i4i4i4i4i4i4i4", __M2N_vi4i4i4i4i4i4i4i4i4},
+	{"vi4i4i4i4i4i4i4i4i4C8", __M2N_vi4i4i4i4i4i4i4i4i4C8},
 	{"vi4i4i4i4i4i4i4i4i4i4", __M2N_vi4i4i4i4i4i4i4i4i4i4},
 	{"vi4i4i4i4i4i4i4i4i4i4i4i4", __M2N_vi4i4i4i4i4i4i4i4i4i4i4i4},
 	{"vi4i4i4i4i4i4i4u1", __M2N_vi4i4i4i4i4i4i4u1},
 	{"vi4i4i4i4i4i4i4u1S1", __M2N_vi4i4i4i4i4i4i4u1S1},
 	{"vi4i4i4i4i4i4i4u1i4i4", __M2N_vi4i4i4i4i4i4i4u1i4i4},
 	{"vi4i4i4i4i4i4i4u1i4i4i4i4", __M2N_vi4i4i4i4i4i4i4u1i4i4i4i4},
+	{"vi4i4i4i4i4i4i4u2i4i4", __M2N_vi4i4i4i4i4i4i4u2i4i4},
 	{"vi4i4i4i4i4i4r4S12S12i4u1i4", __M2N_vi4i4i4i4i4i4r4S12S12i4u1i4},
 	{"vi4i4i4i4i4i4u1", __M2N_vi4i4i4i4i4i4u1},
 	{"vi4i4i4i4i4i4u1i4", __M2N_vi4i4i4i4i4i4u1i4},
 	{"vi4i4i4i4i4i4u1u1", __M2N_vi4i4i4i4i4i4u1u1},
+	{"vi4i4i4i4i4i4u2i4i4", __M2N_vi4i4i4i4i4i4u2i4i4},
 	{"vi4i4i4i4i4r4", __M2N_vi4i4i4i4i4r4},
 	{"vi4i4i4i4i4u1", __M2N_vi4i4i4i4i4u1},
 	{"vi4i4i4i4i4u1i4", __M2N_vi4i4i4i4i4u1i4},
@@ -14147,6 +15899,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"vi4i4i4r4r4", __M2N_vi4i4i4r4r4},
 	{"vi4i4i4r4r4r4", __M2N_vi4i4i4r4r4r4},
 	{"vi4i4i4r4u1", __M2N_vi4i4i4r4u1},
+	{"vi4i4i4r8", __M2N_vi4i4i4r8},
 	{"vi4i4i4u1", __M2N_vi4i4i4u1},
 	{"vi4i4i4u1i4", __M2N_vi4i4i4u1i4},
 	{"vi4i4i4u1i4u1", __M2N_vi4i4i4u1i4u1},
@@ -14155,6 +15908,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"vi4i4i4u1u1u2", __M2N_vi4i4i4u1u1u2},
 	{"vi4i4i4u2", __M2N_vi4i4i4u2},
 	{"vi4i4i4u2i4", __M2N_vi4i4i4u2i4},
+	{"vi4i4i4u4", __M2N_vi4i4i4u4},
 	{"vi4i4i4u4u4i4", __M2N_vi4i4i4u4u4i4},
 	{"vi4i4i4u8", __M2N_vi4i4i4u8},
 	{"vi4i4i8", __M2N_vi4i4i8},
@@ -14222,6 +15976,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"vi4u1S10", __M2N_vi4u1S10},
 	{"vi4u1S12", __M2N_vi4u1S12},
 	{"vi4u1S16", __M2N_vi4u1S16},
+	{"vi4u1S1i4S4", __M2N_vi4u1S1i4S4},
 	{"vi4u1S2", __M2N_vi4u1S2},
 	{"vi4u1S20", __M2N_vi4u1S20},
 	{"vi4u1S24", __M2N_vi4u1S24},
@@ -14251,6 +16006,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"vi4u1i4S4i4i4", __M2N_vi4u1i4S4i4i4},
 	{"vi4u1i4i4", __M2N_vi4u1i4i4},
 	{"vi4u1i4i4S4", __M2N_vi4u1i4i4S4},
+	{"vi4u1i4i4S8", __M2N_vi4u1i4i4S8},
 	{"vi4u1i4i4i4", __M2N_vi4u1i4i4i4},
 	{"vi4u1i4u1u1", __M2N_vi4u1i4u1u1},
 	{"vi4u1i8", __M2N_vi4u1i8},
@@ -14266,10 +16022,12 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"vi4u1u1u1i4i4i4i4i4i4i4i4", __M2N_vi4u1u1u1i4i4i4i4i4i4i4i4},
 	{"vi4u1u1u1u1", __M2N_vi4u1u1u1u1},
 	{"vi4u1u1u4u4u4", __M2N_vi4u1u1u4u4u4},
+	{"vi4u1u4", __M2N_vi4u1u4},
 	{"vi4u2", __M2N_vi4u2},
 	{"vi4u2i4", __M2N_vi4u2i4},
 	{"vi4u2i4i4i4i4i4i4i4", __M2N_vi4u2i4i4i4i4i4i4i4},
 	{"vi4u2i4u1u1u1", __M2N_vi4u2i4u1u1u1},
+	{"vi4u2u1", __M2N_vi4u2u1},
 	{"vi4u2u1u1u1", __M2N_vi4u2u1u1u1},
 	{"vi4u2u2", __M2N_vi4u2u2},
 	{"vi4u4", __M2N_vi4u4},
@@ -14283,6 +16041,7 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"vi4u4i4i4", __M2N_vi4u4i4i4},
 	{"vi4u4i4i4i4", __M2N_vi4u4i4i4i4},
 	{"vi4u4i4u4i2i4i4i4i4", __M2N_vi4u4i4u4i2i4i4i4i4},
+	{"vi4u4u2u2u1u1u1u1u1u1u1u1", __M2N_vi4u4u2u2u1u1u1u1u1u1u1u1},
 	{"vi4u4u4", __M2N_vi4u4u4},
 	{"vi4u4u4i4", __M2N_vi4u4u4i4},
 	{"vi4u4u4r4", __M2N_vi4u4u4r4},
@@ -14297,16 +16056,25 @@ Managed2NativeMethodInfo hybridclr::interpreter::g_managed2nativeStub[] =
 	{"vi8", __M2N_vi8},
 	{"vi8i4", __M2N_vi8i4},
 	{"vr4", __M2N_vr4},
+	{"vr4i4", __M2N_vr4i4},
 	{"vr4r4", __M2N_vr4r4},
 	{"vr4r4r4", __M2N_vr4r4r4},
 	{"vr4r4r4r4", __M2N_vr4r4r4r4},
+	{"vr8", __M2N_vr8},
+	{"vr8i4", __M2N_vr8i4},
 	{"vu1", __M2N_vu1},
+	{"vu1S8i4u4", __M2N_vu1S8i4u4},
 	{"vu1i4", __M2N_vu1i4},
 	{"vu1i4i4", __M2N_vu1i4i4},
 	{"vu1i4i4i4", __M2N_vu1i4i4i4},
 	{"vu1u1S16", __M2N_vu1u1S16},
 	{"vu1u1S16r4", __M2N_vu1u1S16r4},
+	{"vu2", __M2N_vu2},
+	{"vu2i4", __M2N_vu2i4},
 	{"vu4", __M2N_vu4},
+	{"vu4i4", __M2N_vu4i4},
+	{"vu8", __M2N_vu8},
+	{"vu8i4", __M2N_vu8i4},
 	{nullptr, nullptr},
 };
 
@@ -14379,6 +16147,24 @@ static ValueTypeSizeAlign8<16> __N2M_C16i4i4S16(int32_t __arg0, int32_t __arg1, 
     StackObject* ret = args + 3;
     Interpreter::Execute(method, args, ret);
     return *(ValueTypeSizeAlign8<16>*)ret;
+}
+
+
+static ValueTypeSizeAlign8<24> __N2M_C24i4i4C24(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<24> __arg2, const MethodInfo* method)
+{
+    StackObject args[6] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSizeAlign8<24>*)ret;
+}
+
+
+static ValueTypeSizeAlign8<24> __N2M_C24i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[6] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSizeAlign8<24>*)ret;
 }
 
 
@@ -14458,6 +16244,33 @@ static ValueTypeSizeAlign8<8> __N2M_C8i4i4(int32_t __arg0, int32_t __arg1, const
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1 };
     StackObject* ret = args + 2;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSizeAlign8<8>*)ret;
+}
+
+
+static ValueTypeSizeAlign8<8> __N2M_C8i4i4C8(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<8> __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSizeAlign8<8>*)ret;
+}
+
+
+static ValueTypeSizeAlign8<8> __N2M_C8i4i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSizeAlign8<8>*)ret;
+}
+
+
+static ValueTypeSizeAlign8<8> __N2M_C8i4i4i4i4i4i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, int32_t __arg7, const MethodInfo* method)
+{
+    StackObject args[9] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4, *(uint64_t*)&__arg5, *(uint64_t*)&__arg6, *(uint64_t*)&__arg7 };
+    StackObject* ret = args + 8;
     Interpreter::Execute(method, args, ret);
     return *(ValueTypeSizeAlign8<8>*)ret;
 }
@@ -14571,6 +16384,15 @@ static ValueTypeSize<12> __N2M_S12i4S12(int32_t __arg0, ValueTypeSize<12> __arg1
 }
 
 
+static ValueTypeSize<12> __N2M_S12i4S12S4(int32_t __arg0, ValueTypeSize<12> __arg1, ValueTypeSize<4> __arg2, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<12>*)ret;
+}
+
+
 static ValueTypeSize<12> __N2M_S12i4S4(int32_t __arg0, ValueTypeSize<4> __arg1, const MethodInfo* method)
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1 };
@@ -14593,6 +16415,24 @@ static ValueTypeSize<12> __N2M_S12i4i4(int32_t __arg0, int32_t __arg1, const Met
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1 };
     StackObject* ret = args + 2;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<12>*)ret;
+}
+
+
+static ValueTypeSize<12> __N2M_S12i4i4S12(int32_t __arg0, int32_t __arg1, ValueTypeSize<12> __arg2, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<12>*)ret;
+}
+
+
+static ValueTypeSize<12> __N2M_S12i4i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[6] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
     Interpreter::Execute(method, args, ret);
     return *(ValueTypeSize<12>*)ret;
 }
@@ -14679,6 +16519,15 @@ static ValueTypeSize<16> __N2M_S16i4i4(int32_t __arg0, int32_t __arg1, const Met
 }
 
 
+static ValueTypeSize<16> __N2M_S16i4i4S16(int32_t __arg0, int32_t __arg1, ValueTypeSize<16> __arg2, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<16>*)ret;
+}
+
+
 static ValueTypeSize<16> __N2M_S16i4i4u1(int32_t __arg0, int32_t __arg1, uint8_t __arg2, const MethodInfo* method)
 {
     StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
@@ -14742,6 +16591,33 @@ static ValueTypeSize<1> __N2M_S1i4i4(int32_t __arg0, int32_t __arg1, const Metho
 }
 
 
+static ValueTypeSize<1> __N2M_S1i4i4S1(int32_t __arg0, int32_t __arg1, ValueTypeSize<1> __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<1>*)ret;
+}
+
+
+static ValueTypeSize<1> __N2M_S1i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<1>*)ret;
+}
+
+
+static ValueTypeSize<20> __N2M_S20(const MethodInfo* method)
+{
+    StackObject args[3] = { };
+    StackObject* ret = args + 0;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<20>*)ret;
+}
+
+
 static ValueTypeSize<208> __N2M_S208i4(int32_t __arg0, const MethodInfo* method)
 {
     StackObject args[27] = {*(uint64_t*)&__arg0 };
@@ -14773,6 +16649,15 @@ static ValueTypeSize<20> __N2M_S20i4i4(int32_t __arg0, int32_t __arg1, const Met
 {
     StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1 };
     StackObject* ret = args + 2;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<20>*)ret;
+}
+
+
+static ValueTypeSize<20> __N2M_S20i4i4S20(int32_t __arg0, int32_t __arg1, ValueTypeSize<20> __arg2, const MethodInfo* method)
+{
+    StackObject args[6] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = args + 3;
     Interpreter::Execute(method, args, ret);
     return *(ValueTypeSize<20>*)ret;
 }
@@ -14854,6 +16739,15 @@ static ValueTypeSize<2> __N2M_S2i4i2(int32_t __arg0, int16_t __arg1, const Metho
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1 };
     StackObject* ret = args + 2;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<2>*)ret;
+}
+
+
+static ValueTypeSize<2> __N2M_S2i4i4S2(int32_t __arg0, int32_t __arg1, ValueTypeSize<2> __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
     Interpreter::Execute(method, args, ret);
     return *(ValueTypeSize<2>*)ret;
 }
@@ -15192,6 +17086,24 @@ static ValueTypeSize<4> __N2M_S4i4S4S4r4(int32_t __arg0, ValueTypeSize<4> __arg1
 }
 
 
+static ValueTypeSize<4> __N2M_S4i4S4i4(int32_t __arg0, ValueTypeSize<4> __arg1, int32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<4>*)ret;
+}
+
+
+static ValueTypeSize<4> __N2M_S4i4S4i4i4(int32_t __arg0, ValueTypeSize<4> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<4>*)ret;
+}
+
+
 static ValueTypeSize<4> __N2M_S4i4i2(int32_t __arg0, int16_t __arg1, const MethodInfo* method)
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1 };
@@ -15205,6 +17117,15 @@ static ValueTypeSize<4> __N2M_S4i4i4(int32_t __arg0, int32_t __arg1, const Metho
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1 };
     StackObject* ret = args + 2;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<4>*)ret;
+}
+
+
+static ValueTypeSize<4> __N2M_S4i4i4S4(int32_t __arg0, int32_t __arg1, ValueTypeSize<4> __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
     Interpreter::Execute(method, args, ret);
     return *(ValueTypeSize<4>*)ret;
 }
@@ -15363,6 +17284,15 @@ static ValueTypeSize<8> __N2M_S8(const MethodInfo* method)
 }
 
 
+static ValueTypeSize<80> __N2M_S80i4(int32_t __arg0, const MethodInfo* method)
+{
+    StackObject args[11] = {*(uint64_t*)&__arg0 };
+    StackObject* ret = args + 1;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<80>*)ret;
+}
+
+
 static ValueTypeSize<84> __N2M_S84i4(int32_t __arg0, const MethodInfo* method)
 {
     StackObject args[12] = {*(uint64_t*)&__arg0 };
@@ -15403,6 +17333,15 @@ static ValueTypeSize<8> __N2M_S8i4(int32_t __arg0, const MethodInfo* method)
 {
     StackObject args[2] = {*(uint64_t*)&__arg0 };
     StackObject* ret = args + 1;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<8>*)ret;
+}
+
+
+static ValueTypeSize<8> __N2M_S8i4S12S4(int32_t __arg0, ValueTypeSize<12> __arg1, ValueTypeSize<4> __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
     Interpreter::Execute(method, args, ret);
     return *(ValueTypeSize<8>*)ret;
 }
@@ -15453,6 +17392,15 @@ static ValueTypeSize<8> __N2M_S8i4i4(int32_t __arg0, int32_t __arg1, const Metho
 }
 
 
+static ValueTypeSize<8> __N2M_S8i4i4S8(int32_t __arg0, int32_t __arg1, ValueTypeSize<8> __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<8>*)ret;
+}
+
+
 static ValueTypeSize<8> __N2M_S8i4i4S8u1i4i4i4(int32_t __arg0, int32_t __arg1, ValueTypeSize<8> __arg2, uint8_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, const MethodInfo* method)
 {
     StackObject args[8] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4, *(uint64_t*)&__arg5, *(uint64_t*)&__arg6 };
@@ -15466,6 +17414,24 @@ static ValueTypeSize<8> __N2M_S8i4i4S8u1u1(int32_t __arg0, int32_t __arg1, Value
 {
     StackObject args[6] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4 };
     StackObject* ret = args + 5;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<8>*)ret;
+}
+
+
+static ValueTypeSize<8> __N2M_S8i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<8>*)ret;
+}
+
+
+static ValueTypeSize<8> __N2M_S8i4i4i4S8(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<8> __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
     Interpreter::Execute(method, args, ret);
     return *(ValueTypeSize<8>*)ret;
 }
@@ -15534,6 +17500,15 @@ static int8_t __N2M_i1i4i4(int32_t __arg0, int32_t __arg1, const MethodInfo* met
 }
 
 
+static int8_t __N2M_i1i4i4i1(int32_t __arg0, int32_t __arg1, int8_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(int8_t*)ret;
+}
+
+
 static int16_t __N2M_i2i4(int32_t __arg0, const MethodInfo* method)
 {
     StackObject args[2] = {*(uint64_t*)&__arg0 };
@@ -15547,6 +17522,24 @@ static int16_t __N2M_i2i4i4(int32_t __arg0, int32_t __arg1, const MethodInfo* me
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1 };
     StackObject* ret = args + 2;
+    Interpreter::Execute(method, args, ret);
+    return *(int16_t*)ret;
+}
+
+
+static int16_t __N2M_i2i4i4i2(int32_t __arg0, int32_t __arg1, int16_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(int16_t*)ret;
+}
+
+
+static int16_t __N2M_i2i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
     Interpreter::Execute(method, args, ret);
     return *(int16_t*)ret;
 }
@@ -15804,6 +17797,15 @@ static int32_t __N2M_i4i4C16(int32_t __arg0, ValueTypeSizeAlign8<16> __arg1, con
 }
 
 
+static int32_t __N2M_i4i4C16i4i4(int32_t __arg0, ValueTypeSizeAlign8<16> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_i4i4C24(int32_t __arg0, ValueTypeSizeAlign8<24> __arg1, const MethodInfo* method)
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1 };
@@ -15826,6 +17828,15 @@ static int32_t __N2M_i4i4C32C32(int32_t __arg0, ValueTypeSizeAlign8<32> __arg1, 
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, (uint64_t)&__arg2 };
     StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4C32i4i4(int32_t __arg0, ValueTypeSizeAlign8<32> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
     Interpreter::Execute(method, args, ret);
     return *(int32_t*)ret;
 }
@@ -15898,6 +17909,15 @@ static int32_t __N2M_i4i4S108S108(int32_t __arg0, ValueTypeSize<108> __arg1, Val
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, (uint64_t)&__arg2 };
     StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4S108i4i4(int32_t __arg0, ValueTypeSize<108> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
     Interpreter::Execute(method, args, ret);
     return *(int32_t*)ret;
 }
@@ -15984,6 +18004,15 @@ static int32_t __N2M_i4i4S12S12i4(int32_t __arg0, ValueTypeSize<12> __arg1, Valu
 }
 
 
+static int32_t __N2M_i4i4S12i4i4(int32_t __arg0, ValueTypeSize<12> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_i4i4S16(int32_t __arg0, ValueTypeSize<16> __arg1, const MethodInfo* method)
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1 };
@@ -15997,6 +18026,24 @@ static int32_t __N2M_i4i4S16S16(int32_t __arg0, ValueTypeSize<16> __arg1, ValueT
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, (uint64_t)&__arg2 };
     StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4S16i4(int32_t __arg0, ValueTypeSize<16> __arg1, int32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4S16i4i4(int32_t __arg0, ValueTypeSize<16> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
     Interpreter::Execute(method, args, ret);
     return *(int32_t*)ret;
 }
@@ -16038,6 +18085,15 @@ static int32_t __N2M_i4i4S20S20(int32_t __arg0, ValueTypeSize<20> __arg1, ValueT
 }
 
 
+static int32_t __N2M_i4i4S20i4i4(int32_t __arg0, ValueTypeSize<20> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_i4i4S24(int32_t __arg0, ValueTypeSize<24> __arg1, const MethodInfo* method)
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1 };
@@ -16051,6 +18107,15 @@ static int32_t __N2M_i4i4S24S24(int32_t __arg0, ValueTypeSize<24> __arg1, ValueT
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, (uint64_t)&__arg2 };
     StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4S24i4i4(int32_t __arg0, ValueTypeSize<24> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
     Interpreter::Execute(method, args, ret);
     return *(int32_t*)ret;
 }
@@ -16110,6 +18175,15 @@ static int32_t __N2M_i4i4S28S28(int32_t __arg0, ValueTypeSize<28> __arg1, ValueT
 }
 
 
+static int32_t __N2M_i4i4S28i4i4(int32_t __arg0, ValueTypeSize<28> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_i4i4S2S2(int32_t __arg0, ValueTypeSize<2> __arg1, ValueTypeSize<2> __arg2, const MethodInfo* method)
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
@@ -16141,6 +18215,15 @@ static int32_t __N2M_i4i4S32S32(int32_t __arg0, ValueTypeSize<32> __arg1, ValueT
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, (uint64_t)&__arg2 };
     StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4S32i4i4(int32_t __arg0, ValueTypeSize<32> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
     Interpreter::Execute(method, args, ret);
     return *(int32_t*)ret;
 }
@@ -16398,6 +18481,15 @@ static int32_t __N2M_i4i4S44S44(int32_t __arg0, ValueTypeSize<44> __arg1, ValueT
 }
 
 
+static int32_t __N2M_i4i4S44i4i4(int32_t __arg0, ValueTypeSize<44> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_i4i4S48(int32_t __arg0, ValueTypeSize<48> __arg1, const MethodInfo* method)
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1 };
@@ -16416,6 +18508,24 @@ static int32_t __N2M_i4i4S48S48(int32_t __arg0, ValueTypeSize<48> __arg1, ValueT
 }
 
 
+static int32_t __N2M_i4i4S48i4i4(int32_t __arg0, ValueTypeSize<48> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4S4S12i4i4(int32_t __arg0, ValueTypeSize<4> __arg1, ValueTypeSize<12> __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method)
+{
+    StackObject args[6] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, (uint64_t)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4 };
+    StackObject* ret = args + 5;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_i4i4S4S4(int32_t __arg0, ValueTypeSize<4> __arg1, ValueTypeSize<4> __arg2, const MethodInfo* method)
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
@@ -16429,6 +18539,24 @@ static int32_t __N2M_i4i4S4i4(int32_t __arg0, ValueTypeSize<4> __arg1, int32_t _
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
     StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4S4i4i4(int32_t __arg0, ValueTypeSize<4> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4S4i4i4i4(int32_t __arg0, ValueTypeSize<4> __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method)
+{
+    StackObject args[6] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4 };
+    StackObject* ret = args + 5;
     Interpreter::Execute(method, args, ret);
     return *(int32_t*)ret;
 }
@@ -16461,6 +18589,15 @@ static int32_t __N2M_i4i4S52S52(int32_t __arg0, ValueTypeSize<52> __arg1, ValueT
 }
 
 
+static int32_t __N2M_i4i4S52i4i4(int32_t __arg0, ValueTypeSize<52> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_i4i4S56(int32_t __arg0, ValueTypeSize<56> __arg1, const MethodInfo* method)
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1 };
@@ -16474,6 +18611,15 @@ static int32_t __N2M_i4i4S56S56(int32_t __arg0, ValueTypeSize<56> __arg1, ValueT
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, (uint64_t)&__arg2 };
     StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4S56i4i4(int32_t __arg0, ValueTypeSize<56> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
     Interpreter::Execute(method, args, ret);
     return *(int32_t*)ret;
 }
@@ -16515,6 +18661,15 @@ static int32_t __N2M_i4i4S64S64(int32_t __arg0, ValueTypeSize<64> __arg1, ValueT
 }
 
 
+static int32_t __N2M_i4i4S64i4i4(int32_t __arg0, ValueTypeSize<64> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_i4i4S6S6(int32_t __arg0, ValueTypeSize<6> __arg1, ValueTypeSize<6> __arg2, const MethodInfo* method)
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
@@ -16546,6 +18701,15 @@ static int32_t __N2M_i4i4S72S72(int32_t __arg0, ValueTypeSize<72> __arg1, ValueT
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, (uint64_t)&__arg2 };
     StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4S72i4i4(int32_t __arg0, ValueTypeSize<72> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
     Interpreter::Execute(method, args, ret);
     return *(int32_t*)ret;
 }
@@ -16618,6 +18782,15 @@ static int32_t __N2M_i4i4S8i4(int32_t __arg0, ValueTypeSize<8> __arg1, int32_t _
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
     StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4S8i4i4(int32_t __arg0, ValueTypeSize<8> __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
     Interpreter::Execute(method, args, ret);
     return *(int32_t*)ret;
 }
@@ -16848,6 +19021,51 @@ static int32_t __N2M_i4i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, co
 }
 
 
+static int32_t __N2M_i4i4i4i4C16(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSizeAlign8<16> __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, (uint64_t)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4i4i4S12(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<12> __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, (uint64_t)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4i4i4S2(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<2> __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4i4i4S4(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<4> __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4i4i4S8(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<8> __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_i4i4i4i4S8i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<8> __arg3, int32_t __arg4, const MethodInfo* method)
 {
     StackObject args[6] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4 };
@@ -16866,10 +19084,37 @@ static int32_t __N2M_i4i4i4i4S8u1(int32_t __arg0, int32_t __arg1, int32_t __arg2
 }
 
 
+static int32_t __N2M_i4i4i4i4i1(int32_t __arg0, int32_t __arg1, int32_t __arg2, int8_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4i4i4i2(int32_t __arg0, int32_t __arg1, int32_t __arg2, int16_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_i4i4i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
 {
     StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
     StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4i4i4i4S4(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, ValueTypeSize<4> __arg4, const MethodInfo* method)
+{
+    StackObject args[6] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4 };
+    StackObject* ret = args + 5;
     Interpreter::Execute(method, args, ret);
     return *(int32_t*)ret;
 }
@@ -17010,6 +19255,15 @@ static int32_t __N2M_i4i4i4i4i4u1(int32_t __arg0, int32_t __arg1, int32_t __arg2
 }
 
 
+static int32_t __N2M_i4i4i4i4i8(int32_t __arg0, int32_t __arg1, int32_t __arg2, int64_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_i4i4i4i4i8i8i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, int64_t __arg3, int64_t __arg4, int32_t __arg5, int32_t __arg6, const MethodInfo* method)
 {
     StackObject args[8] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4, *(uint64_t*)&__arg5, *(uint64_t*)&__arg6 };
@@ -17028,7 +19282,43 @@ static int32_t __N2M_i4i4i4i4r4(int32_t __arg0, int32_t __arg1, int32_t __arg2, 
 }
 
 
+static int32_t __N2M_i4i4i4i4r8(int32_t __arg0, int32_t __arg1, int32_t __arg2, double __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_i4i4i4i4u1(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint8_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4i4i4u1i4i4i4i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint8_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, int32_t __arg7, int32_t __arg8, int32_t __arg9, const MethodInfo* method)
+{
+    StackObject args[11] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4, *(uint64_t*)&__arg5, *(uint64_t*)&__arg6, *(uint64_t*)&__arg7, *(uint64_t*)&__arg8, *(uint64_t*)&__arg9 };
+    StackObject* ret = args + 10;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4i4i4u1u1i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint8_t __arg3, uint8_t __arg4, int32_t __arg5, const MethodInfo* method)
+{
+    StackObject args[7] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4, *(uint64_t*)&__arg5 };
+    StackObject* ret = args + 6;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4i4i4u2(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint16_t __arg3, const MethodInfo* method)
 {
     StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
     StackObject* ret = args + 4;
@@ -17041,6 +19331,24 @@ static int32_t __N2M_i4i4i4i4u2i4i4(int32_t __arg0, int32_t __arg1, int32_t __ar
 {
     StackObject args[7] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4, *(uint64_t*)&__arg5 };
     StackObject* ret = args + 6;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4i4i4u4(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4i4i4u8(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint64_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
     Interpreter::Execute(method, args, ret);
     return *(int32_t*)ret;
 }
@@ -17059,6 +19367,15 @@ static int32_t __N2M_i4i4i4r4(int32_t __arg0, int32_t __arg1, float __arg2, cons
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
     StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4i4r4i4i4(int32_t __arg0, int32_t __arg1, float __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method)
+{
+    StackObject args[6] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4 };
+    StackObject* ret = args + 5;
     Interpreter::Execute(method, args, ret);
     return *(int32_t*)ret;
 }
@@ -17086,6 +19403,15 @@ static int32_t __N2M_i4i4i4u1i4(int32_t __arg0, int32_t __arg1, uint8_t __arg2, 
 {
     StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
     StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4i4u1i4i4(int32_t __arg0, int32_t __arg1, uint8_t __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method)
+{
+    StackObject args[6] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4 };
+    StackObject* ret = args + 5;
     Interpreter::Execute(method, args, ret);
     return *(int32_t*)ret;
 }
@@ -17127,6 +19453,15 @@ static int32_t __N2M_i4i4i4u2i4i4i4(int32_t __arg0, int32_t __arg1, uint16_t __a
 }
 
 
+static int32_t __N2M_i4i4i4u4(int32_t __arg0, int32_t __arg1, uint32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_i4i4i4u4i4i4(int32_t __arg0, int32_t __arg1, uint32_t __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method)
 {
     StackObject args[6] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4 };
@@ -17145,6 +19480,15 @@ static int32_t __N2M_i4i4i8(int32_t __arg0, int64_t __arg1, const MethodInfo* me
 }
 
 
+static int32_t __N2M_i4i4i8i4i4(int32_t __arg0, int64_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_i4i4i8i8(int32_t __arg0, int64_t __arg1, int64_t __arg2, const MethodInfo* method)
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
@@ -17158,6 +19502,15 @@ static int32_t __N2M_i4i4r4(int32_t __arg0, float __arg1, const MethodInfo* meth
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1 };
     StackObject* ret = args + 2;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4r4i4i4(int32_t __arg0, float __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
     Interpreter::Execute(method, args, ret);
     return *(int32_t*)ret;
 }
@@ -17185,6 +19538,15 @@ static int32_t __N2M_i4i4r8(int32_t __arg0, double __arg1, const MethodInfo* met
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1 };
     StackObject* ret = args + 2;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4r8i4i4(int32_t __arg0, double __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
     Interpreter::Execute(method, args, ret);
     return *(int32_t*)ret;
 }
@@ -17226,6 +19588,15 @@ static int32_t __N2M_i4i4u1i4i4(int32_t __arg0, uint8_t __arg1, int32_t __arg2, 
 }
 
 
+static int32_t __N2M_i4i4u1i4i4i4(int32_t __arg0, uint8_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method)
+{
+    StackObject args[6] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4 };
+    StackObject* ret = args + 5;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_i4i4u1u1(int32_t __arg0, uint8_t __arg1, uint8_t __arg2, const MethodInfo* method)
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
@@ -17244,6 +19615,15 @@ static int32_t __N2M_i4i4u2(int32_t __arg0, uint16_t __arg1, const MethodInfo* m
 }
 
 
+static int32_t __N2M_i4i4u2i4i4(int32_t __arg0, uint16_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_i4i4u2u2(int32_t __arg0, uint16_t __arg1, uint16_t __arg2, const MethodInfo* method)
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
@@ -17257,6 +19637,15 @@ static int32_t __N2M_i4i4u4(int32_t __arg0, uint32_t __arg1, const MethodInfo* m
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1 };
     StackObject* ret = args + 2;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_i4i4u4i4i4(int32_t __arg0, uint32_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
     Interpreter::Execute(method, args, ret);
     return *(int32_t*)ret;
 }
@@ -17316,6 +19705,15 @@ static int32_t __N2M_i4r8r8(double __arg0, double __arg1, const MethodInfo* meth
 }
 
 
+static int32_t __N2M_i4u1u1(uint8_t __arg0, uint8_t __arg1, const MethodInfo* method)
+{
+    StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1 };
+    StackObject* ret = args + 2;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_i4u2u2(uint16_t __arg0, uint16_t __arg1, const MethodInfo* method)
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1 };
@@ -17365,6 +19763,15 @@ static int64_t __N2M_i8i4(int32_t __arg0, const MethodInfo* method)
 {
     StackObject args[2] = {*(uint64_t*)&__arg0 };
     StackObject* ret = args + 1;
+    Interpreter::Execute(method, args, ret);
+    return *(int64_t*)ret;
+}
+
+
+static int64_t __N2M_i8i4S8(int32_t __arg0, ValueTypeSize<8> __arg1, const MethodInfo* method)
+{
+    StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1 };
+    StackObject* ret = args + 2;
     Interpreter::Execute(method, args, ret);
     return *(int64_t*)ret;
 }
@@ -17523,6 +19930,15 @@ static float __N2M_r4i4i4S16(int32_t __arg0, int32_t __arg1, ValueTypeSize<16> _
 }
 
 
+static float __N2M_r4i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(float*)ret;
+}
+
+
 static float __N2M_r4i4i4r4(int32_t __arg0, int32_t __arg1, float __arg2, const MethodInfo* method)
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
@@ -17589,6 +20005,15 @@ static double __N2M_r8i4i4(int32_t __arg0, int32_t __arg1, const MethodInfo* met
 static double __N2M_r8i4i4S16(int32_t __arg0, int32_t __arg1, ValueTypeSize<16> __arg2, const MethodInfo* method)
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(double*)ret;
+}
+
+
+static double __N2M_r8i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
     StackObject* ret = args + 3;
     Interpreter::Execute(method, args, ret);
     return *(double*)ret;
@@ -17893,6 +20318,15 @@ static uint8_t __N2M_u1i4C32C32(int32_t __arg0, ValueTypeSizeAlign8<32> __arg1, 
 
 
 static uint8_t __N2M_u1i4C40(int32_t __arg0, ValueTypeSizeAlign8<40> __arg1, const MethodInfo* method)
+{
+    StackObject args[3] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1 };
+    StackObject* ret = args + 2;
+    Interpreter::Execute(method, args, ret);
+    return *(uint8_t*)ret;
+}
+
+
+static uint8_t __N2M_u1i4C48(int32_t __arg0, ValueTypeSizeAlign8<48> __arg1, const MethodInfo* method)
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1 };
     StackObject* ret = args + 2;
@@ -18981,6 +21415,15 @@ static uint8_t __N2M_u1i4i4i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2
 }
 
 
+static uint8_t __N2M_u1i4i4i4i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, const MethodInfo* method)
+{
+    StackObject args[7] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4, *(uint64_t*)&__arg5 };
+    StackObject* ret = args + 6;
+    Interpreter::Execute(method, args, ret);
+    return *(uint8_t*)ret;
+}
+
+
 static uint8_t __N2M_u1i4i4i4i4i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, const MethodInfo* method)
 {
     StackObject args[8] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4, *(uint64_t*)&__arg5, *(uint64_t*)&__arg6 };
@@ -18994,6 +21437,24 @@ static uint8_t __N2M_u1i4i4i4i4i4i4i4i4(int32_t __arg0, int32_t __arg1, int32_t 
 {
     StackObject args[9] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4, *(uint64_t*)&__arg5, *(uint64_t*)&__arg6, *(uint64_t*)&__arg7 };
     StackObject* ret = args + 8;
+    Interpreter::Execute(method, args, ret);
+    return *(uint8_t*)ret;
+}
+
+
+static uint8_t __N2M_u1i4i4i4i4i4i4i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, int32_t __arg7, int32_t __arg8, const MethodInfo* method)
+{
+    StackObject args[10] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4, *(uint64_t*)&__arg5, *(uint64_t*)&__arg6, *(uint64_t*)&__arg7, *(uint64_t*)&__arg8 };
+    StackObject* ret = args + 9;
+    Interpreter::Execute(method, args, ret);
+    return *(uint8_t*)ret;
+}
+
+
+static uint8_t __N2M_u1i4i4i4i4u1(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, uint8_t __arg4, const MethodInfo* method)
+{
+    StackObject args[6] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4 };
+    StackObject* ret = args + 5;
     Interpreter::Execute(method, args, ret);
     return *(uint8_t*)ret;
 }
@@ -19269,6 +21730,15 @@ static uint16_t __N2M_u2i4i4(int32_t __arg0, int32_t __arg1, const MethodInfo* m
 }
 
 
+static uint16_t __N2M_u2i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(uint16_t*)ret;
+}
+
+
 static uint16_t __N2M_u2i4i4i4u2(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint16_t __arg3, const MethodInfo* method)
 {
     StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
@@ -19359,6 +21829,15 @@ static uint32_t __N2M_u4i4i4S16(int32_t __arg0, int32_t __arg1, ValueTypeSize<16
 }
 
 
+static uint32_t __N2M_u4i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(uint32_t*)ret;
+}
+
+
 static uint32_t __N2M_u4i4i4u4(int32_t __arg0, int32_t __arg1, uint32_t __arg2, const MethodInfo* method)
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
@@ -19416,6 +21895,15 @@ static uint64_t __N2M_u8i4i4(int32_t __arg0, int32_t __arg1, const MethodInfo* m
 static uint64_t __N2M_u8i4i4S16(int32_t __arg0, int32_t __arg1, ValueTypeSize<16> __arg2, const MethodInfo* method)
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(uint64_t*)ret;
+}
+
+
+static uint64_t __N2M_u8i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
     StackObject* ret = args + 3;
     Interpreter::Execute(method, args, ret);
     return *(uint64_t*)ret;
@@ -19665,6 +22153,15 @@ static void __N2M_vS8S12(ValueTypeSize<8> __arg0, ValueTypeSize<12> __arg1, cons
 }
 
 
+static void __N2M_vS8S16(ValueTypeSize<8> __arg0, ValueTypeSize<16> __arg1, const MethodInfo* method)
+{
+    StackObject args[2] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
 static void __N2M_vS8S20(ValueTypeSize<8> __arg0, ValueTypeSize<20> __arg1, const MethodInfo* method)
 {
     StackObject args[2] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1 };
@@ -19711,6 +22208,15 @@ static void __N2M_vi4C16(int32_t __arg0, ValueTypeSizeAlign8<16> __arg1, const M
 
 
 static void __N2M_vi4C16i4(int32_t __arg0, ValueTypeSizeAlign8<16> __arg1, int32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_vi4C24i4(int32_t __arg0, ValueTypeSizeAlign8<24> __arg1, int32_t __arg2, const MethodInfo* method)
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, (uint64_t)&__arg1, *(uint64_t*)&__arg2 };
     StackObject* ret = nullptr;
@@ -20151,6 +22657,15 @@ static void __N2M_vi4S8S12(int32_t __arg0, ValueTypeSize<8> __arg1, ValueTypeSiz
 }
 
 
+static void __N2M_vi4S8S16(int32_t __arg0, ValueTypeSize<8> __arg1, ValueTypeSize<16> __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
 static void __N2M_vi4S8S20(int32_t __arg0, ValueTypeSize<8> __arg1, ValueTypeSize<20> __arg2, const MethodInfo* method)
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
@@ -20187,6 +22702,15 @@ static void __N2M_vi4S8i4i4(int32_t __arg0, ValueTypeSize<8> __arg1, int32_t __a
 }
 
 
+static void __N2M_vi4S8i8(int32_t __arg0, ValueTypeSize<8> __arg1, int64_t __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
 static void __N2M_vi4i2(int32_t __arg0, int16_t __arg1, const MethodInfo* method)
 {
     StackObject args[2] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1 };
@@ -20205,9 +22729,63 @@ static void __N2M_vi4i4(int32_t __arg0, int32_t __arg1, const MethodInfo* method
 }
 
 
+static void __N2M_vi4i4C16(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<16> __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_vi4i4C16i4i4u1(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<16> __arg2, int32_t __arg3, int32_t __arg4, uint8_t __arg5, const MethodInfo* method)
+{
+    StackObject args[6] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, (uint64_t)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4, *(uint64_t*)&__arg5 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_vi4i4C24(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<24> __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
 static void __N2M_vi4i4C32(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<32> __arg2, const MethodInfo* method)
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_vi4i4C8(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<8> __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_vi4i4C8i4(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<8> __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_vi4i4S1(int32_t __arg0, int32_t __arg1, ValueTypeSize<1> __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
     StackObject* ret = nullptr;
     Interpreter::Execute(method, args, ret);
     
@@ -20235,6 +22813,24 @@ static void __N2M_vi4i4S12(int32_t __arg0, int32_t __arg1, ValueTypeSize<12> __a
 static void __N2M_vi4i4S16(int32_t __arg0, int32_t __arg1, ValueTypeSize<16> __arg2, const MethodInfo* method)
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_vi4i4S16i4i4u1(int32_t __arg0, int32_t __arg1, ValueTypeSize<16> __arg2, int32_t __arg3, int32_t __arg4, uint8_t __arg5, const MethodInfo* method)
+{
+    StackObject args[6] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, (uint64_t)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4, *(uint64_t*)&__arg5 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_vi4i4S2(int32_t __arg0, int32_t __arg1, ValueTypeSize<2> __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
     StackObject* ret = nullptr;
     Interpreter::Execute(method, args, ret);
     
@@ -20367,6 +22963,24 @@ static void __N2M_vi4i4S8i4(int32_t __arg0, int32_t __arg1, ValueTypeSize<8> __a
 }
 
 
+static void __N2M_vi4i4i1(int32_t __arg0, int32_t __arg1, int8_t __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_vi4i4i2(int32_t __arg0, int32_t __arg1, int16_t __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
 static void __N2M_vi4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method)
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
@@ -20421,6 +23035,15 @@ static void __N2M_vi4i4i4i2(int32_t __arg0, int32_t __arg1, int32_t __arg2, int1
 }
 
 
+static void __N2M_vi4i4i4i2i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, int16_t __arg3, int32_t __arg4, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
 static void __N2M_vi4i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
@@ -20433,6 +23056,15 @@ static void __N2M_vi4i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, int3
 static void __N2M_vi4i4i4i4C8i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, ValueTypeSizeAlign8<8> __arg4, int32_t __arg5, const MethodInfo* method)
 {
     StackObject args[6] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4, *(uint64_t*)&__arg5 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_vi4i4i4i4S8(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, ValueTypeSize<8> __arg4, const MethodInfo* method)
+{
+    StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4 };
     StackObject* ret = nullptr;
     Interpreter::Execute(method, args, ret);
     
@@ -20484,9 +23116,36 @@ static void __N2M_vi4i4i4i4i4i4i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __
 }
 
 
+static void __N2M_vi4i4i4i4i4i4i4u2i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, uint16_t __arg7, int32_t __arg8, int32_t __arg9, const MethodInfo* method)
+{
+    StackObject args[10] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4, *(uint64_t*)&__arg5, *(uint64_t*)&__arg6, *(uint64_t*)&__arg7, *(uint64_t*)&__arg8, *(uint64_t*)&__arg9 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_vi4i4i4i4i4u1(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, uint8_t __arg5, const MethodInfo* method)
+{
+    StackObject args[6] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4, *(uint64_t*)&__arg5 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
 static void __N2M_vi4i4i4i4u1(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, uint8_t __arg4, const MethodInfo* method)
 {
     StackObject args[5] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_vi4i4i4i8(int32_t __arg0, int32_t __arg1, int32_t __arg2, int64_t __arg3, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
     StackObject* ret = nullptr;
     Interpreter::Execute(method, args, ret);
     
@@ -20502,7 +23161,43 @@ static void __N2M_vi4i4i4i8i8(int32_t __arg0, int32_t __arg1, int32_t __arg2, in
 }
 
 
+static void __N2M_vi4i4i4r4(int32_t __arg0, int32_t __arg1, int32_t __arg2, float __arg3, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_vi4i4i4r8(int32_t __arg0, int32_t __arg1, int32_t __arg2, double __arg3, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
 static void __N2M_vi4i4i4u1(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint8_t __arg3, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_vi4i4i4u2(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint16_t __arg3, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_vi4i4i4u4(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint32_t __arg3, const MethodInfo* method)
 {
     StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
     StackObject* ret = nullptr;
@@ -20514,6 +23209,15 @@ static void __N2M_vi4i4i4u1(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint
 static void __N2M_vi4i4i4u4u4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint32_t __arg3, uint32_t __arg4, int32_t __arg5, const MethodInfo* method)
 {
     StackObject args[6] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4, *(uint64_t*)&__arg5 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_vi4i4i4u8(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint64_t __arg3, const MethodInfo* method)
+{
+    StackObject args[4] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
     StackObject* ret = nullptr;
     Interpreter::Execute(method, args, ret);
     
@@ -20611,6 +23315,15 @@ static void __N2M_vi4i4u2(int32_t __arg0, int32_t __arg1, uint16_t __arg2, const
 
 
 static void __N2M_vi4i4u4(int32_t __arg0, int32_t __arg1, uint32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_vi4i4u8(int32_t __arg0, int32_t __arg1, uint64_t __arg2, const MethodInfo* method)
 {
     StackObject args[3] = {*(uint64_t*)&__arg0, *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
     StackObject* ret = nullptr;
@@ -20918,6 +23631,8 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"C16i4i4C16", (Il2CppMethodPointer)__N2M_C16i4i4C16},
 	{"C16i4i4C168S12i4", (Il2CppMethodPointer)__N2M_C16i4i4C168S12i4},
 	{"C16i4i4S16", (Il2CppMethodPointer)__N2M_C16i4i4S16},
+	{"C24i4i4C24", (Il2CppMethodPointer)__N2M_C24i4i4C24},
+	{"C24i4i4i4", (Il2CppMethodPointer)__N2M_C24i4i4i4},
 	{"C32i4", (Il2CppMethodPointer)__N2M_C32i4},
 	{"C32i4i4", (Il2CppMethodPointer)__N2M_C32i4i4},
 	{"C40i4", (Il2CppMethodPointer)__N2M_C40i4},
@@ -20927,6 +23642,9 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"C8i4", (Il2CppMethodPointer)__N2M_C8i4},
 	{"C8i4C8", (Il2CppMethodPointer)__N2M_C8i4C8},
 	{"C8i4i4", (Il2CppMethodPointer)__N2M_C8i4i4},
+	{"C8i4i4C8", (Il2CppMethodPointer)__N2M_C8i4i4C8},
+	{"C8i4i4i4i4", (Il2CppMethodPointer)__N2M_C8i4i4i4i4},
+	{"C8i4i4i4i4i4i4i4i4", (Il2CppMethodPointer)__N2M_C8i4i4i4i4i4i4i4i4},
 	{"C8i4i4i4i4i4i4i4i4i4", (Il2CppMethodPointer)__N2M_C8i4i4i4i4i4i4i4i4i4},
 	{"S1", (Il2CppMethodPointer)__N2M_S1},
 	{"S108i4", (Il2CppMethodPointer)__N2M_S108i4},
@@ -20939,9 +23657,12 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"S12S12", (Il2CppMethodPointer)__N2M_S12S12},
 	{"S12i4", (Il2CppMethodPointer)__N2M_S12i4},
 	{"S12i4S12", (Il2CppMethodPointer)__N2M_S12i4S12},
+	{"S12i4S12S4", (Il2CppMethodPointer)__N2M_S12i4S12S4},
 	{"S12i4S4", (Il2CppMethodPointer)__N2M_S12i4S4},
 	{"S12i4i2", (Il2CppMethodPointer)__N2M_S12i4i2},
 	{"S12i4i4", (Il2CppMethodPointer)__N2M_S12i4i4},
+	{"S12i4i4S12", (Il2CppMethodPointer)__N2M_S12i4i4S12},
+	{"S12i4i4i4i4", (Il2CppMethodPointer)__N2M_S12i4i4i4i4},
 	{"S12i4u1", (Il2CppMethodPointer)__N2M_S12i4u1},
 	{"S16S16", (Il2CppMethodPointer)__N2M_S16S16},
 	{"S16S24", (Il2CppMethodPointer)__N2M_S16S24},
@@ -20951,6 +23672,7 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"S16i4S24", (Il2CppMethodPointer)__N2M_S16i4S24},
 	{"S16i4i2", (Il2CppMethodPointer)__N2M_S16i4i2},
 	{"S16i4i4", (Il2CppMethodPointer)__N2M_S16i4i4},
+	{"S16i4i4S16", (Il2CppMethodPointer)__N2M_S16i4i4S16},
 	{"S16i4i4u1", (Il2CppMethodPointer)__N2M_S16i4i4u1},
 	{"S188i4", (Il2CppMethodPointer)__N2M_S188i4},
 	{"S1S4", (Il2CppMethodPointer)__N2M_S1S4},
@@ -20958,10 +23680,14 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"S1i4S4", (Il2CppMethodPointer)__N2M_S1i4S4},
 	{"S1i4i2", (Il2CppMethodPointer)__N2M_S1i4i2},
 	{"S1i4i4", (Il2CppMethodPointer)__N2M_S1i4i4},
+	{"S1i4i4S1", (Il2CppMethodPointer)__N2M_S1i4i4S1},
+	{"S1i4i4i4", (Il2CppMethodPointer)__N2M_S1i4i4i4},
+	{"S20", (Il2CppMethodPointer)__N2M_S20},
 	{"S208i4", (Il2CppMethodPointer)__N2M_S208i4},
 	{"S20i4", (Il2CppMethodPointer)__N2M_S20i4},
 	{"S20i4i2", (Il2CppMethodPointer)__N2M_S20i4i2},
 	{"S20i4i4", (Il2CppMethodPointer)__N2M_S20i4i4},
+	{"S20i4i4S20", (Il2CppMethodPointer)__N2M_S20i4i4S20},
 	{"S24S24", (Il2CppMethodPointer)__N2M_S24S24},
 	{"S24i4", (Il2CppMethodPointer)__N2M_S24i4},
 	{"S24i4S24", (Il2CppMethodPointer)__N2M_S24i4S24},
@@ -20971,6 +23697,7 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"S28i4", (Il2CppMethodPointer)__N2M_S28i4},
 	{"S28i4i2", (Il2CppMethodPointer)__N2M_S28i4i2},
 	{"S2i4i2", (Il2CppMethodPointer)__N2M_S2i4i2},
+	{"S2i4i4S2", (Il2CppMethodPointer)__N2M_S2i4i4S2},
 	{"S32i4", (Il2CppMethodPointer)__N2M_S32i4},
 	{"S32i4i2", (Il2CppMethodPointer)__N2M_S32i4i2},
 	{"S32i4i4", (Il2CppMethodPointer)__N2M_S32i4i4},
@@ -21008,8 +23735,11 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"S4i4", (Il2CppMethodPointer)__N2M_S4i4},
 	{"S4i4S16", (Il2CppMethodPointer)__N2M_S4i4S16},
 	{"S4i4S4S4r4", (Il2CppMethodPointer)__N2M_S4i4S4S4r4},
+	{"S4i4S4i4", (Il2CppMethodPointer)__N2M_S4i4S4i4},
+	{"S4i4S4i4i4", (Il2CppMethodPointer)__N2M_S4i4S4i4i4},
 	{"S4i4i2", (Il2CppMethodPointer)__N2M_S4i4i2},
 	{"S4i4i4", (Il2CppMethodPointer)__N2M_S4i4i4},
+	{"S4i4i4S4", (Il2CppMethodPointer)__N2M_S4i4i4S4},
 	{"S52i4", (Il2CppMethodPointer)__N2M_S52i4},
 	{"S52i4i2", (Il2CppMethodPointer)__N2M_S52i4i2},
 	{"S52i4i4", (Il2CppMethodPointer)__N2M_S52i4i4},
@@ -21027,18 +23757,23 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"S72i4i4", (Il2CppMethodPointer)__N2M_S72i4i4},
 	{"S7i4i2", (Il2CppMethodPointer)__N2M_S7i4i2},
 	{"S8", (Il2CppMethodPointer)__N2M_S8},
+	{"S80i4", (Il2CppMethodPointer)__N2M_S80i4},
 	{"S84i4", (Il2CppMethodPointer)__N2M_S84i4},
 	{"S8S4", (Il2CppMethodPointer)__N2M_S8S4},
 	{"S8S8", (Il2CppMethodPointer)__N2M_S8S8},
 	{"S8S8i4", (Il2CppMethodPointer)__N2M_S8S8i4},
 	{"S8i4", (Il2CppMethodPointer)__N2M_S8i4},
+	{"S8i4S12S4", (Il2CppMethodPointer)__N2M_S8i4S12S4},
 	{"S8i4S4", (Il2CppMethodPointer)__N2M_S8i4S4},
 	{"S8i4S8", (Il2CppMethodPointer)__N2M_S8i4S8},
 	{"S8i4S8i4", (Il2CppMethodPointer)__N2M_S8i4S8i4},
 	{"S8i4i2", (Il2CppMethodPointer)__N2M_S8i4i2},
 	{"S8i4i4", (Il2CppMethodPointer)__N2M_S8i4i4},
+	{"S8i4i4S8", (Il2CppMethodPointer)__N2M_S8i4i4S8},
 	{"S8i4i4S8u1i4i4i4", (Il2CppMethodPointer)__N2M_S8i4i4S8u1i4i4i4},
 	{"S8i4i4S8u1u1", (Il2CppMethodPointer)__N2M_S8i4i4S8u1u1},
+	{"S8i4i4i4", (Il2CppMethodPointer)__N2M_S8i4i4i4},
+	{"S8i4i4i4S8", (Il2CppMethodPointer)__N2M_S8i4i4i4S8},
 	{"S8i4i4r4i4r4i4", (Il2CppMethodPointer)__N2M_S8i4i4r4i4r4i4},
 	{"S8i4r4i4r4i4", (Il2CppMethodPointer)__N2M_S8i4r4i4r4i4},
 	{"S92i4", (Il2CppMethodPointer)__N2M_S92i4},
@@ -21046,8 +23781,11 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"S9i4i2", (Il2CppMethodPointer)__N2M_S9i4i2},
 	{"i1i4", (Il2CppMethodPointer)__N2M_i1i4},
 	{"i1i4i4", (Il2CppMethodPointer)__N2M_i1i4i4},
+	{"i1i4i4i1", (Il2CppMethodPointer)__N2M_i1i4i4i1},
 	{"i2i4", (Il2CppMethodPointer)__N2M_i2i4},
 	{"i2i4i4", (Il2CppMethodPointer)__N2M_i2i4i4},
+	{"i2i4i4i2", (Il2CppMethodPointer)__N2M_i2i4i4i2},
+	{"i2i4i4i4", (Il2CppMethodPointer)__N2M_i2i4i4i4},
 	{"i4", (Il2CppMethodPointer)__N2M_i4},
 	{"i4C32C32", (Il2CppMethodPointer)__N2M_i4C32C32},
 	{"i4S108S108", (Il2CppMethodPointer)__N2M_i4S108S108},
@@ -21076,9 +23814,11 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"i4S8S8", (Il2CppMethodPointer)__N2M_i4S8S8},
 	{"i4i4", (Il2CppMethodPointer)__N2M_i4i4},
 	{"i4i4C16", (Il2CppMethodPointer)__N2M_i4i4C16},
+	{"i4i4C16i4i4", (Il2CppMethodPointer)__N2M_i4i4C16i4i4},
 	{"i4i4C24", (Il2CppMethodPointer)__N2M_i4i4C24},
 	{"i4i4C32", (Il2CppMethodPointer)__N2M_i4i4C32},
 	{"i4i4C32C32", (Il2CppMethodPointer)__N2M_i4i4C32C32},
+	{"i4i4C32i4i4", (Il2CppMethodPointer)__N2M_i4i4C32i4i4},
 	{"i4i4C48", (Il2CppMethodPointer)__N2M_i4i4C48},
 	{"i4i4C8", (Il2CppMethodPointer)__N2M_i4i4C8},
 	{"i4i4C8C8", (Il2CppMethodPointer)__N2M_i4i4C8C8},
@@ -21087,6 +23827,7 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"i4i4S104", (Il2CppMethodPointer)__N2M_i4i4S104},
 	{"i4i4S108", (Il2CppMethodPointer)__N2M_i4i4S108},
 	{"i4i4S108S108", (Il2CppMethodPointer)__N2M_i4i4S108S108},
+	{"i4i4S108i4i4", (Il2CppMethodPointer)__N2M_i4i4S108i4i4},
 	{"i4i4S11", (Il2CppMethodPointer)__N2M_i4i4S11},
 	{"i4i4S112", (Il2CppMethodPointer)__N2M_i4i4S112},
 	{"i4i4S12", (Il2CppMethodPointer)__N2M_i4i4S12},
@@ -21096,24 +23837,31 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"i4i4S12S12S40", (Il2CppMethodPointer)__N2M_i4i4S12S12S40},
 	{"i4i4S12S12S68", (Il2CppMethodPointer)__N2M_i4i4S12S12S68},
 	{"i4i4S12S12i4", (Il2CppMethodPointer)__N2M_i4i4S12S12i4},
+	{"i4i4S12i4i4", (Il2CppMethodPointer)__N2M_i4i4S12i4i4},
 	{"i4i4S16", (Il2CppMethodPointer)__N2M_i4i4S16},
 	{"i4i4S16S16", (Il2CppMethodPointer)__N2M_i4i4S16S16},
+	{"i4i4S16i4", (Il2CppMethodPointer)__N2M_i4i4S16i4},
+	{"i4i4S16i4i4", (Il2CppMethodPointer)__N2M_i4i4S16i4i4},
 	{"i4i4S1S1", (Il2CppMethodPointer)__N2M_i4i4S1S1},
 	{"i4i4S2", (Il2CppMethodPointer)__N2M_i4i4S2},
 	{"i4i4S20", (Il2CppMethodPointer)__N2M_i4i4S20},
 	{"i4i4S20S20", (Il2CppMethodPointer)__N2M_i4i4S20S20},
+	{"i4i4S20i4i4", (Il2CppMethodPointer)__N2M_i4i4S20i4i4},
 	{"i4i4S24", (Il2CppMethodPointer)__N2M_i4i4S24},
 	{"i4i4S24S24", (Il2CppMethodPointer)__N2M_i4i4S24S24},
+	{"i4i4S24i4i4", (Il2CppMethodPointer)__N2M_i4i4S24i4i4},
 	{"i4i4S24i4r4i4", (Il2CppMethodPointer)__N2M_i4i4S24i4r4i4},
 	{"i4i4S24i4r4i4i4i4", (Il2CppMethodPointer)__N2M_i4i4S24i4r4i4i4i4},
 	{"i4i4S24r4i4", (Il2CppMethodPointer)__N2M_i4i4S24r4i4},
 	{"i4i4S24r4i4i4i4", (Il2CppMethodPointer)__N2M_i4i4S24r4i4i4i4},
 	{"i4i4S28", (Il2CppMethodPointer)__N2M_i4i4S28},
 	{"i4i4S28S28", (Il2CppMethodPointer)__N2M_i4i4S28S28},
+	{"i4i4S28i4i4", (Il2CppMethodPointer)__N2M_i4i4S28i4i4},
 	{"i4i4S2S2", (Il2CppMethodPointer)__N2M_i4i4S2S2},
 	{"i4i4S3", (Il2CppMethodPointer)__N2M_i4i4S3},
 	{"i4i4S32", (Il2CppMethodPointer)__N2M_i4i4S32},
 	{"i4i4S32S32", (Il2CppMethodPointer)__N2M_i4i4S32S32},
+	{"i4i4S32i4i4", (Il2CppMethodPointer)__N2M_i4i4S32i4i4},
 	{"i4i4S36", (Il2CppMethodPointer)__N2M_i4i4S36},
 	{"i4i4S36S36", (Il2CppMethodPointer)__N2M_i4i4S36S36},
 	{"i4i4S376", (Il2CppMethodPointer)__N2M_i4i4S376},
@@ -21142,23 +23890,32 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"i4i4S416", (Il2CppMethodPointer)__N2M_i4i4S416},
 	{"i4i4S44", (Il2CppMethodPointer)__N2M_i4i4S44},
 	{"i4i4S44S44", (Il2CppMethodPointer)__N2M_i4i4S44S44},
+	{"i4i4S44i4i4", (Il2CppMethodPointer)__N2M_i4i4S44i4i4},
 	{"i4i4S48", (Il2CppMethodPointer)__N2M_i4i4S48},
 	{"i4i4S48S48", (Il2CppMethodPointer)__N2M_i4i4S48S48},
+	{"i4i4S48i4i4", (Il2CppMethodPointer)__N2M_i4i4S48i4i4},
+	{"i4i4S4S12i4i4", (Il2CppMethodPointer)__N2M_i4i4S4S12i4i4},
 	{"i4i4S4S4", (Il2CppMethodPointer)__N2M_i4i4S4S4},
 	{"i4i4S4i4", (Il2CppMethodPointer)__N2M_i4i4S4i4},
+	{"i4i4S4i4i4", (Il2CppMethodPointer)__N2M_i4i4S4i4i4},
+	{"i4i4S4i4i4i4", (Il2CppMethodPointer)__N2M_i4i4S4i4i4i4},
 	{"i4i4S5", (Il2CppMethodPointer)__N2M_i4i4S5},
 	{"i4i4S52", (Il2CppMethodPointer)__N2M_i4i4S52},
 	{"i4i4S52S52", (Il2CppMethodPointer)__N2M_i4i4S52S52},
+	{"i4i4S52i4i4", (Il2CppMethodPointer)__N2M_i4i4S52i4i4},
 	{"i4i4S56", (Il2CppMethodPointer)__N2M_i4i4S56},
 	{"i4i4S56S56", (Il2CppMethodPointer)__N2M_i4i4S56S56},
+	{"i4i4S56i4i4", (Il2CppMethodPointer)__N2M_i4i4S56i4i4},
 	{"i4i4S5S5", (Il2CppMethodPointer)__N2M_i4i4S5S5},
 	{"i4i4S6", (Il2CppMethodPointer)__N2M_i4i4S6},
 	{"i4i4S64", (Il2CppMethodPointer)__N2M_i4i4S64},
 	{"i4i4S64S64", (Il2CppMethodPointer)__N2M_i4i4S64S64},
+	{"i4i4S64i4i4", (Il2CppMethodPointer)__N2M_i4i4S64i4i4},
 	{"i4i4S6S6", (Il2CppMethodPointer)__N2M_i4i4S6S6},
 	{"i4i4S7", (Il2CppMethodPointer)__N2M_i4i4S7},
 	{"i4i4S72", (Il2CppMethodPointer)__N2M_i4i4S72},
 	{"i4i4S72S72", (Il2CppMethodPointer)__N2M_i4i4S72S72},
+	{"i4i4S72i4i4", (Il2CppMethodPointer)__N2M_i4i4S72i4i4},
 	{"i4i4S7S7", (Il2CppMethodPointer)__N2M_i4i4S7S7},
 	{"i4i4S8", (Il2CppMethodPointer)__N2M_i4i4S8},
 	{"i4i4S80", (Il2CppMethodPointer)__N2M_i4i4S80},
@@ -21167,6 +23924,7 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"i4i4S8S8r4i4i4i4", (Il2CppMethodPointer)__N2M_i4i4S8S8r4i4i4i4},
 	{"i4i4S8S8u1", (Il2CppMethodPointer)__N2M_i4i4S8S8u1},
 	{"i4i4S8i4", (Il2CppMethodPointer)__N2M_i4i4S8i4},
+	{"i4i4S8i4i4", (Il2CppMethodPointer)__N2M_i4i4S8i4i4},
 	{"i4i4S9", (Il2CppMethodPointer)__N2M_i4i4S9},
 	{"i4i4S96", (Il2CppMethodPointer)__N2M_i4i4S96},
 	{"i4i4S9S9", (Il2CppMethodPointer)__N2M_i4i4S9S9},
@@ -21192,9 +23950,17 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"i4i4i4S8i4", (Il2CppMethodPointer)__N2M_i4i4i4S8i4},
 	{"i4i4i4S8i4i4", (Il2CppMethodPointer)__N2M_i4i4i4S8i4i4},
 	{"i4i4i4i4", (Il2CppMethodPointer)__N2M_i4i4i4i4},
+	{"i4i4i4i4C16", (Il2CppMethodPointer)__N2M_i4i4i4i4C16},
+	{"i4i4i4i4S12", (Il2CppMethodPointer)__N2M_i4i4i4i4S12},
+	{"i4i4i4i4S2", (Il2CppMethodPointer)__N2M_i4i4i4i4S2},
+	{"i4i4i4i4S4", (Il2CppMethodPointer)__N2M_i4i4i4i4S4},
+	{"i4i4i4i4S8", (Il2CppMethodPointer)__N2M_i4i4i4i4S8},
 	{"i4i4i4i4S8i4", (Il2CppMethodPointer)__N2M_i4i4i4i4S8i4},
 	{"i4i4i4i4S8u1", (Il2CppMethodPointer)__N2M_i4i4i4i4S8u1},
+	{"i4i4i4i4i1", (Il2CppMethodPointer)__N2M_i4i4i4i4i1},
+	{"i4i4i4i4i2", (Il2CppMethodPointer)__N2M_i4i4i4i4i2},
 	{"i4i4i4i4i4", (Il2CppMethodPointer)__N2M_i4i4i4i4i4},
+	{"i4i4i4i4i4S4", (Il2CppMethodPointer)__N2M_i4i4i4i4i4S4},
 	{"i4i4i4i4i4i4", (Il2CppMethodPointer)__N2M_i4i4i4i4i4i4},
 	{"i4i4i4i4i4i4i4", (Il2CppMethodPointer)__N2M_i4i4i4i4i4i4i4},
 	{"i4i4i4i4i4i4i4i4", (Il2CppMethodPointer)__N2M_i4i4i4i4i4i4i4i4},
@@ -21210,46 +23976,64 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"i4i4i4i4i4i4i4u1", (Il2CppMethodPointer)__N2M_i4i4i4i4i4i4i4u1},
 	{"i4i4i4i4i4i4u1", (Il2CppMethodPointer)__N2M_i4i4i4i4i4i4u1},
 	{"i4i4i4i4i4u1", (Il2CppMethodPointer)__N2M_i4i4i4i4i4u1},
+	{"i4i4i4i4i8", (Il2CppMethodPointer)__N2M_i4i4i4i4i8},
 	{"i4i4i4i4i8i8i4i4", (Il2CppMethodPointer)__N2M_i4i4i4i4i8i8i4i4},
 	{"i4i4i4i4r4", (Il2CppMethodPointer)__N2M_i4i4i4i4r4},
+	{"i4i4i4i4r8", (Il2CppMethodPointer)__N2M_i4i4i4i4r8},
 	{"i4i4i4i4u1", (Il2CppMethodPointer)__N2M_i4i4i4i4u1},
+	{"i4i4i4i4u1i4i4i4i4i4i4", (Il2CppMethodPointer)__N2M_i4i4i4i4u1i4i4i4i4i4i4},
+	{"i4i4i4i4u1u1i4", (Il2CppMethodPointer)__N2M_i4i4i4i4u1u1i4},
+	{"i4i4i4i4u2", (Il2CppMethodPointer)__N2M_i4i4i4i4u2},
 	{"i4i4i4i4u2i4i4", (Il2CppMethodPointer)__N2M_i4i4i4i4u2i4i4},
+	{"i4i4i4i4u4", (Il2CppMethodPointer)__N2M_i4i4i4i4u4},
+	{"i4i4i4i4u8", (Il2CppMethodPointer)__N2M_i4i4i4i4u8},
 	{"i4i4i4i8i4i4", (Il2CppMethodPointer)__N2M_i4i4i4i8i4i4},
 	{"i4i4i4r4", (Il2CppMethodPointer)__N2M_i4i4i4r4},
+	{"i4i4i4r4i4i4", (Il2CppMethodPointer)__N2M_i4i4i4r4i4i4},
 	{"i4i4i4r8i4i4", (Il2CppMethodPointer)__N2M_i4i4i4r8i4i4},
 	{"i4i4i4u1", (Il2CppMethodPointer)__N2M_i4i4i4u1},
 	{"i4i4i4u1i4", (Il2CppMethodPointer)__N2M_i4i4i4u1i4},
+	{"i4i4i4u1i4i4", (Il2CppMethodPointer)__N2M_i4i4i4u1i4i4},
 	{"i4i4i4u1u1", (Il2CppMethodPointer)__N2M_i4i4i4u1u1},
 	{"i4i4i4u2i4", (Il2CppMethodPointer)__N2M_i4i4i4u2i4},
 	{"i4i4i4u2i4i4", (Il2CppMethodPointer)__N2M_i4i4i4u2i4i4},
 	{"i4i4i4u2i4i4i4", (Il2CppMethodPointer)__N2M_i4i4i4u2i4i4i4},
+	{"i4i4i4u4", (Il2CppMethodPointer)__N2M_i4i4i4u4},
 	{"i4i4i4u4i4i4", (Il2CppMethodPointer)__N2M_i4i4i4u4i4i4},
 	{"i4i4i8", (Il2CppMethodPointer)__N2M_i4i4i8},
+	{"i4i4i8i4i4", (Il2CppMethodPointer)__N2M_i4i4i8i4i4},
 	{"i4i4i8i8", (Il2CppMethodPointer)__N2M_i4i4i8i8},
 	{"i4i4r4", (Il2CppMethodPointer)__N2M_i4i4r4},
+	{"i4i4r4i4i4", (Il2CppMethodPointer)__N2M_i4i4r4i4i4},
 	{"i4i4r4r4", (Il2CppMethodPointer)__N2M_i4i4r4r4},
 	{"i4i4r4r4r4", (Il2CppMethodPointer)__N2M_i4i4r4r4r4},
 	{"i4i4r8", (Il2CppMethodPointer)__N2M_i4i4r8},
+	{"i4i4r8i4i4", (Il2CppMethodPointer)__N2M_i4i4r8i4i4},
 	{"i4i4r8r8", (Il2CppMethodPointer)__N2M_i4i4r8r8},
 	{"i4i4u1", (Il2CppMethodPointer)__N2M_i4i4u1},
 	{"i4i4u1i4", (Il2CppMethodPointer)__N2M_i4i4u1i4},
 	{"i4i4u1i4i4", (Il2CppMethodPointer)__N2M_i4i4u1i4i4},
+	{"i4i4u1i4i4i4", (Il2CppMethodPointer)__N2M_i4i4u1i4i4i4},
 	{"i4i4u1u1", (Il2CppMethodPointer)__N2M_i4i4u1u1},
 	{"i4i4u2", (Il2CppMethodPointer)__N2M_i4i4u2},
+	{"i4i4u2i4i4", (Il2CppMethodPointer)__N2M_i4i4u2i4i4},
 	{"i4i4u2u2", (Il2CppMethodPointer)__N2M_i4i4u2u2},
 	{"i4i4u4", (Il2CppMethodPointer)__N2M_i4i4u4},
+	{"i4i4u4i4i4", (Il2CppMethodPointer)__N2M_i4i4u4i4i4},
 	{"i4i4u4u4", (Il2CppMethodPointer)__N2M_i4i4u4u4},
 	{"i4i4u4u4i4", (Il2CppMethodPointer)__N2M_i4i4u4u4i4},
 	{"i4i4u8", (Il2CppMethodPointer)__N2M_i4i4u8},
 	{"i4i4u8u8", (Il2CppMethodPointer)__N2M_i4i4u8u8},
 	{"i4i8i8", (Il2CppMethodPointer)__N2M_i4i8i8},
 	{"i4r8r8", (Il2CppMethodPointer)__N2M_i4r8r8},
+	{"i4u1u1", (Il2CppMethodPointer)__N2M_i4u1u1},
 	{"i4u2u2", (Il2CppMethodPointer)__N2M_i4u2u2},
 	{"i4u4u4", (Il2CppMethodPointer)__N2M_i4u4u4},
 	{"i4u4u4i4", (Il2CppMethodPointer)__N2M_i4u4u4i4},
 	{"i4u8u8", (Il2CppMethodPointer)__N2M_i4u8u8},
 	{"i8", (Il2CppMethodPointer)__N2M_i8},
 	{"i8i4", (Il2CppMethodPointer)__N2M_i8i4},
+	{"i8i4S8", (Il2CppMethodPointer)__N2M_i8i4S8},
 	{"i8i4i4", (Il2CppMethodPointer)__N2M_i8i4i4},
 	{"i8i4i4S16", (Il2CppMethodPointer)__N2M_i8i4i4S16},
 	{"i8i4i4i4", (Il2CppMethodPointer)__N2M_i8i4i4i4},
@@ -21267,6 +24051,7 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"r4i4i2", (Il2CppMethodPointer)__N2M_r4i4i2},
 	{"r4i4i4", (Il2CppMethodPointer)__N2M_r4i4i4},
 	{"r4i4i4S16", (Il2CppMethodPointer)__N2M_r4i4i4S16},
+	{"r4i4i4i4", (Il2CppMethodPointer)__N2M_r4i4i4i4},
 	{"r4i4i4r4", (Il2CppMethodPointer)__N2M_r4i4i4r4},
 	{"r4i4i4r4r4", (Il2CppMethodPointer)__N2M_r4i4i4r4r4},
 	{"r4i4r4", (Il2CppMethodPointer)__N2M_r4i4r4},
@@ -21275,6 +24060,7 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"r8i4", (Il2CppMethodPointer)__N2M_r8i4},
 	{"r8i4i4", (Il2CppMethodPointer)__N2M_r8i4i4},
 	{"r8i4i4S16", (Il2CppMethodPointer)__N2M_r8i4i4S16},
+	{"r8i4i4i4", (Il2CppMethodPointer)__N2M_r8i4i4i4},
 	{"r8i4i4r8", (Il2CppMethodPointer)__N2M_r8i4i4r8},
 	{"r8i4r8", (Il2CppMethodPointer)__N2M_r8i4r8},
 	{"r8r8", (Il2CppMethodPointer)__N2M_r8r8},
@@ -21309,6 +24095,7 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"u1i4C32", (Il2CppMethodPointer)__N2M_u1i4C32},
 	{"u1i4C32C32", (Il2CppMethodPointer)__N2M_u1i4C32C32},
 	{"u1i4C40", (Il2CppMethodPointer)__N2M_u1i4C40},
+	{"u1i4C48", (Il2CppMethodPointer)__N2M_u1i4C48},
 	{"u1i4C48C48", (Il2CppMethodPointer)__N2M_u1i4C48C48},
 	{"u1i4C56", (Il2CppMethodPointer)__N2M_u1i4C56},
 	{"u1i4C8", (Il2CppMethodPointer)__N2M_u1i4C8},
@@ -21429,8 +24216,11 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"u1i4i4i4S8S8i4i4i4", (Il2CppMethodPointer)__N2M_u1i4i4i4S8S8i4i4i4},
 	{"u1i4i4i4i4", (Il2CppMethodPointer)__N2M_u1i4i4i4i4},
 	{"u1i4i4i4i4i4", (Il2CppMethodPointer)__N2M_u1i4i4i4i4i4},
+	{"u1i4i4i4i4i4i4", (Il2CppMethodPointer)__N2M_u1i4i4i4i4i4i4},
 	{"u1i4i4i4i4i4i4i4", (Il2CppMethodPointer)__N2M_u1i4i4i4i4i4i4i4},
 	{"u1i4i4i4i4i4i4i4i4", (Il2CppMethodPointer)__N2M_u1i4i4i4i4i4i4i4i4},
+	{"u1i4i4i4i4i4i4i4i4i4", (Il2CppMethodPointer)__N2M_u1i4i4i4i4i4i4i4i4i4},
+	{"u1i4i4i4i4u1", (Il2CppMethodPointer)__N2M_u1i4i4i4i4u1},
 	{"u1i4i4i4r4r4i4i4i4", (Il2CppMethodPointer)__N2M_u1i4i4i4r4r4i4i4i4},
 	{"u1i4i4r4r4i4i4i4", (Il2CppMethodPointer)__N2M_u1i4i4r4r4i4i4i4},
 	{"u1i4i4u1", (Il2CppMethodPointer)__N2M_u1i4i4u1},
@@ -21461,6 +24251,7 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"u1u4", (Il2CppMethodPointer)__N2M_u1u4},
 	{"u2i4", (Il2CppMethodPointer)__N2M_u2i4},
 	{"u2i4i4", (Il2CppMethodPointer)__N2M_u2i4i4},
+	{"u2i4i4i4", (Il2CppMethodPointer)__N2M_u2i4i4i4},
 	{"u2i4i4i4u2", (Il2CppMethodPointer)__N2M_u2i4i4i4u2},
 	{"u2i4i4u2", (Il2CppMethodPointer)__N2M_u2i4i4u2},
 	{"u2i4u2", (Il2CppMethodPointer)__N2M_u2i4u2},
@@ -21471,6 +24262,7 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"u4i4S44", (Il2CppMethodPointer)__N2M_u4i4S44},
 	{"u4i4i4", (Il2CppMethodPointer)__N2M_u4i4i4},
 	{"u4i4i4S16", (Il2CppMethodPointer)__N2M_u4i4i4S16},
+	{"u4i4i4i4", (Il2CppMethodPointer)__N2M_u4i4i4i4},
 	{"u4i4i4u4", (Il2CppMethodPointer)__N2M_u4i4i4u4},
 	{"u4i4u4", (Il2CppMethodPointer)__N2M_u4i4u4},
 	{"u4u4", (Il2CppMethodPointer)__N2M_u4u4},
@@ -21478,6 +24270,7 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"u8i4S8", (Il2CppMethodPointer)__N2M_u8i4S8},
 	{"u8i4i4", (Il2CppMethodPointer)__N2M_u8i4i4},
 	{"u8i4i4S16", (Il2CppMethodPointer)__N2M_u8i4i4S16},
+	{"u8i4i4i4", (Il2CppMethodPointer)__N2M_u8i4i4i4},
 	{"u8i4i4u8", (Il2CppMethodPointer)__N2M_u8i4i4u8},
 	{"u8i4u8", (Il2CppMethodPointer)__N2M_u8i4u8},
 	{"u8u8", (Il2CppMethodPointer)__N2M_u8u8},
@@ -21505,12 +24298,14 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"vS72", (Il2CppMethodPointer)__N2M_vS72},
 	{"vS8", (Il2CppMethodPointer)__N2M_vS8},
 	{"vS8S12", (Il2CppMethodPointer)__N2M_vS8S12},
+	{"vS8S16", (Il2CppMethodPointer)__N2M_vS8S16},
 	{"vS8S20", (Il2CppMethodPointer)__N2M_vS8S20},
 	{"vS8S28", (Il2CppMethodPointer)__N2M_vS8S28},
 	{"vS8i4", (Il2CppMethodPointer)__N2M_vS8i4},
 	{"vi4", (Il2CppMethodPointer)__N2M_vi4},
 	{"vi4C16", (Il2CppMethodPointer)__N2M_vi4C16},
 	{"vi4C16i4", (Il2CppMethodPointer)__N2M_vi4C16i4},
+	{"vi4C24i4", (Il2CppMethodPointer)__N2M_vi4C24i4},
 	{"vi4C32", (Il2CppMethodPointer)__N2M_vi4C32},
 	{"vi4C40", (Il2CppMethodPointer)__N2M_vi4C40},
 	{"vi4C56", (Il2CppMethodPointer)__N2M_vi4C56},
@@ -21559,16 +24354,26 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"vi4S8C56", (Il2CppMethodPointer)__N2M_vi4S8C56},
 	{"vi4S8C56i4", (Il2CppMethodPointer)__N2M_vi4S8C56i4},
 	{"vi4S8S12", (Il2CppMethodPointer)__N2M_vi4S8S12},
+	{"vi4S8S16", (Il2CppMethodPointer)__N2M_vi4S8S16},
 	{"vi4S8S20", (Il2CppMethodPointer)__N2M_vi4S8S20},
 	{"vi4S8S28", (Il2CppMethodPointer)__N2M_vi4S8S28},
 	{"vi4S8i4", (Il2CppMethodPointer)__N2M_vi4S8i4},
 	{"vi4S8i4i4", (Il2CppMethodPointer)__N2M_vi4S8i4i4},
+	{"vi4S8i8", (Il2CppMethodPointer)__N2M_vi4S8i8},
 	{"vi4i2", (Il2CppMethodPointer)__N2M_vi4i2},
 	{"vi4i4", (Il2CppMethodPointer)__N2M_vi4i4},
+	{"vi4i4C16", (Il2CppMethodPointer)__N2M_vi4i4C16},
+	{"vi4i4C16i4i4u1", (Il2CppMethodPointer)__N2M_vi4i4C16i4i4u1},
+	{"vi4i4C24", (Il2CppMethodPointer)__N2M_vi4i4C24},
 	{"vi4i4C32", (Il2CppMethodPointer)__N2M_vi4i4C32},
+	{"vi4i4C8", (Il2CppMethodPointer)__N2M_vi4i4C8},
+	{"vi4i4C8i4", (Il2CppMethodPointer)__N2M_vi4i4C8i4},
+	{"vi4i4S1", (Il2CppMethodPointer)__N2M_vi4i4S1},
 	{"vi4i4S108", (Il2CppMethodPointer)__N2M_vi4i4S108},
 	{"vi4i4S12", (Il2CppMethodPointer)__N2M_vi4i4S12},
 	{"vi4i4S16", (Il2CppMethodPointer)__N2M_vi4i4S16},
+	{"vi4i4S16i4i4u1", (Il2CppMethodPointer)__N2M_vi4i4S16i4i4u1},
+	{"vi4i4S2", (Il2CppMethodPointer)__N2M_vi4i4S2},
 	{"vi4i4S20", (Il2CppMethodPointer)__N2M_vi4i4S20},
 	{"vi4i4S24", (Il2CppMethodPointer)__N2M_vi4i4S24},
 	{"vi4i4S32", (Il2CppMethodPointer)__N2M_vi4i4S32},
@@ -21583,23 +24388,35 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"vi4i4S72", (Il2CppMethodPointer)__N2M_vi4i4S72},
 	{"vi4i4S8", (Il2CppMethodPointer)__N2M_vi4i4S8},
 	{"vi4i4S8i4", (Il2CppMethodPointer)__N2M_vi4i4S8i4},
+	{"vi4i4i1", (Il2CppMethodPointer)__N2M_vi4i4i1},
+	{"vi4i4i2", (Il2CppMethodPointer)__N2M_vi4i4i2},
 	{"vi4i4i4", (Il2CppMethodPointer)__N2M_vi4i4i4},
 	{"vi4i4i4C8i4", (Il2CppMethodPointer)__N2M_vi4i4i4C8i4},
 	{"vi4i4i4S16", (Il2CppMethodPointer)__N2M_vi4i4i4S16},
 	{"vi4i4i4S4", (Il2CppMethodPointer)__N2M_vi4i4i4S4},
 	{"vi4i4i4S8", (Il2CppMethodPointer)__N2M_vi4i4i4S8},
 	{"vi4i4i4i2", (Il2CppMethodPointer)__N2M_vi4i4i4i2},
+	{"vi4i4i4i2i4", (Il2CppMethodPointer)__N2M_vi4i4i4i2i4},
 	{"vi4i4i4i4", (Il2CppMethodPointer)__N2M_vi4i4i4i4},
 	{"vi4i4i4i4C8i4", (Il2CppMethodPointer)__N2M_vi4i4i4i4C8i4},
+	{"vi4i4i4i4S8", (Il2CppMethodPointer)__N2M_vi4i4i4i4S8},
 	{"vi4i4i4i4i4", (Il2CppMethodPointer)__N2M_vi4i4i4i4i4},
 	{"vi4i4i4i4i4i4", (Il2CppMethodPointer)__N2M_vi4i4i4i4i4i4},
 	{"vi4i4i4i4i4i4i4", (Il2CppMethodPointer)__N2M_vi4i4i4i4i4i4i4},
 	{"vi4i4i4i4i4i4i4i4", (Il2CppMethodPointer)__N2M_vi4i4i4i4i4i4i4i4},
 	{"vi4i4i4i4i4i4i4i4i4", (Il2CppMethodPointer)__N2M_vi4i4i4i4i4i4i4i4i4},
+	{"vi4i4i4i4i4i4i4u2i4i4", (Il2CppMethodPointer)__N2M_vi4i4i4i4i4i4i4u2i4i4},
+	{"vi4i4i4i4i4u1", (Il2CppMethodPointer)__N2M_vi4i4i4i4i4u1},
 	{"vi4i4i4i4u1", (Il2CppMethodPointer)__N2M_vi4i4i4i4u1},
+	{"vi4i4i4i8", (Il2CppMethodPointer)__N2M_vi4i4i4i8},
 	{"vi4i4i4i8i8", (Il2CppMethodPointer)__N2M_vi4i4i4i8i8},
+	{"vi4i4i4r4", (Il2CppMethodPointer)__N2M_vi4i4i4r4},
+	{"vi4i4i4r8", (Il2CppMethodPointer)__N2M_vi4i4i4r8},
 	{"vi4i4i4u1", (Il2CppMethodPointer)__N2M_vi4i4i4u1},
+	{"vi4i4i4u2", (Il2CppMethodPointer)__N2M_vi4i4i4u2},
+	{"vi4i4i4u4", (Il2CppMethodPointer)__N2M_vi4i4i4u4},
 	{"vi4i4i4u4u4i4", (Il2CppMethodPointer)__N2M_vi4i4i4u4u4i4},
+	{"vi4i4i4u8", (Il2CppMethodPointer)__N2M_vi4i4i4u8},
 	{"vi4i4i8", (Il2CppMethodPointer)__N2M_vi4i4i8},
 	{"vi4i4i8i8", (Il2CppMethodPointer)__N2M_vi4i4i8i8},
 	{"vi4i4r4", (Il2CppMethodPointer)__N2M_vi4i4r4},
@@ -21611,6 +24428,7 @@ Native2ManagedMethodInfo hybridclr::interpreter::g_native2managedStub[] =
 	{"vi4i4u1u1", (Il2CppMethodPointer)__N2M_vi4i4u1u1},
 	{"vi4i4u2", (Il2CppMethodPointer)__N2M_vi4i4u2},
 	{"vi4i4u4", (Il2CppMethodPointer)__N2M_vi4i4u4},
+	{"vi4i4u8", (Il2CppMethodPointer)__N2M_vi4i4u8},
 	{"vi4i8", (Il2CppMethodPointer)__N2M_vi4i8},
 	{"vi4i8C48", (Il2CppMethodPointer)__N2M_vi4i8C48},
 	{"vi4i8i4", (Il2CppMethodPointer)__N2M_vi4i8i4},
@@ -21661,6 +24479,33 @@ static ValueTypeSizeAlign8<16> __N2M_AdjustorThunk_C16i4i4(int32_t __arg0, int32
     StackObject* ret = args + 2;
     Interpreter::Execute(method, args, ret);
     return *(ValueTypeSizeAlign8<16>*)ret;
+}
+
+
+static ValueTypeSizeAlign8<16> __N2M_AdjustorThunk_C16i4i4C16(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<16> __arg2, const MethodInfo* method)
+{
+    StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSizeAlign8<16>*)ret;
+}
+
+
+static ValueTypeSizeAlign8<24> __N2M_AdjustorThunk_C24i4i4C24(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<24> __arg2, const MethodInfo* method)
+{
+    StackObject args[6] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSizeAlign8<24>*)ret;
+}
+
+
+static ValueTypeSizeAlign8<24> __N2M_AdjustorThunk_C24i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[6] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSizeAlign8<24>*)ret;
 }
 
 
@@ -21722,6 +24567,15 @@ static ValueTypeSizeAlign8<8> __N2M_AdjustorThunk_C8i4i4(int32_t __arg0, int32_t
 {
     StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1 };
     StackObject* ret = args + 2;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSizeAlign8<8>*)ret;
+}
+
+
+static ValueTypeSizeAlign8<8> __N2M_AdjustorThunk_C8i4i4C8(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<8> __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
     Interpreter::Execute(method, args, ret);
     return *(ValueTypeSizeAlign8<8>*)ret;
 }
@@ -21799,6 +24653,24 @@ static ValueTypeSize<12> __N2M_AdjustorThunk_S12i4i4(int32_t __arg0, int32_t __a
 }
 
 
+static ValueTypeSize<12> __N2M_AdjustorThunk_S12i4i4S12(int32_t __arg0, int32_t __arg1, ValueTypeSize<12> __arg2, const MethodInfo* method)
+{
+    StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<12>*)ret;
+}
+
+
+static ValueTypeSize<12> __N2M_AdjustorThunk_S12i4i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[6] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<12>*)ret;
+}
+
+
 static ValueTypeSize<12> __N2M_AdjustorThunk_S12i4u1(int32_t __arg0, uint8_t __arg1, const MethodInfo* method)
 {
     StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1 };
@@ -21830,6 +24702,15 @@ static ValueTypeSize<16> __N2M_AdjustorThunk_S16i4i4(int32_t __arg0, int32_t __a
 {
     StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1 };
     StackObject* ret = args + 2;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<16>*)ret;
+}
+
+
+static ValueTypeSize<16> __N2M_AdjustorThunk_S16i4i4S16(int32_t __arg0, int32_t __arg1, ValueTypeSize<16> __arg2, const MethodInfo* method)
+{
+    StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = args + 3;
     Interpreter::Execute(method, args, ret);
     return *(ValueTypeSize<16>*)ret;
 }
@@ -21871,6 +24752,15 @@ static ValueTypeSize<1> __N2M_AdjustorThunk_S1i4i2(int32_t __arg0, int16_t __arg
 }
 
 
+static ValueTypeSize<1> __N2M_AdjustorThunk_S1i4i4S1(int32_t __arg0, int32_t __arg1, ValueTypeSize<1> __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<1>*)ret;
+}
+
+
 static ValueTypeSize<208> __N2M_AdjustorThunk_S208i4(int32_t __arg0, const MethodInfo* method)
 {
     StackObject args[27] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)) };
@@ -21902,6 +24792,15 @@ static ValueTypeSize<20> __N2M_AdjustorThunk_S20i4i4(int32_t __arg0, int32_t __a
 {
     StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1 };
     StackObject* ret = args + 2;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<20>*)ret;
+}
+
+
+static ValueTypeSize<20> __N2M_AdjustorThunk_S20i4i4S20(int32_t __arg0, int32_t __arg1, ValueTypeSize<20> __arg2, const MethodInfo* method)
+{
+    StackObject args[6] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = args + 3;
     Interpreter::Execute(method, args, ret);
     return *(ValueTypeSize<20>*)ret;
 }
@@ -21956,6 +24855,15 @@ static ValueTypeSize<2> __N2M_AdjustorThunk_S2i4i2(int32_t __arg0, int16_t __arg
 {
     StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1 };
     StackObject* ret = args + 2;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<2>*)ret;
+}
+
+
+static ValueTypeSize<2> __N2M_AdjustorThunk_S2i4i4S2(int32_t __arg0, int32_t __arg1, ValueTypeSize<2> __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
     Interpreter::Execute(method, args, ret);
     return *(ValueTypeSize<2>*)ret;
 }
@@ -22204,6 +25112,15 @@ static ValueTypeSize<4> __N2M_AdjustorThunk_S4i4i4(int32_t __arg0, int32_t __arg
 }
 
 
+static ValueTypeSize<4> __N2M_AdjustorThunk_S4i4i4S4(int32_t __arg0, int32_t __arg1, ValueTypeSize<4> __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<4>*)ret;
+}
+
+
 static ValueTypeSize<52> __N2M_AdjustorThunk_S52i4(int32_t __arg0, const MethodInfo* method)
 {
     StackObject args[8] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)) };
@@ -22357,6 +25274,33 @@ static ValueTypeSize<8> __N2M_AdjustorThunk_S8i4i4(int32_t __arg0, int32_t __arg
 }
 
 
+static ValueTypeSize<8> __N2M_AdjustorThunk_S8i4i4S8(int32_t __arg0, int32_t __arg1, ValueTypeSize<8> __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<8>*)ret;
+}
+
+
+static ValueTypeSize<8> __N2M_AdjustorThunk_S8i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<8>*)ret;
+}
+
+
+static ValueTypeSize<8> __N2M_AdjustorThunk_S8i4i4i4S8(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<8> __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(ValueTypeSize<8>*)ret;
+}
+
+
 static ValueTypeSize<9> __N2M_AdjustorThunk_S9i4i2(int32_t __arg0, int16_t __arg1, const MethodInfo* method)
 {
     StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1 };
@@ -22375,10 +25319,28 @@ static int8_t __N2M_AdjustorThunk_i1i4i4(int32_t __arg0, int32_t __arg1, const M
 }
 
 
+static int8_t __N2M_AdjustorThunk_i1i4i4i1(int32_t __arg0, int32_t __arg1, int8_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(int8_t*)ret;
+}
+
+
 static int16_t __N2M_AdjustorThunk_i2i4i4(int32_t __arg0, int32_t __arg1, const MethodInfo* method)
 {
     StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1 };
     StackObject* ret = args + 2;
+    Interpreter::Execute(method, args, ret);
+    return *(int16_t*)ret;
+}
+
+
+static int16_t __N2M_AdjustorThunk_i2i4i4i2(int32_t __arg0, int32_t __arg1, int16_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
     Interpreter::Execute(method, args, ret);
     return *(int16_t*)ret;
 }
@@ -22486,6 +25448,15 @@ static int32_t __N2M_AdjustorThunk_i4i4S16(int32_t __arg0, ValueTypeSize<16> __a
 static int32_t __N2M_AdjustorThunk_i4i4S16S16(int32_t __arg0, ValueTypeSize<16> __arg1, ValueTypeSize<16> __arg2, const MethodInfo* method)
 {
     StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), (uint64_t)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_AdjustorThunk_i4i4S16i4(int32_t __arg0, ValueTypeSize<16> __arg1, int32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), (uint64_t)&__arg1, *(uint64_t*)&__arg2 };
     StackObject* ret = args + 3;
     Interpreter::Execute(method, args, ret);
     return *(int32_t*)ret;
@@ -22699,6 +25670,15 @@ static int32_t __N2M_AdjustorThunk_i4i4S8S8(int32_t __arg0, ValueTypeSize<8> __a
 }
 
 
+static int32_t __N2M_AdjustorThunk_i4i4S8i4(int32_t __arg0, ValueTypeSize<8> __arg1, int32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_AdjustorThunk_i4i4i1(int32_t __arg0, int8_t __arg1, const MethodInfo* method)
 {
     StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1 };
@@ -22753,10 +25733,73 @@ static int32_t __N2M_AdjustorThunk_i4i4i4i4(int32_t __arg0, int32_t __arg1, int3
 }
 
 
+static int32_t __N2M_AdjustorThunk_i4i4i4i4C16(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSizeAlign8<16> __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, (uint64_t)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_AdjustorThunk_i4i4i4i4S12(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<12> __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, (uint64_t)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_AdjustorThunk_i4i4i4i4S2(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<2> __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_AdjustorThunk_i4i4i4i4S4(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<4> __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_AdjustorThunk_i4i4i4i4S8(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<8> __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_AdjustorThunk_i4i4i4i4S8i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, ValueTypeSize<8> __arg3, int32_t __arg4, const MethodInfo* method)
 {
     StackObject args[6] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4 };
     StackObject* ret = args + 5;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_AdjustorThunk_i4i4i4i4i1(int32_t __arg0, int32_t __arg1, int32_t __arg2, int8_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_AdjustorThunk_i4i4i4i4i2(int32_t __arg0, int32_t __arg1, int32_t __arg2, int16_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
     Interpreter::Execute(method, args, ret);
     return *(int32_t*)ret;
 }
@@ -22798,7 +25841,70 @@ static int32_t __N2M_AdjustorThunk_i4i4i4i4i4i4i4i4i4(int32_t __arg0, int32_t __
 }
 
 
+static int32_t __N2M_AdjustorThunk_i4i4i4i4i8(int32_t __arg0, int32_t __arg1, int32_t __arg2, int64_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_AdjustorThunk_i4i4i4i4r4(int32_t __arg0, int32_t __arg1, int32_t __arg2, float __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_AdjustorThunk_i4i4i4i4r8(int32_t __arg0, int32_t __arg1, int32_t __arg2, double __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_AdjustorThunk_i4i4i4i4u1(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint8_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_AdjustorThunk_i4i4i4i4u1u1i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint8_t __arg3, uint8_t __arg4, int32_t __arg5, const MethodInfo* method)
+{
+    StackObject args[7] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4, *(uint64_t*)&__arg5 };
+    StackObject* ret = args + 6;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_AdjustorThunk_i4i4i4i4u2(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint16_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_AdjustorThunk_i4i4i4i4u4(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint32_t __arg3, const MethodInfo* method)
+{
+    StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
+    StackObject* ret = args + 4;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
+static int32_t __N2M_AdjustorThunk_i4i4i4i4u8(int32_t __arg0, int32_t __arg1, int32_t __arg2, uint64_t __arg3, const MethodInfo* method)
 {
     StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
     StackObject* ret = args + 4;
@@ -22888,6 +25994,15 @@ static int32_t __N2M_AdjustorThunk_i4i4u1i4(int32_t __arg0, uint8_t __arg1, int3
 }
 
 
+static int32_t __N2M_AdjustorThunk_i4i4u1u1(int32_t __arg0, uint8_t __arg1, uint8_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(int32_t*)ret;
+}
+
+
 static int32_t __N2M_AdjustorThunk_i4i4u2(int32_t __arg0, uint16_t __arg1, const MethodInfo* method)
 {
     StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1 };
@@ -22960,6 +26075,15 @@ static int64_t __N2M_AdjustorThunk_i8i4i4(int32_t __arg0, int32_t __arg1, const 
 }
 
 
+static int64_t __N2M_AdjustorThunk_i8i4i4i8(int32_t __arg0, int32_t __arg1, int64_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(int64_t*)ret;
+}
+
+
 static float __N2M_AdjustorThunk_r4i4(int32_t __arg0, const MethodInfo* method)
 {
     StackObject args[2] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)) };
@@ -22987,6 +26111,15 @@ static float __N2M_AdjustorThunk_r4i4i4(int32_t __arg0, int32_t __arg1, const Me
 }
 
 
+static float __N2M_AdjustorThunk_r4i4i4r4(int32_t __arg0, int32_t __arg1, float __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(float*)ret;
+}
+
+
 static double __N2M_AdjustorThunk_r8i4(int32_t __arg0, const MethodInfo* method)
 {
     StackObject args[2] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)) };
@@ -23000,6 +26133,15 @@ static double __N2M_AdjustorThunk_r8i4i4(int32_t __arg0, int32_t __arg1, const M
 {
     StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1 };
     StackObject* ret = args + 2;
+    Interpreter::Execute(method, args, ret);
+    return *(double*)ret;
+}
+
+
+static double __N2M_AdjustorThunk_r8i4i4r8(int32_t __arg0, int32_t __arg1, double __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
     Interpreter::Execute(method, args, ret);
     return *(double*)ret;
 }
@@ -23051,6 +26193,15 @@ static uint8_t __N2M_AdjustorThunk_u1i4C32(int32_t __arg0, ValueTypeSizeAlign8<3
 
 
 static uint8_t __N2M_AdjustorThunk_u1i4C40(int32_t __arg0, ValueTypeSizeAlign8<40> __arg1, const MethodInfo* method)
+{
+    StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), (uint64_t)&__arg1 };
+    StackObject* ret = args + 2;
+    Interpreter::Execute(method, args, ret);
+    return *(uint8_t*)ret;
+}
+
+
+static uint8_t __N2M_AdjustorThunk_u1i4C48(int32_t __arg0, ValueTypeSizeAlign8<48> __arg1, const MethodInfo* method)
 {
     StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), (uint64_t)&__arg1 };
     StackObject* ret = args + 2;
@@ -23761,6 +26912,15 @@ static uint16_t __N2M_AdjustorThunk_u2i4i4(int32_t __arg0, int32_t __arg1, const
 }
 
 
+static uint16_t __N2M_AdjustorThunk_u2i4i4u2(int32_t __arg0, int32_t __arg1, uint16_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(uint16_t*)ret;
+}
+
+
 static uint32_t __N2M_AdjustorThunk_u4i4(int32_t __arg0, const MethodInfo* method)
 {
     StackObject args[2] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)) };
@@ -23774,6 +26934,15 @@ static uint32_t __N2M_AdjustorThunk_u4i4i4(int32_t __arg0, int32_t __arg1, const
 {
     StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1 };
     StackObject* ret = args + 2;
+    Interpreter::Execute(method, args, ret);
+    return *(uint32_t*)ret;
+}
+
+
+static uint32_t __N2M_AdjustorThunk_u4i4i4u4(int32_t __arg0, int32_t __arg1, uint32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
     Interpreter::Execute(method, args, ret);
     return *(uint32_t*)ret;
 }
@@ -23806,6 +26975,15 @@ static uint64_t __N2M_AdjustorThunk_u8i4i4(int32_t __arg0, int32_t __arg1, const
 }
 
 
+static uint64_t __N2M_AdjustorThunk_u8i4i4u8(int32_t __arg0, int32_t __arg1, uint64_t __arg2, const MethodInfo* method)
+{
+    StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = args + 3;
+    Interpreter::Execute(method, args, ret);
+    return *(uint64_t*)ret;
+}
+
+
 static void __N2M_AdjustorThunk_vi4(int32_t __arg0, const MethodInfo* method)
 {
     StackObject args[1] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)) };
@@ -23818,6 +26996,15 @@ static void __N2M_AdjustorThunk_vi4(int32_t __arg0, const MethodInfo* method)
 static void __N2M_AdjustorThunk_vi4C16(int32_t __arg0, ValueTypeSizeAlign8<16> __arg1, const MethodInfo* method)
 {
     StackObject args[2] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), (uint64_t)&__arg1 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_AdjustorThunk_vi4C24i4(int32_t __arg0, ValueTypeSizeAlign8<24> __arg1, int32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), (uint64_t)&__arg1, *(uint64_t*)&__arg2 };
     StackObject* ret = nullptr;
     Interpreter::Execute(method, args, ret);
     
@@ -24157,9 +27344,45 @@ static void __N2M_AdjustorThunk_vi4i4(int32_t __arg0, int32_t __arg1, const Meth
 }
 
 
+static void __N2M_AdjustorThunk_vi4i4C16(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<16> __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_AdjustorThunk_vi4i4C24(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<24> __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
 static void __N2M_AdjustorThunk_vi4i4C32(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<32> __arg2, const MethodInfo* method)
 {
     StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_AdjustorThunk_vi4i4C8(int32_t __arg0, int32_t __arg1, ValueTypeSizeAlign8<8> __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_AdjustorThunk_vi4i4S1(int32_t __arg0, int32_t __arg1, ValueTypeSize<1> __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
     StackObject* ret = nullptr;
     Interpreter::Execute(method, args, ret);
     
@@ -24187,6 +27410,15 @@ static void __N2M_AdjustorThunk_vi4i4S12(int32_t __arg0, int32_t __arg1, ValueTy
 static void __N2M_AdjustorThunk_vi4i4S16(int32_t __arg0, int32_t __arg1, ValueTypeSize<16> __arg2, const MethodInfo* method)
 {
     StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, (uint64_t)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_AdjustorThunk_vi4i4S2(int32_t __arg0, int32_t __arg1, ValueTypeSize<2> __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
     StackObject* ret = nullptr;
     Interpreter::Execute(method, args, ret);
     
@@ -24292,6 +27524,24 @@ static void __N2M_AdjustorThunk_vi4i4S8(int32_t __arg0, int32_t __arg1, ValueTyp
 }
 
 
+static void __N2M_AdjustorThunk_vi4i4i1(int32_t __arg0, int32_t __arg1, int8_t __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_AdjustorThunk_vi4i4i2(int32_t __arg0, int32_t __arg1, int16_t __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
 static void __N2M_AdjustorThunk_vi4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, const MethodInfo* method)
 {
     StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
@@ -24319,6 +27569,15 @@ static void __N2M_AdjustorThunk_vi4i4i4i2(int32_t __arg0, int32_t __arg1, int32_
 }
 
 
+static void __N2M_AdjustorThunk_vi4i4i4i2i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, int16_t __arg3, int32_t __arg4, const MethodInfo* method)
+{
+    StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
 static void __N2M_AdjustorThunk_vi4i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, const MethodInfo* method)
 {
     StackObject args[4] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3 };
@@ -24328,9 +27587,27 @@ static void __N2M_AdjustorThunk_vi4i4i4i4(int32_t __arg0, int32_t __arg1, int32_
 }
 
 
+static void __N2M_AdjustorThunk_vi4i4i4i4S8(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, ValueTypeSize<8> __arg4, const MethodInfo* method)
+{
+    StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
 static void __N2M_AdjustorThunk_vi4i4i4i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, const MethodInfo* method)
 {
     StackObject args[5] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_AdjustorThunk_vi4i4i4i4i4i4i4u2i4i4(int32_t __arg0, int32_t __arg1, int32_t __arg2, int32_t __arg3, int32_t __arg4, int32_t __arg5, int32_t __arg6, uint16_t __arg7, int32_t __arg8, int32_t __arg9, const MethodInfo* method)
+{
+    StackObject args[10] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2, *(uint64_t*)&__arg3, *(uint64_t*)&__arg4, *(uint64_t*)&__arg5, *(uint64_t*)&__arg6, *(uint64_t*)&__arg7, *(uint64_t*)&__arg8, *(uint64_t*)&__arg9 };
     StackObject* ret = nullptr;
     Interpreter::Execute(method, args, ret);
     
@@ -24356,6 +27633,15 @@ static void __N2M_AdjustorThunk_vi4i4i4u4u4i4(int32_t __arg0, int32_t __arg1, in
 
 
 static void __N2M_AdjustorThunk_vi4i4i8(int32_t __arg0, int32_t __arg1, int64_t __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_AdjustorThunk_vi4i4r4(int32_t __arg0, int32_t __arg1, float __arg2, const MethodInfo* method)
 {
     StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
     StackObject* ret = nullptr;
@@ -24419,6 +27705,15 @@ static void __N2M_AdjustorThunk_vi4i4u2(int32_t __arg0, int32_t __arg1, uint16_t
 
 
 static void __N2M_AdjustorThunk_vi4i4u4(int32_t __arg0, int32_t __arg1, uint32_t __arg2, const MethodInfo* method)
+{
+    StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
+    StackObject* ret = nullptr;
+    Interpreter::Execute(method, args, ret);
+    
+}
+
+
+static void __N2M_AdjustorThunk_vi4i4u8(int32_t __arg0, int32_t __arg1, uint64_t __arg2, const MethodInfo* method)
 {
     StackObject args[3] = {(uint64_t)(*(uint8_t**)&__arg0 + sizeof(Il2CppObject)), *(uint64_t*)&__arg1, *(uint64_t*)&__arg2 };
     StackObject* ret = nullptr;
@@ -24513,6 +27808,9 @@ NativeAdjustThunkMethodInfo hybridclr::interpreter::g_adjustThunkStub[] =
 
 	{"C16i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_C16i4},
 	{"C16i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_C16i4i4},
+	{"C16i4i4C16", (Il2CppMethodPointer)__N2M_AdjustorThunk_C16i4i4C16},
+	{"C24i4i4C24", (Il2CppMethodPointer)__N2M_AdjustorThunk_C24i4i4C24},
+	{"C24i4i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_C24i4i4i4},
 	{"C32i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_C32i4},
 	{"C32i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_C32i4i4},
 	{"C40i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_C40i4},
@@ -24520,6 +27818,7 @@ NativeAdjustThunkMethodInfo hybridclr::interpreter::g_adjustThunkStub[] =
 	{"C8i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_C8i4},
 	{"C8i4C8", (Il2CppMethodPointer)__N2M_AdjustorThunk_C8i4C8},
 	{"C8i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_C8i4i4},
+	{"C8i4i4C8", (Il2CppMethodPointer)__N2M_AdjustorThunk_C8i4i4C8},
 	{"S108i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S108i4},
 	{"S108i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S108i4i4},
 	{"S10i4i2", (Il2CppMethodPointer)__N2M_AdjustorThunk_S10i4i2},
@@ -24528,24 +27827,30 @@ NativeAdjustThunkMethodInfo hybridclr::interpreter::g_adjustThunkStub[] =
 	{"S12i4S4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S12i4S4},
 	{"S12i4i2", (Il2CppMethodPointer)__N2M_AdjustorThunk_S12i4i2},
 	{"S12i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S12i4i4},
+	{"S12i4i4S12", (Il2CppMethodPointer)__N2M_AdjustorThunk_S12i4i4S12},
+	{"S12i4i4i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S12i4i4i4i4},
 	{"S12i4u1", (Il2CppMethodPointer)__N2M_AdjustorThunk_S12i4u1},
 	{"S16i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S16i4},
 	{"S16i4i2", (Il2CppMethodPointer)__N2M_AdjustorThunk_S16i4i2},
 	{"S16i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S16i4i4},
+	{"S16i4i4S16", (Il2CppMethodPointer)__N2M_AdjustorThunk_S16i4i4S16},
 	{"S16i4i4u1", (Il2CppMethodPointer)__N2M_AdjustorThunk_S16i4i4u1},
 	{"S188i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S188i4},
 	{"S1i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S1i4},
 	{"S1i4i2", (Il2CppMethodPointer)__N2M_AdjustorThunk_S1i4i2},
+	{"S1i4i4S1", (Il2CppMethodPointer)__N2M_AdjustorThunk_S1i4i4S1},
 	{"S208i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S208i4},
 	{"S20i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S20i4},
 	{"S20i4i2", (Il2CppMethodPointer)__N2M_AdjustorThunk_S20i4i2},
 	{"S20i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S20i4i4},
+	{"S20i4i4S20", (Il2CppMethodPointer)__N2M_AdjustorThunk_S20i4i4S20},
 	{"S24i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S24i4},
 	{"S24i4i2", (Il2CppMethodPointer)__N2M_AdjustorThunk_S24i4i2},
 	{"S24i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S24i4i4},
 	{"S28i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S28i4},
 	{"S28i4i2", (Il2CppMethodPointer)__N2M_AdjustorThunk_S28i4i2},
 	{"S2i4i2", (Il2CppMethodPointer)__N2M_AdjustorThunk_S2i4i2},
+	{"S2i4i4S2", (Il2CppMethodPointer)__N2M_AdjustorThunk_S2i4i4S2},
 	{"S32i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S32i4},
 	{"S32i4i2", (Il2CppMethodPointer)__N2M_AdjustorThunk_S32i4i2},
 	{"S32i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S32i4i4},
@@ -24573,6 +27878,7 @@ NativeAdjustThunkMethodInfo hybridclr::interpreter::g_adjustThunkStub[] =
 	{"S4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S4i4},
 	{"S4i4i2", (Il2CppMethodPointer)__N2M_AdjustorThunk_S4i4i2},
 	{"S4i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S4i4i4},
+	{"S4i4i4S4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S4i4i4S4},
 	{"S52i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S52i4},
 	{"S52i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S52i4i4},
 	{"S56i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S56i4},
@@ -24590,9 +27896,14 @@ NativeAdjustThunkMethodInfo hybridclr::interpreter::g_adjustThunkStub[] =
 	{"S8i4S8", (Il2CppMethodPointer)__N2M_AdjustorThunk_S8i4S8},
 	{"S8i4i2", (Il2CppMethodPointer)__N2M_AdjustorThunk_S8i4i2},
 	{"S8i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S8i4i4},
+	{"S8i4i4S8", (Il2CppMethodPointer)__N2M_AdjustorThunk_S8i4i4S8},
+	{"S8i4i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_S8i4i4i4},
+	{"S8i4i4i4S8", (Il2CppMethodPointer)__N2M_AdjustorThunk_S8i4i4i4S8},
 	{"S9i4i2", (Il2CppMethodPointer)__N2M_AdjustorThunk_S9i4i2},
 	{"i1i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i1i4i4},
+	{"i1i4i4i1", (Il2CppMethodPointer)__N2M_AdjustorThunk_i1i4i4i1},
 	{"i2i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i2i4i4},
+	{"i2i4i4i2", (Il2CppMethodPointer)__N2M_AdjustorThunk_i2i4i4i2},
 	{"i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4},
 	{"i4i4C16", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4C16},
 	{"i4i4C32", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4C32},
@@ -24605,6 +27916,7 @@ NativeAdjustThunkMethodInfo hybridclr::interpreter::g_adjustThunkStub[] =
 	{"i4i4S12S12", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4S12S12},
 	{"i4i4S16", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4S16},
 	{"i4i4S16S16", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4S16S16},
+	{"i4i4S16i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4S16i4},
 	{"i4i4S20", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4S20},
 	{"i4i4S20S20", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4S20S20},
 	{"i4i4S24", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4S24},
@@ -24628,18 +27940,33 @@ NativeAdjustThunkMethodInfo hybridclr::interpreter::g_adjustThunkStub[] =
 	{"i4i4S72S72", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4S72S72},
 	{"i4i4S8", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4S8},
 	{"i4i4S8S8", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4S8S8},
+	{"i4i4S8i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4S8i4},
 	{"i4i4i1", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i1},
 	{"i4i4i2", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i2},
 	{"i4i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4},
 	{"i4i4i4S16", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4S16},
 	{"i4i4i4S8i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4S8i4},
 	{"i4i4i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4},
+	{"i4i4i4i4C16", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4C16},
+	{"i4i4i4i4S12", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4S12},
+	{"i4i4i4i4S2", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4S2},
+	{"i4i4i4i4S4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4S4},
+	{"i4i4i4i4S8", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4S8},
 	{"i4i4i4i4S8i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4S8i4},
+	{"i4i4i4i4i1", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4i1},
+	{"i4i4i4i4i2", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4i2},
 	{"i4i4i4i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4i4},
 	{"i4i4i4i4i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4i4i4},
 	{"i4i4i4i4i4i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4i4i4i4},
 	{"i4i4i4i4i4i4i4i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4i4i4i4i4i4},
+	{"i4i4i4i4i8", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4i8},
+	{"i4i4i4i4r4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4r4},
+	{"i4i4i4i4r8", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4r8},
 	{"i4i4i4i4u1", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4u1},
+	{"i4i4i4i4u1u1i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4u1u1i4},
+	{"i4i4i4i4u2", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4u2},
+	{"i4i4i4i4u4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4u4},
+	{"i4i4i4i4u8", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4i4u8},
 	{"i4i4i4u1", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4u1},
 	{"i4i4i4u1i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i4u1i4},
 	{"i4i4i8", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4i8},
@@ -24649,6 +27976,7 @@ NativeAdjustThunkMethodInfo hybridclr::interpreter::g_adjustThunkStub[] =
 	{"i4i4r8r8", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4r8r8},
 	{"i4i4u1", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4u1},
 	{"i4i4u1i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4u1i4},
+	{"i4i4u1u1", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4u1u1},
 	{"i4i4u2", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4u2},
 	{"i4i4u2u2", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4u2u2},
 	{"i4i4u4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4u4},
@@ -24657,17 +27985,21 @@ NativeAdjustThunkMethodInfo hybridclr::interpreter::g_adjustThunkStub[] =
 	{"i4i4u8u8", (Il2CppMethodPointer)__N2M_AdjustorThunk_i4i4u8u8},
 	{"i8i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i8i4},
 	{"i8i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_i8i4i4},
+	{"i8i4i4i8", (Il2CppMethodPointer)__N2M_AdjustorThunk_i8i4i4i8},
 	{"r4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_r4i4},
 	{"r4i4i2", (Il2CppMethodPointer)__N2M_AdjustorThunk_r4i4i2},
 	{"r4i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_r4i4i4},
+	{"r4i4i4r4", (Il2CppMethodPointer)__N2M_AdjustorThunk_r4i4i4r4},
 	{"r8i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_r8i4},
 	{"r8i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_r8i4i4},
+	{"r8i4i4r8", (Il2CppMethodPointer)__N2M_AdjustorThunk_r8i4i4r8},
 	{"u1i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_u1i4},
 	{"u1i4C1584", (Il2CppMethodPointer)__N2M_AdjustorThunk_u1i4C1584},
 	{"u1i4C16", (Il2CppMethodPointer)__N2M_AdjustorThunk_u1i4C16},
 	{"u1i4C24", (Il2CppMethodPointer)__N2M_AdjustorThunk_u1i4C24},
 	{"u1i4C32", (Il2CppMethodPointer)__N2M_AdjustorThunk_u1i4C32},
 	{"u1i4C40", (Il2CppMethodPointer)__N2M_AdjustorThunk_u1i4C40},
+	{"u1i4C48", (Il2CppMethodPointer)__N2M_AdjustorThunk_u1i4C48},
 	{"u1i4C56", (Il2CppMethodPointer)__N2M_AdjustorThunk_u1i4C56},
 	{"u1i4C8", (Il2CppMethodPointer)__N2M_AdjustorThunk_u1i4C8},
 	{"u1i4S1", (Il2CppMethodPointer)__N2M_AdjustorThunk_u1i4S1},
@@ -24746,13 +28078,17 @@ NativeAdjustThunkMethodInfo hybridclr::interpreter::g_adjustThunkStub[] =
 	{"u1i4u8", (Il2CppMethodPointer)__N2M_AdjustorThunk_u1i4u8},
 	{"u2i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_u2i4},
 	{"u2i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_u2i4i4},
+	{"u2i4i4u2", (Il2CppMethodPointer)__N2M_AdjustorThunk_u2i4i4u2},
 	{"u4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_u4i4},
 	{"u4i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_u4i4i4},
+	{"u4i4i4u4", (Il2CppMethodPointer)__N2M_AdjustorThunk_u4i4i4u4},
 	{"u8i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_u8i4},
 	{"u8i4S8", (Il2CppMethodPointer)__N2M_AdjustorThunk_u8i4S8},
 	{"u8i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_u8i4i4},
+	{"u8i4i4u8", (Il2CppMethodPointer)__N2M_AdjustorThunk_u8i4i4u8},
 	{"vi4", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4},
 	{"vi4C16", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4C16},
+	{"vi4C24i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4C24i4},
 	{"vi4C32", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4C32},
 	{"vi4C40", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4C40},
 	{"vi4C56", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4C56},
@@ -24790,10 +28126,15 @@ NativeAdjustThunkMethodInfo hybridclr::interpreter::g_adjustThunkStub[] =
 	{"vi4S8i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4S8i4i4},
 	{"vi4i2", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i2},
 	{"vi4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4},
+	{"vi4i4C16", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4C16},
+	{"vi4i4C24", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4C24},
 	{"vi4i4C32", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4C32},
+	{"vi4i4C8", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4C8},
+	{"vi4i4S1", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4S1},
 	{"vi4i4S108", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4S108},
 	{"vi4i4S12", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4S12},
 	{"vi4i4S16", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4S16},
+	{"vi4i4S2", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4S2},
 	{"vi4i4S20", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4S20},
 	{"vi4i4S24", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4S24},
 	{"vi4i4S32", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4S32},
@@ -24805,14 +28146,20 @@ NativeAdjustThunkMethodInfo hybridclr::interpreter::g_adjustThunkStub[] =
 	{"vi4i4S64", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4S64},
 	{"vi4i4S72", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4S72},
 	{"vi4i4S8", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4S8},
+	{"vi4i4i1", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4i1},
+	{"vi4i4i2", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4i2},
 	{"vi4i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4i4},
 	{"vi4i4i4S8", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4i4S8},
 	{"vi4i4i4i2", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4i4i2},
+	{"vi4i4i4i2i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4i4i2i4},
 	{"vi4i4i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4i4i4},
+	{"vi4i4i4i4S8", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4i4i4S8},
 	{"vi4i4i4i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4i4i4i4},
+	{"vi4i4i4i4i4i4i4u2i4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4i4i4i4i4i4u2i4i4},
 	{"vi4i4i4u1", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4i4u1},
 	{"vi4i4i4u4u4i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4i4u4u4i4},
 	{"vi4i4i8", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4i8},
+	{"vi4i4r4", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4r4},
 	{"vi4i4r8", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4r8},
 	{"vi4i4u1", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4u1},
 	{"vi4i4u1i4", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4u1i4},
@@ -24820,6 +28167,7 @@ NativeAdjustThunkMethodInfo hybridclr::interpreter::g_adjustThunkStub[] =
 	{"vi4i4u1u1", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4u1u1},
 	{"vi4i4u2", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4u2},
 	{"vi4i4u4", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4u4},
+	{"vi4i4u8", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i4u8},
 	{"vi4i8", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4i8},
 	{"vi4r4", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4r4},
 	{"vi4r8", (Il2CppMethodPointer)__N2M_AdjustorThunk_vi4r8},
